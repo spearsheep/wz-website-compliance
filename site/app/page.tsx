@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowRight, Search, Wrench, Building2, RefreshCw } from "lucide-react"
 import { ScannerHero } from "@/components/home/ScannerHero"
+import { Approaches } from "@/components/home/Approaches"
 import { SparkDot } from "@/components/compliance/SparkDot"
 import { FAQ } from "@/components/shared/FAQ"
 
@@ -108,6 +109,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── APPROACHES (4-WAY COMPARISON) ─────────────────────── */}
+      <Approaches />
 
       {/* ── EXPOSURE BY STATE ────────────────────────────────── */}
       <section className="py-20 px-6 bg-white">
