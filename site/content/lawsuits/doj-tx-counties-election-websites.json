@@ -1,0 +1,28 @@
+{
+  "case_name": "United States v. Colorado County, Runnels County, Smith County, and Upton County (Texas) — Election Website Accessibility",
+  "slug": "doj-tx-counties-election-websites",
+  "court": "DOJ settlement agreements — U.S. District Court, Eastern/Northern/Southern/Western Districts of Texas",
+  "docket": "Multiple — see DOJ press release (archived June 2024)",
+  "year_filed": 2024,
+  "year_resolved": 2024,
+  "industry": "government-public-sector",
+  "defendant_name": "Four Texas county governments",
+  "defendant_size": "small-mid",
+  "claim_type": "County election websites violated ADA by discriminating against individuals with vision or manual disabilities",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "keyboard-nav"],
+  "outcome": "Settlement agreements requiring all four counties to make election websites accessible to people with disabilities under Title II of the ADA",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "DOJ — Justice Department Secures Agreements with Texas Counties (June 2024)",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-secures-agreements-texas-counties-ensure-election-website-accessibility",
+      "tier": 1
+    }
+  ],
+  "use_in_report": false,
+  "summary_one_line": "DOJ in 2024 required four Texas counties to make election websites accessible under Title II of the ADA — shows DOJ enforcement extends to government sites, not just commercial businesses.",
+  "notes": "Included as a supplementary government sector case showing breadth of DOJ enforcement. Primary relevance to report: any public-facing digital property — government or commercial — is subject to ADA enforcement. Note this is Title II (government) not Title III (commercial) — keep the legal distinction clear in the report."
+}

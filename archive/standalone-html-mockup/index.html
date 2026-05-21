@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Juris — Real WCAG 2.1 AA compliance for professional services firms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #FFFFFF;
+  --bg-soft:   #FAF8F3;
+  --bg-cream:  #F5F1E8;
+  --ink:       #0A0A0A;
+  --ink-2:     #1F1F1F;
+  --ink-soft:  #4A4A48;
+  --ink-mute:  #8A8A85;
+  --rule:      #E8E6E2;
+  --rule-bold: #C9C5BC;
+
+  --navy:      #0F172A;
+  --burgundy:  #8B1A1A;
+  --red:       #B91C1C;
+  --red-bg:    #FEF2F2;
+  --amber:     #B45309;
+  --green:     #047857;
+
+  --sans:      'Geist', system-ui, sans-serif;
+  --serif:     'Newsreader', Georgia, serif;
+  --mono:      'Geist Mono', 'JetBrains Mono', monospace;
+
+  --max:       1200px;
+  --gutter:    32px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'ss01', 'cv11';
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ─── NAV ────────────────────────────────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  z-index: 100;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px var(--gutter);
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.brand-mark {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.brand-name {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+}
+.brand-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+  padding-left: 10px;
+  border-left: 1px solid var(--rule);
+}
+.nav-cta {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: var(--ink);
+  padding: 9px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  transition: transform 150ms ease, background 150ms ease;
+}
+.nav-cta:hover { background: var(--burgundy); transform: translateY(-1px); }
+
+/* ─── HERO ───────────────────────────────────── */
+.hero {
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.hero-title {
+  font-family: var(--sans);
+  font-size: clamp(46px, 7vw, 88px);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.038em;
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 1000px;
+}
+.hero-title .serif-italic {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+.hero-title .accent {
+  color: var(--burgundy);
+}
+.hero-sub {
+  font-family: var(--sans);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 680px;
+  margin-bottom: 40px;
+  letter-spacing: -0.005em;
+}
+
+/* Scanner widget */
+.scanner {
+  display: flex;
+  gap: 0;
+  max-width: 580px;
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 0 var(--ink), 0 2px 0 -1px var(--ink);
+}
+.scanner-input {
+  flex: 1;
+  border: none;
+  padding: 16px 18px;
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  background: transparent;
+}
+.scanner-input::placeholder { color: var(--ink-mute); }
+.scanner-btn {
+  background: var(--ink);
+  color: white;
+  border: none;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 22px;
+  cursor: pointer;
+  letter-spacing: -0.005em;
+  transition: background 150ms ease;
+}
+.scanner-btn:hover { background: var(--burgundy); }
+.scanner-note {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+}
+
+/* ─── SECTION ────────────────────────────────── */
+.section {
+  padding: 96px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.section-eyebrow {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.section-title {
+  font-family: var(--sans);
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+  margin-bottom: 22px;
+  max-width: 800px;
+}
+.section-title .serif-italic {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.012em;
+}
+.section-lead {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 620px;
+  margin-bottom: 56px;
+}
+
+/* ─── PROOF STATS ────────────────────────────── */
+.proof-stats {
+  background: var(--bg-soft);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--ink);
+  margin-top: 24px;
+}
+.stat {
+  padding: 36px 32px 36px 0;
+  border-right: 1px solid var(--rule-bold);
+}
+.stat:last-child { border-right: none; padding-right: 0; }
+.stat + .stat { padding-left: 32px; }
+.stat-num {
+  font-family: var(--sans);
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  color: var(--ink);
+  margin-bottom: 16px;
+  font-feature-settings: 'tnum';
+}
+.stat-num .small { font-size: 0.6em; color: var(--ink-mute); font-weight: 600; }
+.stat-num.red { color: var(--burgundy); }
+.stat-label {
+  font-family: var(--sans);
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  max-width: 280px;
+  font-weight: 500;
+}
+.stat-label strong { color: var(--ink); font-weight: 600; }
+.stat-cite {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.01em;
+}
+
+/* ─── APPROACHES ────────────────────────────── */
+.approaches-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.approach {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 30px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.approach.juris {
+  background: var(--ink);
+  color: white;
+  border-color: var(--ink);
+  transform: translateY(-12px);
+  box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.25), 0 4px 0 -1px var(--burgundy);
+}
+.approach-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--ink-mute);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+.approach.juris .approach-num { color: rgba(255,255,255,0.55); }
+.approach-name {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.approach.juris .approach-name { font-size: 24px; }
+.approach-tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  min-height: 44px;
+}
+.approach.juris .approach-tagline { color: rgba(255,255,255,0.75); }
+.approach-price {
+  font-family: var(--sans);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 4px;
+  font-feature-settings: 'tnum';
+}
+.approach.juris .approach-price { color: white; font-size: 28px; }
+.approach-price-sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+}
+.approach.juris .approach-price-sub { color: rgba(255,255,255,0.55); }
+.approach-divider {
+  height: 1px;
+  background: var(--rule);
+  margin-bottom: 18px;
+}
+.approach.juris .approach-divider { background: rgba(255,255,255,0.12); }
+.approach-pros, .approach-cons {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.approach-pros li, .approach-cons li {
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+  margin-bottom: 6px;
+  color: var(--ink-soft);
+}
+.approach.juris .approach-pros li,
+.approach.juris .approach-cons li { color: rgba(255,255,255,0.78); }
+.approach-pros li::before {
+  content: '+';
+  color: var(--green);
+  font-weight: 700;
+  font-family: var(--mono);
+}
+.approach-cons li::before {
+  content: '—';
+  color: var(--red);
+  font-weight: 700;
+  font-family: var(--mono);
+}
+.approach.juris .approach-pros li::before { color: #4ADE80; }
+.approach-footnote {
+  margin-top: auto;
+  padding-top: 16px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+  border-top: 1px solid var(--rule);
+  line-height: 1.5;
+}
+.approach.juris .approach-footnote {
+  color: rgba(255,255,255,0.55);
+  border-color: rgba(255,255,255,0.12);
+}
+.approach-badge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: var(--burgundy);
+  color: white;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ─── METHOD STRIP ─────────────────────────── */
+.method {
+  background: var(--bg-soft);
+}
+.method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.method-num {
+  font-family: var(--sans);
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  color: var(--ink);
+  font-feature-settings: 'tnum';
+  margin-bottom: 24px;
+}
+.method-num .small {
+  font-size: 32px;
+  color: var(--ink-mute);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.method-heading {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.method-text {
+  font-family: var(--sans);
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+.method-list {
+  list-style: none;
+  border-top: 1px solid var(--rule-bold);
+}
+.method-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 32px 1fr 90px;
+  gap: 12px;
+  align-items: center;
+  font-family: var(--sans);
+  font-size: 14.5px;
+  color: var(--ink);
+}
+.method-list li:last-child { border-bottom: none; }
+.method-list .step {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.method-list .step-name {
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.method-list .step-name .desc {
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-size: 13px;
+  display: block;
+  margin-top: 2px;
+}
+.method-list .step-tool {
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+}
+
+/* ─── PRICING ──────────────────────────────── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.tier {
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.tier.feature {
+  background: var(--bg-cream);
+  border-color: var(--burgundy);
+  position: relative;
+}
+.tier-eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+}
+.tier.feature .tier-eyebrow { color: var(--burgundy); }
+.tier-name {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  margin-bottom: 6px;
+}
+.tier-blurb {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin-bottom: 24px;
+  min-height: 60px;
+}
+.tier-price {
+  font-family: var(--sans);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 4px;
+  font-feature-settings: 'tnum';
+  line-height: 1;
+}
+.tier-price-sub {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+.tier-features {
+  list-style: none;
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+}
+.tier-features li {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 9px;
+  line-height: 1.45;
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  gap: 6px;
+}
+.tier-features li::before {
+  content: '✓';
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* ─── PROOF / CASES ───────────────────────── */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 24px;
+}
+.case {
+  border-top: 2px solid var(--ink);
+  padding-top: 22px;
+}
+.case-amt {
+  font-family: var(--sans);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  color: var(--burgundy);
+  margin-bottom: 12px;
+  font-feature-settings: 'tnum';
+}
+.case-defendant {
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 6px;
+}
+.case-meta {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-mute);
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+.case-desc {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+/* ─── FINAL CTA ─────────────────────────── */
+.final-cta {
+  background: var(--ink);
+  color: white;
+  padding: 110px 0;
+  text-align: center;
+}
+.final-cta-title {
+  font-family: var(--sans);
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin-bottom: 18px;
+}
+.final-cta-title .serif-italic {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+}
+.final-cta-sub {
+  font-family: var(--sans);
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 38px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+}
+.final-cta-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+.final-cta-btn {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  transition: transform 150ms ease, background 150ms ease;
+}
+.final-cta-btn.primary {
+  background: white;
+  color: var(--ink);
+}
+.final-cta-btn.primary:hover { background: var(--bg-cream); transform: translateY(-1px); }
+.final-cta-btn.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.final-cta-btn.secondary:hover { background: rgba(255,255,255,0.08); transform: translateY(-1px); }
+
+/* ─── FOOTER ────────────────────────────── */
+.footer {
+  padding: 56px 0 40px;
+  border-bottom: none;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-meta {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+.footer-links a {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.footer-links a:hover { color: var(--burgundy); }
+
+/* ─── MOBILE ──────────────────────────── */
+@media (max-width: 880px) {
+  .stats-grid, .approaches-grid, .pricing-grid, .cases-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat { border-right: none; border-bottom: 1px solid var(--rule-bold); padding: 28px 0; }
+  .stat:last-child { border-bottom: none; }
+  .stat + .stat { padding-left: 0; }
+  .approach.juris { transform: none; }
+  .method-grid { grid-template-columns: 1fr; gap: 32px; }
+  .method-num { font-size: 80px; }
+  .section { padding: 64px 0; }
+  .hero { padding: 64px 0 56px; }
+  .final-cta-buttons { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <svg class="brand-mark" viewBox="430 180 400 600" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0F172A" d="M707.16 450c0-57.82.03-115.15-.1-172.47 0-3.58 1.08-5.63 4.04-7.67 29.08-20.03 58.04-40.24 87.04-60.39 2.03-1.41 4.1-2.77 7.16-4.83v6.39c.01 99.31.03 198.63.04 297.94 0 36.99-.04 73.98-.02 110.97.04 78.99-62.04 142.61-141.01 144.36-12.79.28-25.6.04-39.3.04 1.1-.99 1.54-1.6 2.14-1.91 40.39-20.86 64.19-54.67 74.97-97.94 3.23-12.96 4.73-26.65 4.84-40.03.51-57.82.21-115.65.2-173.46Z"/>
+        <path fill="#8B1A1A" d="M583.74 727.75c-18.6 11.12-38.21 18.08-59.56 19.67-2.05.15-4.5.1-6.2-.86-31.48-17.66-53.61-43.25-65.28-77.61-.15-.45-.16-.95-.06-.31 11.95-2.23 24.1-3.37 35.56-6.83 39.07-11.79 68.45-51.83 68.63-92.63.16-35.65 0-71.31.16-106.96.01-2.09 1.12-5.02 2.72-6.15 34-24.01 68.14-47.83 102.27-71.68.67-.47 1.39-.85 2.72-1.66.15 1.79.37 3.14.37 4.5.01 64.14.88 128.3-.34 192.42-1.08 56.99-23.16 104.71-69.03 140.16-3.68 2.84-7.75 5.18-11.95 7.94Z"/>
+      </svg>
+      <span class="brand-name">Juris</span>
+      <span class="brand-tag">Compliance</span>
+    </a>
+    <a href="#book" class="nav-cta">Book a call</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ────────────────────────────────── -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Web Accessibility · WCAG 2.1 AA</div>
+    <h1 class="hero-title">
+      Real WCAG compliance.<br>
+      <span class="serif-italic">Audited</span>, <span class="serif-italic">fixed</span>, and <span class="accent">certified for court.</span>
+    </h1>
+    <p class="hero-sub">
+      Most accessibility solutions are theater — widgets, dashboards, or $50,000 consulting engagements. Juris is the flat-fee alternative for law firms, medical practices, and financial advisors who need genuine compliance, not marketing.
+    </p>
+    <form class="scanner" onsubmit="event.preventDefault();">
+      <input class="scanner-input" type="url" placeholder="yourfirm.com" />
+      <button class="scanner-btn" type="submit">Scan free →</button>
+    </form>
+    <div class="scanner-note">30-second Lighthouse + axe-core audit · no signup required</div>
+  </div>
+</section>
+
+<!-- ─── PROOF STATS ─────────────────────────── -->
+<section class="section proof-stats">
+  <div class="wrap">
+    <div class="section-eyebrow">By the Numbers</div>
+    <h2 class="section-title">
+      The legal exposure is <span class="serif-italic">measurable</span>, growing, and well-documented.
+    </h2>
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-num red">3,117<span class="small">+</span></div>
+        <div class="stat-label">
+          <strong>Federal ADA web accessibility lawsuits</strong> filed in 2025 — a 27% increase year-over-year.
+        </div>
+        <span class="stat-cite">— Seyfarth Shaw, March 2026</span>
+      </div>
+      <div class="stat">
+        <div class="stat-num red">$5.15<span class="small">M</span></div>
+        <div class="stat-label">
+          <strong>Largest disclosed settlement</strong> in 2025 (Alcazar v. Fashion Nova). DOJ intervened citing inadequacy.
+        </div>
+        <span class="stat-cite">— justice.gov, Feb 2026</span>
+      </div>
+      <div class="stat">
+        <div class="stat-num">64<span class="small">%</span></div>
+        <div class="stat-label">
+          <strong>Of defendants in 2025</strong> had revenue under $25M. There is no "too small to be sued."
+        </div>
+        <span class="stat-cite">— UsableNet Midyear 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOUR APPROACHES ─────────────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-eyebrow">The Four Approaches</div>
+    <h2 class="section-title">
+      Most solutions on the market <span class="serif-italic">don't actually fix anything.</span>
+    </h2>
+    <p class="section-lead">
+      There are four ways to handle web accessibility. Three of them either don't work or aren't priced for professional services firms. One does. We are the fourth.
+    </p>
+
+    <div class="approaches-grid">
+
+      <!-- Approach 1 -->
+      <div class="approach">
+        <div class="approach-num">Approach 01</div>
+        <h3 class="approach-name">The Widget</h3>
+        <p class="approach-tagline">"One line of code makes you compliant."</p>
+        <div class="approach-price">$49<span style="font-size: 14px; font-weight: 500; color: var(--ink-mute);">/month</span></div>
+        <div class="approach-price-sub">FOREVER</div>
+        <div class="approach-divider"></div>
+        <ul class="approach-pros">
+          <li>Fast to install</li>
+          <li>Cheap upfront</li>
+        </ul>
+        <ul class="approach-cons">
+          <li>Underlying code is unchanged</li>
+          <li>Screen readers ignore the widget</li>
+          <li>22.6% of sued sites had one installed</li>
+          <li>FTC fined the leader $1M in 2025</li>
+        </ul>
+        <p class="approach-footnote">Tribeca Skin Care paid for one. Got sued anyway. Sued the vendor back.</p>
+      </div>
+
+      <!-- Approach 2 -->
+      <div class="approach">
+        <div class="approach-num">Approach 02</div>
+        <h3 class="approach-name">The Dashboard</h3>
+        <p class="approach-tagline">"We'll tell you what's broken."</p>
+        <div class="approach-price">$25–$500<span style="font-size: 14px; font-weight: 500; color: var(--ink-mute);">/mo</span></div>
+        <div class="approach-price-sub">FOREVER</div>
+        <div class="approach-divider"></div>
+        <ul class="approach-pros">
+          <li>Ongoing monitoring</li>
+          <li>Audit trail for compliance officers</li>
+        </ul>
+        <ul class="approach-cons">
+          <li>Doesn't fix anything</li>
+          <li>You still need developers</li>
+          <li>Dashboards get ignored</li>
+          <li>Built for enterprise teams</li>
+        </ul>
+        <p class="approach-footnote">A list of problems is not a solution. You still own the work.</p>
+      </div>
+
+      <!-- Approach 3 -->
+      <div class="approach">
+        <div class="approach-num">Approach 03</div>
+        <h3 class="approach-name">The Consultancy</h3>
+        <p class="approach-tagline">"Custom enterprise engagement."</p>
+        <div class="approach-price">$30K – $200K<span style="font-size: 14px; font-weight: 500; color: var(--ink-mute);">+</span></div>
+        <div class="approach-price-sub">PER ENGAGEMENT</div>
+        <div class="approach-divider"></div>
+        <ul class="approach-pros">
+          <li>Real remediation</li>
+          <li>Legally defensible</li>
+          <li>Comprehensive</li>
+        </ul>
+        <ul class="approach-cons">
+          <li>Priced for Fortune 500</li>
+          <li>3–6 month engagements</li>
+          <li>Custom quotes only</li>
+          <li>Overkill for a 15-page site</li>
+        </ul>
+        <p class="approach-footnote">The right approach. The wrong scale. The wrong price.</p>
+      </div>
+
+      <!-- Approach 4 — Juris -->
+      <div class="approach juris">
+        <div class="approach-badge">The Fourth</div>
+        <div class="approach-num">Approach 04</div>
+        <h3 class="approach-name">Juris</h3>
+        <p class="approach-tagline">"Audited by experts. Fixed by engineers. Certified for court."</p>
+        <div class="approach-price">$4,500</div>
+        <div class="approach-price-sub">FLAT FEE · ONE-TIME</div>
+        <div class="approach-divider"></div>
+        <ul class="approach-pros">
+          <li>Real code-level remediation</li>
+          <li>WCAG 2.1 AA certification</li>
+          <li>VPAT included</li>
+          <li>Sized for professional services firms</li>
+          <li>Transparent flat-fee pricing</li>
+        </ul>
+        <p class="approach-footnote">A genuine fix at a price that makes sense for a 15-attorney firm or a single-location medical practice.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── METHOD ─────────────────────────────── -->
+<section class="section method">
+  <div class="wrap">
+    <div class="section-eyebrow">Methodology</div>
+    <h2 class="section-title">
+      Three layers of testing. <span class="serif-italic">No theater.</span>
+    </h2>
+    <div class="method-grid">
+      <div>
+        <div class="method-num">85<span class="small">%</span></div>
+        <div class="method-heading">Coverage of WCAG 2.1 AA</div>
+        <p class="method-text">
+          Most accessibility tools cover 30–40% of the WCAG criteria automatically. Juris combines three audit methods to reach 85% coverage — including the 80% of criteria cited in real lawsuits.
+        </p>
+        <p class="method-text" style="font-style: italic; color: var(--ink-mute); font-size: 14px;">
+          The remaining 15% requires policy review and live assistive-technology testing, which is included in our Premium tier.
+        </p>
+      </div>
+      <ul class="method-list">
+        <li>
+          <span class="step">01</span>
+          <div class="step-name">Lighthouse audit<span class="desc">Google's accessibility scoring engine</span></div>
+          <span class="step-tool">Automated</span>
+        </li>
+        <li>
+          <span class="step">02</span>
+          <div class="step-name">axe-core scan<span class="desc">Industry-standard violation detection by Deque</span></div>
+          <span class="step-tool">Automated</span>
+        </li>
+        <li>
+          <span class="step">03</span>
+          <div class="step-name">Accessibility tree review<span class="desc">What a screen reader actually announces</span></div>
+          <span class="step-tool">Semi-auto</span>
+        </li>
+        <li>
+          <span class="step">04</span>
+          <div class="step-name">Manual screen reader test<span class="desc">VoiceOver and NVDA walkthrough by an engineer</span></div>
+          <span class="step-tool">Manual</span>
+        </li>
+        <li>
+          <span class="step">05</span>
+          <div class="step-name">Remediation<span class="desc">Code-level fixes by our engineering team</span></div>
+          <span class="step-tool">Manual</span>
+        </li>
+        <li>
+          <span class="step">06</span>
+          <div class="step-name">Compliance certificate<span class="desc">VPAT documenting the standard achieved</span></div>
+          <span class="step-tool">Delivery</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ────────────────────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-eyebrow">Pricing</div>
+    <h2 class="section-title">
+      Flat fee. <span class="serif-italic">Stated up front.</span>
+    </h2>
+    <p class="section-lead">
+      No "contact sales." No hidden retainers. No per-page audits that balloon to $10K. The price you see is what you pay.
+    </p>
+
+    <div class="pricing-grid">
+      <div class="tier">
+        <div class="tier-eyebrow">Tier 1</div>
+        <div class="tier-name">Audit</div>
+        <p class="tier-blurb">Diagnostic only. You get the full report. You handle the fix.</p>
+        <div class="tier-price">$1,500</div>
+        <div class="tier-price-sub">ONE-TIME · UP TO 25 PAGES</div>
+        <ul class="tier-features">
+          <li>Lighthouse + axe-core + a11y tree scan</li>
+          <li>Manual screen reader walkthrough</li>
+          <li>Written report with prioritized fixes</li>
+          <li>Branded PDF deliverable</li>
+        </ul>
+      </div>
+
+      <div class="tier feature">
+        <div class="tier-eyebrow">Tier 2 · Most popular</div>
+        <div class="tier-name">Audit + Remediation</div>
+        <p class="tier-blurb">Diagnostic plus the fix. We do the engineering work and certify the result.</p>
+        <div class="tier-price">$4,500</div>
+        <div class="tier-price-sub">ONE-TIME · INCLUDES VPAT</div>
+        <ul class="tier-features">
+          <li>Everything in Tier 1</li>
+          <li>Code-level remediation by our engineers</li>
+          <li>WCAG 2.1 AA compliance certificate</li>
+          <li>Voluntary Product Accessibility Template (VPAT)</li>
+          <li>30 days of post-delivery support</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <div class="tier-eyebrow">Tier 3</div>
+        <div class="tier-name">Accessible Rebuild</div>
+        <p class="tier-blurb">Your site is old. We build it new — modern design, compliant by construction.</p>
+        <div class="tier-price">$12,000</div>
+        <div class="tier-price-sub">FROM · 4–6 WEEK TIMELINE</div>
+        <ul class="tier-features">
+          <li>New website on accessible architecture</li>
+          <li>Modern design tailored to your firm</li>
+          <li>SEO-ready, mobile-optimized</li>
+          <li>WCAG 2.1 AA verified at delivery</li>
+          <li>90 days of post-launch support</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <div class="tier-eyebrow">Ongoing</div>
+        <div class="tier-name">Monitoring</div>
+        <p class="tier-blurb">Compliance drifts as content changes. We catch regressions before they become lawsuits.</p>
+        <div class="tier-price">$149</div>
+        <div class="tier-price-sub">/MONTH · QUARTERLY REVIEW</div>
+        <ul class="tier-features">
+          <li>Monthly automated scan</li>
+          <li>Quarterly manual review</li>
+          <li>Compliance certificate renewal</li>
+          <li>Alerts on new violations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROOF / CASES ───────────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-eyebrow">Recent Disclosed Settlements</div>
+    <h2 class="section-title">
+      The cases aren't <span class="serif-italic">theoretical.</span>
+    </h2>
+    <p class="section-lead">
+      Most ADA web accessibility settlements are confidential. These are the largest publicly disclosed cases — each one cites the same technical failures our scanner catches.
+    </p>
+    <div class="cases-grid">
+      <div class="case">
+        <div class="case-amt">$5.15M</div>
+        <div class="case-defendant">Fashion Nova</div>
+        <div class="case-meta">2025 · N.D. Cal. · DOJ intervention</div>
+        <p class="case-desc">Class settlement for inaccessible e-commerce platform. DOJ intervened in Feb 2026 calling the original terms inadequate.</p>
+      </div>
+      <div class="case">
+        <div class="case-amt">$9.7M</div>
+        <div class="case-defendant">Target Corporation</div>
+        <div class="case-meta">2008 · NFB class action</div>
+        <p class="case-desc">$6M in class damages plus $3.7M in attorney fees. The first major federal precedent that website accessibility falls under ADA Title III.</p>
+      </div>
+      <div class="case">
+        <div class="case-amt">$440K</div>
+        <div class="case-defendant">MedStar Health</div>
+        <div class="case-meta">2024 · D. Md. · DOJ consent decree</div>
+        <p class="case-desc">Maryland and DC's largest hospital system. DOJ-mandated WCAG 2.1 AA compliance, $440K in patient compensation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FINAL CTA ──────────────────────── -->
+<section class="final-cta" id="book">
+  <div class="wrap">
+    <h2 class="final-cta-title">
+      Stop paying for <span class="serif-italic">accessibility theater.</span>
+    </h2>
+    <p class="final-cta-sub">
+      Twenty minutes on a call. We'll scan your site live, walk you through what we found, and tell you exactly what it costs to fix.
+    </p>
+    <div class="final-cta-buttons">
+      <a href="#" class="final-cta-btn primary">Book a 20-minute call →</a>
+      <a href="#scan" class="final-cta-btn secondary">Run a free scan first</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-meta">Juris · ray@juris.audit · © 2026</div>
+      <div class="footer-links">
+        <a href="#">Methodology</a>
+        <a href="#">Sources</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

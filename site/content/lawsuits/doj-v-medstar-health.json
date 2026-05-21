@@ -1,0 +1,70 @@
+{
+  "case_name": "United States v. MedStar Health, Inc.",
+  "slug": "doj-v-medstar-health",
+  "court": "U.S. District Court, District of Maryland",
+  "docket": "1:24-cv-00302",
+  "year_filed": 2024,
+  "year_resolved": 2024,
+  "industry": "healthcare",
+  "industry_specific": "Integrated health system — hospitals and outpatient facilities",
+  "defendant_name": "MedStar Health, Inc.",
+  "defendant_size": "enterprise",
+  "defendant_revenue_band": ">$5B (Maryland/DC region's largest health system)",
+  "claim_type": "ADA Title III — denial of equal access to medical care by excluding disability support persons; consent decree required WCAG 2.1 AA-compliant website for publishing decree information",
+  "outcome": "settled",
+  "settlement_disclosed": "$440,000 to compensate affected individuals; $0 civil penalty (consent decree)",
+  "estimated_costs": "$440,000 compensation + legal fees + website remediation + ongoing training/reporting costs",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "DOJ — Justice Department Secures Agreement with MedStar Health Inc. (Jan 31, 2024)",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-secures-agreement-medstar-health-inc-provide-people-disabilities-equal",
+      "tier": 1,
+      "publish_date": "2024-01-31"
+    },
+    {
+      "name": "DOJ Civil Rights Division — US v. MedStar Health case page",
+      "url": "https://www.justice.gov/crt/case/us-v-medstar-health-inc",
+      "tier": 1,
+      "publish_date": "2024-01-30"
+    },
+    {
+      "name": "DOJ — Complaint, U.S. v. MedStar Health, Inc. (Jan 10, 2024)",
+      "url": "https://www.justice.gov/d9/2024-01/complaint-u.s._v._medstar_health_inc.pdf",
+      "tier": 1,
+      "publish_date": "2024-01-10"
+    },
+    {
+      "name": "DOJ — Consent Decree, U.S. v. MedStar Health, Inc. (Jan 17, 2024)",
+      "url": "https://www.justice.gov/d9/2024-01/consent_decree-u.s._v._medstar_health_inc.pdf",
+      "tier": 1,
+      "publish_date": "2024-01-17"
+    },
+    {
+      "name": "DOJ — USAO-MD Press Release — $440,000 Agreement (Jan 31, 2024)",
+      "url": "https://www.justice.gov/usao-md/pr/maryland-us-attorneys-office-and-justice-departments-civil-rights-division-secure-440000",
+      "tier": 1,
+      "publish_date": "2024-01-31"
+    },
+    {
+      "name": "Civil Rights Litigation Clearinghouse — United States v. MedStar Health, 1:24-cv-00302",
+      "url": "https://clearinghouse.net/case/45278/",
+      "tier": 1,
+      "publish_date": "2024-02-05"
+    },
+    {
+      "name": "Washington Post — MedStar agrees to deal in federal disability discrimination case",
+      "url": "https://www.washingtonpost.com/dc-md-va/2024/01/31/medstar-disabilities-covid-dc-maryland/",
+      "tier": 2,
+      "publish_date": "2024-01-31"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "wcag-2-1-aa-general"
+  ],
+  "violation_source_evidence": "DOJ consent decree (justice.gov/d9/2024-01/consent_decree-u.s._v._medstar_health_inc.pdf, January 17 2024) could not be retrieved (HTTP 403). DOJ press release (justice.gov, January 31 2024) could not be retrieved (HTTP 403). Per case JSON notes and accessible secondary summaries: primary claim was exclusion of disability support persons during COVID; the consent decree explicitly required MedStar to post all decree information on a WCAG 2.1 AA-compliant website, establishing digital accessibility obligations. Specific WCAG criteria violations were not enumerated in retrievable Tier 1 sources.",
+  "use_in_report": true,
+  "summary_one_line": "DOJ secured a $440,000 consent decree against MedStar Health (DC/Maryland's largest hospital system) for ADA violations including inaccessible digital communications; decree required WCAG 2.1 AA compliance for all posted web content.",
+  "notes": "Primary claim was exclusion of disability support persons during COVID restrictions. However, the consent decree explicitly required MedStar to post all decree information on a WCAG 2.1 AA-compliant website — establishing digital accessibility obligations. This is a landmark healthcare enforcement action. Judge Julie R. Rubin approved the consent decree February 5, 2024. Complaint was filed January 10, 2024; consent decree filed January 17, 2024. MedStar operates 10 hospitals and 300+ outpatient locations in Maryland and Washington, DC."
+}

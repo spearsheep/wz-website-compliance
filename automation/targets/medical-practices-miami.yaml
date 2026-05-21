@@ -1,0 +1,41 @@
+id: medical-practices-miami
+display_name: "Miami Medical Practices"
+
+google_places_query: "medical practice doctor office"
+location: "Miami, FL"
+radius_meters: 40000
+max_per_run: 20
+min_review_count: 10
+
+state_law_context: |
+  Florida is the #2 state for ADA web accessibility lawsuit volume in 2025 — filings
+  nearly doubled year-over-year. Healthcare practices face an additional federal
+  obligation: HHS Section 504 final rule requires WCAG 2.1 AA compliance for any
+  practice accepting Medicare/Medicaid, with deadlines of May 2026 (15+ employees)
+  and May 2027 (smaller practices).
+
+risk_message_short: "Federal HHS Section 504 deadline plus Florida's 2nd-highest lawsuit volume in 2025."
+
+sample_recent_case: |
+  Florida federal court filings rose 105% in 2025; healthcare practices increasingly
+  named in suits over patient portal and appointment booking inaccessibility.
+
+decision_maker_titles:
+  primary:
+    - "practice administrator"
+    - "office manager"
+    - "operations director"
+    - "compliance officer"
+  fallback:
+    - "marketing director"
+    - "practice manager"
+    - "chief operating officer"
+
+pain_point: |
+  Healthcare has TWO compliance pressures: ADA Title III lawsuits AND HHS Section 504
+  federal regulatory deadline. Most practice administrators are aware of HIPAA compliance
+  but unaware that web accessibility is now a federal requirement, not a recommendation.
+
+call_to_action_angle: |
+  Frame as regulatory compliance preparation, not lawsuit defense. The Section 504
+  deadline is a forcing function — a retrofit later costs more than a proper rebuild now.

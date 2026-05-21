@@ -1,0 +1,33 @@
+{
+  "case_name": "Burbon v. Fox News Network, LLC",
+  "slug": "burbon-v-fox-news",
+  "court": "U.S. District Court, Southern District of New York",
+  "docket": "1:18-cv-01662",
+  "year_filed": 2018,
+  "year_resolved": 2019,
+  "industry": "media-news",
+  "defendant_name": "Fox News Network, LLC",
+  "defendant_size": "enterprise",
+  "claim_type": "FoxNews.com inaccessible to blind and low-vision users; missing alt text, dead links, no keyboard navigation",
+  "wcag_violations_alleged": ["alt-text-missing", "dead-links", "keyboard-nav"],
+  "outcome": "Settled (terms confidential); Fox News agreed to address accessibility concerns",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Top Class Actions — Fox News website not accessible to blind, class action says",
+      "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/fox-news-website-not-accessible-blind-class-action-says/",
+      "tier": 2
+    },
+    {
+      "name": "Level Access — ADA website compliance lawsuits: high profile cases",
+      "url": "https://www.levelaccess.com/blog/title-iii-lawsuits-10-big-companies-sued-over-website-accessibility/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Fox News class action (2018) for inaccessible news website; demonstrates that media and content-driven businesses face the same ADA exposure as retailers.",
+  "notes": "Plaintiff claimed FoxNews.com lacked alt text for all images, contained dead links, and was not usable with keyboard navigation. Case settled 2019 with confidential terms. Settlement terms not publicly available — note this clearly in any report. Useful for illustrating that content/news businesses are not exempt."
+}

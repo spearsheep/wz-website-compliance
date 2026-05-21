@@ -1,0 +1,48 @@
+{
+  "statistic_id": "settlement-cost-data",
+  "claim": "ADA web accessibility lawsuits cost businesses $30,000–$100,000+ to settle; total exposure including defense, remediation, and monitoring can reach $55,000–$270,000",
+  "value_primary": "$30,000–$100,000+ typical settlement range",
+  "value_specific": {
+    "demand_letter_settlement": "$5,000–$15,000 (early resolution before filing)",
+    "out_of_court_settlement_average": "$30,000 (Accessible.org via aggregated court data)",
+    "court_judgment_average": "$85,000",
+    "class_action_average": "$400,000+",
+    "landmark_disclosed_2025": "$5,150,000 (Fashion Nova, Alcazar v. Fashion Nova, N.D. Cal. 2025)",
+    "landmark_disclosed_2008": "$6,000,000 (Target, NFB v. Target, N.D. Cal. 2008)",
+    "total_cost_range_including_defense": "$55,000–$270,000 per case (settlement + legal defense + remediation + monitoring)"
+  },
+  "year": 2025,
+  "verified": true,
+  "tier": 2,
+  "sources": [
+    {
+      "name": "Accessible.org — ADA website compliance lawsuit settlement amounts",
+      "url": "https://accessible.org/ada-website-compliance-lawsuit-settlement-amounts/",
+      "tier": 2
+    },
+    {
+      "name": "WCAGsafe — ADA lawsuit statistics 2025-2026 (settlement ranges)",
+      "url": "https://wcagsafe.com/blog/ada-lawsuit-statistics",
+      "tier": 2
+    },
+    {
+      "name": "Medium/Kris Rivenburgh — Website accessibility lawsuit costs",
+      "url": "https://adabook.medium.com/can-you-afford-25-000-website-accessibility-lawsuits-cost-money-21987cd913f3",
+      "tier": 2
+    },
+    {
+      "name": "Fashion Nova Settlement — $5.15M (DOJ case page)",
+      "url": "https://www.justice.gov/crt/case/alcazar-v-fashion-nova-inc",
+      "tier": 1
+    },
+    {
+      "name": "NFB v. Target — $6M settlement (NFB official announcement)",
+      "url": "https://nfb.org/images/nfb/publications/bm/bm08/bm0809/bm080915.htm",
+      "tier": 1
+    }
+  ],
+  "context": "Settlement amounts are highly variable. Most ADA web accessibility settlements are confidential — the $30k and $85k averages are derived from aggregated third-party tracking, not a single primary source. The two confirmed public settlement figures are Target ($6M, 2008) and Fashion Nova ($5.15M, 2025). Attorney fees add $3,000–$50,000 on top of settlement amounts. Remediation costs of a non-compliant website range from $5,000–$100,000 depending on complexity. The real financial risk for most SMBs is the combination of: demand letter costs + attorney fees + settlement + mandatory remediation + potential monitoring.",
+  "use_in_report": true,
+  "report_footnote": "4",
+  "important_caveat": "Most ADA settlements are confidential. The $30k and $85k averages are industry estimates from accessibility advocacy tracking tools, not court-published data. Present with appropriate hedging. Only two fully public disclosed settlement amounts found: Target ($6M, 2008) and Fashion Nova ($5.15M, 2025)."
+}

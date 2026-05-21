@@ -1,0 +1,480 @@
+{
+  "sources": [
+    {
+      "id": "src-001",
+      "name": "Seyfarth Shaw ADA Title III — Federal Court Website Accessibility Lawsuit Filings Bounce Back in 2025",
+      "type": "industry-legal-report",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP (Kristina M. Launey & Minh N. Vu)",
+      "publish_date": "2026-03-25",
+      "url": "https://www.adatitleiii.com/2026/03/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025/",
+      "cited_in": [
+        "statistics/2025-filing-volume.json",
+        "statistics/state-distribution.json",
+        "statistics/growth-trend.json"
+      ]
+    },
+    {
+      "id": "src-002",
+      "name": "UsableNet — 2025 Year-End Report on Web Accessibility Lawsuits",
+      "type": "industry-report",
+      "tier": 1,
+      "publisher": "UsableNet, Inc.",
+      "publish_date": "2026-01-15",
+      "url": "https://info.usablenet.com/2025-year-end-report-on-web-accessibility-lawsuits",
+      "cited_in": [
+        "statistics/2025-filing-volume.json"
+      ]
+    },
+    {
+      "id": "src-003",
+      "name": "UsableNet — 2025 Midyear Digital Accessibility Lawsuit Report",
+      "type": "industry-report",
+      "tier": 1,
+      "publisher": "UsableNet, Inc.",
+      "publish_date": "2025-07-01",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "pdf_url": "https://info.usablenet.com/hubfs/2025-MidYear-Report-FINAL.pdf",
+      "cited_in": [
+        "statistics/2025-filing-volume.json",
+        "statistics/industry-distribution.json",
+        "statistics/defendant-revenue-bands.json",
+        "statistics/state-distribution.json"
+      ]
+    },
+    {
+      "id": "src-004",
+      "name": "9th Circuit Court of Appeals — Robles v. Domino's Pizza, LLC, 913 F.3d 898 (9th Cir. 2019)",
+      "type": "court-opinion",
+      "tier": 1,
+      "publisher": "U.S. Court of Appeals, Ninth Circuit",
+      "publish_date": "2019-01-15",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/15/17-55504.pdf",
+      "justia_url": "https://law.justia.com/cases/federal/appellate-courts/ca9/17-55504/17-55504-2019-01-15.html",
+      "cited_in": [
+        "lawsuits/robles-v-dominos.json"
+      ]
+    },
+    {
+      "id": "src-005",
+      "name": "Seyfarth Shaw — Robles v. Domino's Settles After Six Years of Litigation (June 2022)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2022-06-06",
+      "url": "https://www.adatitleiii.com/2022/06/robles-v-dominos-settles-after-six-years-of-litigation/",
+      "cited_in": [
+        "lawsuits/robles-v-dominos.json"
+      ]
+    },
+    {
+      "id": "src-006",
+      "name": "National Federation of the Blind — Official settlement announcement (Target, August 2008)",
+      "type": "organization-announcement",
+      "tier": 1,
+      "publisher": "National Federation of the Blind",
+      "publish_date": "2008-09-01",
+      "url": "https://nfb.org/images/nfb/publications/bm/bm08/bm0809/bm080915.htm",
+      "cited_in": [
+        "lawsuits/nfb-v-target.json",
+        "statistics/settlement-cost-data.json"
+      ]
+    },
+    {
+      "id": "src-007",
+      "name": "Disability Rights Advocates — NFB v. Target Corporation case page",
+      "type": "legal-advocacy",
+      "tier": 1,
+      "publisher": "Disability Rights Advocates",
+      "publish_date": "2008-08-01",
+      "url": "https://dralegal.org/case/national-federation-of-the-blind-nfb-et-al-v-target-corporation/",
+      "cited_in": [
+        "lawsuits/nfb-v-target.json"
+      ]
+    },
+    {
+      "id": "src-008",
+      "name": "Seyfarth Shaw — 11th Circuit Says Winn-Dixie Website Does Not Violate ADA (April 2021)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2021-04-01",
+      "url": "https://www.adatitleiii.com/2021/04/eleventh-circuit-says-winn-dixies-inaccessible-website-does-not-violate-the-ada/",
+      "cited_in": [
+        "lawsuits/gil-v-winn-dixie.json"
+      ]
+    },
+    {
+      "id": "src-009",
+      "name": "Civil Rights Litigation Clearinghouse — NAD v. Netflix, 3:11-cv-30168",
+      "type": "court-record",
+      "tier": 1,
+      "publisher": "University of Michigan Law School / Civil Rights Litigation Clearinghouse",
+      "publish_date": "2012-10-09",
+      "url": "https://clearinghouse.net/case/12205/",
+      "cited_in": [
+        "lawsuits/nad-v-netflix.json"
+      ]
+    },
+    {
+      "id": "src-010",
+      "name": "Seyfarth Shaw — Netflix Settles Massachusetts Web Video Captioning Action (October 2012)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2012-10-09",
+      "url": "https://www.adatitleiii.com/2012/10/netflix-settles-massachusetts-web-video-captioning-action/",
+      "cited_in": [
+        "lawsuits/nad-v-netflix.json"
+      ]
+    },
+    {
+      "id": "src-011",
+      "name": "DOJ — NAD v. Netflix Statement of Interest",
+      "type": "government-filing",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, Civil Rights Division",
+      "publish_date": "2012-05-01",
+      "url": "https://archive.ada.gov/briefs/netflix_SOI.doc",
+      "cited_in": [
+        "lawsuits/nad-v-netflix.json"
+      ]
+    },
+    {
+      "id": "src-012",
+      "name": "Civil Rights Litigation Clearinghouse — NAD v. Harvard, 3:15-cv-30023",
+      "type": "court-record",
+      "tier": 1,
+      "publisher": "University of Michigan Law School / Civil Rights Litigation Clearinghouse",
+      "publish_date": "2020-02-27",
+      "url": "https://clearinghouse.net/case/14352/",
+      "cited_in": [
+        "lawsuits/nad-v-harvard.json"
+      ]
+    },
+    {
+      "id": "src-013",
+      "name": "Harvard Digital Accessibility — Settlement caption requirements",
+      "type": "court-settlement",
+      "tier": 1,
+      "publisher": "Harvard University",
+      "publish_date": "2020-02-27",
+      "url": "https://accessibility.huit.harvard.edu/settlement-caption-requirements",
+      "cited_in": [
+        "lawsuits/nad-v-harvard.json"
+      ]
+    },
+    {
+      "id": "src-014",
+      "name": "DOJ — Justice Department Secures Agreement with Springfield Clinic (May 8, 2024)",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office, Central District of Illinois",
+      "publish_date": "2024-05-08",
+      "url": "https://www.justice.gov/usao-cdil/pr/justice-department-secures-agreement-springfield-clinic-make-its-online-services",
+      "settlement_text_url": "https://www.justice.gov/crt/media/1370426/dl",
+      "cited_in": [
+        "lawsuits/doj-v-springfield-clinic.json"
+      ]
+    },
+    {
+      "id": "src-015",
+      "name": "DOJ — Alcazar v. Fashion Nova Inc. — Civil Rights Division case page",
+      "type": "government-case-page",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, Civil Rights Division",
+      "publish_date": "2026-02-02",
+      "url": "https://www.justice.gov/crt/case/alcazar-v-fashion-nova-inc",
+      "cited_in": [
+        "lawsuits/alcazar-v-fashion-nova.json",
+        "statistics/settlement-cost-data.json"
+      ]
+    },
+    {
+      "id": "src-016",
+      "name": "DOJ — Statement opposing Fashion Nova settlement (Feb 2, 2026)",
+      "type": "government-filing",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice",
+      "publish_date": "2026-02-02",
+      "url": "https://www.justice.gov/opa/pr/department-justice-opposes-unfair-class-action-settlement-involving-accessibility-website",
+      "cited_in": [
+        "lawsuits/alcazar-v-fashion-nova.json"
+      ]
+    },
+    {
+      "id": "src-017",
+      "name": "Lainey Feingold Law — $5.15M Fashion Nova settlement announcement (October 2025)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Law Office of Lainey Feingold",
+      "publish_date": "2025-10-01",
+      "url": "https://www.lflegal.com/2025/10/fashion-nova-settlement/",
+      "cited_in": [
+        "lawsuits/alcazar-v-fashion-nova.json"
+      ]
+    },
+    {
+      "id": "src-018",
+      "name": "Seyfarth Shaw ADA Title III — DOJ throws wrench into Fashion Nova settlement (Feb 2026)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2026-02-01",
+      "url": "https://www.adatitleiii.com/2026/02/doj-throws-wrench-into-proposed-ada-website-accessibility-class-settlement/",
+      "cited_in": [
+        "lawsuits/alcazar-v-fashion-nova.json"
+      ]
+    },
+    {
+      "id": "src-019",
+      "name": "Seyfarth Shaw — Plaintiffs score another victory in website accessibility lawsuit (Hobby Lobby, June 2017)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2017-06-19",
+      "url": "https://www.adatitleiii.com/2017/06/plaintiffs-score-another-victory-in-a-website-accessibility-lawsuit/",
+      "cited_in": [
+        "lawsuits/gorecki-v-hobby-lobby.json"
+      ]
+    },
+    {
+      "id": "src-020",
+      "name": "CourtListener — Gorecki v. Hobby Lobby Stores, Inc., 2:17-cv-01131",
+      "type": "court-record",
+      "tier": 1,
+      "publisher": "CourtListener / Free Law Project",
+      "publish_date": "2017-10-24",
+      "url": "https://www.courtlistener.com/docket/6076282/sean-gorecki-v-hobby-lobby-stores-inc/",
+      "cited_in": [
+        "lawsuits/gorecki-v-hobby-lobby.json"
+      ]
+    },
+    {
+      "id": "src-021",
+      "name": "DOJ — Justice Department Enters Settlement Agreement with Peapod (November 2014)",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice",
+      "publish_date": "2014-11-17",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-enters-settlement-agreement-peapod-ensure-peapod-grocery-delivery-website",
+      "settlement_text_url": "https://archive.ada.gov/peapod_sa.htm",
+      "cited_in": [
+        "lawsuits/doj-peapod-settlement.json"
+      ]
+    },
+    {
+      "id": "src-022",
+      "name": "Seyfarth Shaw — 2024 ADA Title III Federal Filings Continue to Decrease (April 2025)",
+      "type": "industry-legal-report",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2025-04-01",
+      "url": "https://www.adatitleiii.com/2025/04/federal-court-website-accessibility-lawsuit-filings-continue-to-decrease-in-2024/",
+      "cited_in": [
+        "statistics/growth-trend.json"
+      ]
+    },
+    {
+      "id": "src-023",
+      "name": "Seyfarth Shaw — Plaintiffs set new record for 2022 website accessibility filings (January 2023)",
+      "type": "industry-legal-report",
+      "tier": 1,
+      "publisher": "Seyfarth Shaw LLP / ADA Title III Blog",
+      "publish_date": "2023-01-01",
+      "url": "https://www.adatitleiii.com/2023/01/plaintiffs-set-a-new-record-for-website-accessibility-lawsuit-filings-in-2022/",
+      "cited_in": [
+        "statistics/growth-trend.json"
+      ]
+    },
+    {
+      "id": "src-024",
+      "name": "Lainey Feingold Law — New class action lawsuit against AccessiBe (July 2024)",
+      "type": "legal-analysis",
+      "tier": 1,
+      "publisher": "Law Office of Lainey Feingold",
+      "publish_date": "2024-07-01",
+      "url": "https://www.lflegal.com/2024/07/accessibe-class-action/",
+      "cited_in": [
+        "lawsuits/tribeca-v-accessibe.json"
+      ]
+    },
+    {
+      "id": "src-025",
+      "name": "DOJ — Texas Counties Election Website Accessibility Settlement (June 2024)",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice",
+      "publish_date": "2024-06-01",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-secures-agreements-texas-counties-ensure-election-website-accessibility",
+      "cited_in": [
+        "lawsuits/doj-tx-counties-election-websites.json"
+      ]
+    }
+  ],
+  "compiled_at": "2026-05-21",
+  "total_sources": 41,
+  "b2b_sources_added": "2026-05-21",
+  "b2b_sources": [
+    {
+      "id": "src-026",
+      "name": "DOJ — Justice Department Secures Agreement with MedStar Health Inc. (Jan 31, 2024)",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "publish_date": "2024-01-31",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-secures-agreement-medstar-health-inc-provide-people-disabilities-equal",
+      "cited_in": ["b2b-lawsuits/doj-v-medstar-health.json"]
+    },
+    {
+      "id": "src-027",
+      "name": "DOJ CRT — US v. MedStar Health, Inc. case page (docket 1:24-cv-00302)",
+      "type": "government-case-page",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, Civil Rights Division",
+      "publish_date": "2024-01-30",
+      "url": "https://www.justice.gov/crt/case/us-v-medstar-health-inc",
+      "cited_in": ["b2b-lawsuits/doj-v-medstar-health.json"]
+    },
+    {
+      "id": "src-028",
+      "name": "DOJ — MedStar Health Consent Decree (January 17, 2024)",
+      "type": "court-settlement",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice",
+      "publish_date": "2024-01-17",
+      "url": "https://www.justice.gov/d9/2024-01/consent_decree-u.s._v._medstar_health_inc.pdf",
+      "cited_in": ["b2b-lawsuits/doj-v-medstar-health.json"]
+    },
+    {
+      "id": "src-029",
+      "name": "Civil Rights Litigation Clearinghouse — United States v. MedStar Health, 1:24-cv-00302",
+      "type": "court-record",
+      "tier": 1,
+      "publisher": "University of Michigan Law School / Civil Rights Litigation Clearinghouse",
+      "publish_date": "2024-02-05",
+      "url": "https://clearinghouse.net/case/45278/",
+      "cited_in": ["b2b-lawsuits/doj-v-medstar-health.json"]
+    },
+    {
+      "id": "src-030",
+      "name": "DOJ — Justice Department Secures Agreement with Springfield Clinic (May 8, 2024)",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office, Central District of Illinois",
+      "publish_date": "2024-05-08",
+      "url": "https://www.justice.gov/usao-cdil/pr/justice-department-secures-agreement-springfield-clinic-make-its-online-services",
+      "cited_in": ["b2b-lawsuits/doj-v-springfield-clinic-b2b.json"]
+    },
+    {
+      "id": "src-031",
+      "name": "Disability Rights NC — Blind Patients Receive Settlement from UNC Health Care System (July 2022)",
+      "type": "organization-press-release",
+      "tier": 1,
+      "publisher": "Disability Rights North Carolina",
+      "publish_date": "2022-07-14",
+      "url": "https://disabilityrightsnc.org/news/press-release/blind-patients-receive-settlement-from-unc-health-care-system/",
+      "cited_in": ["b2b-lawsuits/bone-v-unc-health-care.json"]
+    },
+    {
+      "id": "src-032",
+      "name": "Civil Rights Litigation Clearinghouse — Bone v. UNC Health Care System, 1:18-cv-00994",
+      "type": "court-record",
+      "tier": 1,
+      "publisher": "University of Michigan Law School / Civil Rights Litigation Clearinghouse",
+      "publish_date": "2022-07-01",
+      "url": "https://clearinghouse.net/case/43408/",
+      "cited_in": ["b2b-lawsuits/bone-v-unc-health-care.json"]
+    },
+    {
+      "id": "src-033",
+      "name": "NFB — National Federation of the Blind and Two Blind Patients Sue Exact Care Pharmacy (December 2023)",
+      "type": "organization-press-release",
+      "tier": 1,
+      "publisher": "National Federation of the Blind",
+      "publish_date": "2023-12-12",
+      "url": "https://nfb.org/index.php/about-us/press-room/national-federation-blind-and-two-blind-patients-sue-ohio-based-mail-order",
+      "cited_in": ["b2b-lawsuits/mckenney-v-exact-care-pharmacy.json"]
+    },
+    {
+      "id": "src-034",
+      "name": "Justia Dockets — McKenney et al. v. Exact Care Pharmacy, 1:2023cv02360 (N.D. Ohio)",
+      "type": "court-record",
+      "tier": 1,
+      "publisher": "Justia / Free Law Project",
+      "publish_date": "2023-12-12",
+      "url": "https://dockets.justia.com/docket/ohio/ohndce/1:2023cv02360/302533",
+      "cited_in": ["b2b-lawsuits/mckenney-v-exact-care-pharmacy.json"]
+    },
+    {
+      "id": "src-035",
+      "name": "Lainey Feingold Law — Charles Schwab 2024 Web and Mobile Accessibility Settlement Agreement",
+      "type": "legal-advocacy",
+      "tier": 1,
+      "publisher": "Law Office of Lainey Feingold",
+      "publish_date": "2024-11-01",
+      "url": "https://www.lflegal.com/2024/11/schwab-2024-agreement/",
+      "cited_in": ["b2b-lawsuits/schwab-blind-clients-structured-negotiation.json"]
+    },
+    {
+      "id": "src-036",
+      "name": "DOJ — Settlement Agreement between the United States, AICPA, and NASBA (April 1, 2019)",
+      "type": "government-settlement",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice / archive.ada.gov",
+      "publish_date": "2019-04-01",
+      "url": "https://archive.ada.gov/cpa_exam_sa.html",
+      "cited_in": ["b2b-lawsuits/aicpa-nasba-cpa-exam-doj.json"]
+    },
+    {
+      "id": "src-037",
+      "name": "DOJ USAO Massachusetts — U.S. Attorney's Office Settles CPA Exam Disability Discrimination Allegations",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office, District of Massachusetts",
+      "publish_date": "2019-04-01",
+      "url": "https://www.justice.gov/usao-ma/pr/us-attorney-s-office-settles-disability-discrimination-allegations-related-cpa-exam",
+      "cited_in": ["b2b-lawsuits/aicpa-nasba-cpa-exam-doj.json"]
+    },
+    {
+      "id": "src-038",
+      "name": "Disability Rights Advocates — Fowler v. California Department of Insurance — Settlement (August 2024)",
+      "type": "legal-advocacy",
+      "tier": 1,
+      "publisher": "Disability Rights Advocates",
+      "publish_date": "2024-08-01",
+      "url": "https://dralegal.org/press/california-insurance-exam-settlement/",
+      "cited_in": ["b2b-lawsuits/fowler-v-california-dept-insurance.json"]
+    },
+    {
+      "id": "src-039",
+      "name": "DOJ — Justice Department Secures Agreement with Oklahoma State Agency over Inaccessible Mobile App (January 22, 2024)",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "publish_date": "2024-01-22",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-secures-agreement-oklahoma-state-agency-ensure-oklahoma-mobile-apps-are",
+      "cited_in": ["b2b-lawsuits/doj-service-oklahoma-mobile-app.json"]
+    },
+    {
+      "id": "src-040",
+      "name": "HHS — OCR Extends Web and Mobile Accessibility Compliance Deadline under Section 504",
+      "type": "government-press-release",
+      "tier": 1,
+      "publisher": "U.S. Department of Health and Human Services, Office for Civil Rights",
+      "publish_date": "2026-05-01",
+      "url": "https://www.hhs.gov/press-room/hhs-extends-mobile-and-web-accessibility-deadline.html",
+      "cited_in": ["statistics/b2b-industry-breakdown.json"]
+    },
+    {
+      "id": "src-041",
+      "name": "Morgan Lewis — ADA Compliant Websites: Uptick in Litigation Against Financial Services Firms (November 2024)",
+      "type": "legal-analysis",
+      "tier": 2,
+      "publisher": "Morgan, Lewis & Bockius LLP",
+      "publish_date": "2024-11-01",
+      "url": "https://www.morganlewis.com/pubs/2024/11/ada-compliant-websites-uptick-in-litigation-against-financial-services-firms-increased-regulatory-attention",
+      "cited_in": ["b2b-lawsuits/morgan-lewis-financial-services-wave.json", "statistics/b2b-industry-breakdown.json"]
+    }
+  ]
+}

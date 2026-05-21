@@ -1,0 +1,410 @@
+{
+  "last_updated": "2026-05-21",
+  "research_notes": "Pricing data sourced from company websites, G2, Capterra, Vendr, and third-party review sites. Custom-quoted prices estimated from buyer guides and community reports.",
+  "competitors": [
+    {
+      "name": "accessiBe",
+      "tier": "overlay-vendor",
+      "category": "low-end",
+      "founded": 2018,
+      "size": "Mid-size, private (Israel + NY)",
+      "pricing": {
+        "starting_monthly": 41,
+        "starting_annual": 490,
+        "mid_tier_annual": 1490,
+        "top_tier_annual": 3990,
+        "enterprise_monthly": "custom",
+        "audit_one_time": null,
+        "rebuild_one_time": null,
+        "monitoring_monthly": null,
+        "notes": "Starter $490/yr (5K visits), Growth $1,490/yr (30K visits), Scale $3,990/yr (100K visits)"
+      },
+      "target_customer": "SMB websites, non-technical owners wanting a fast 'compliance' fix",
+      "url": "https://accessibe.com/pricing/accesswidget",
+      "notable_issues": [
+        "FTC $1M fine finalized April 2025 for deceptive compliance claims",
+        "Barred from claiming AI makes sites 'WCAG compliant'",
+        "22.6% of 2025 ADA lawsuits targeted overlay-equipped sites",
+        "National Federation of the Blind formally opposes the product",
+        "Courts consistently reject overlays as good-faith compliance efforts"
+      ],
+      "strengths": ["Easiest 1-line JS install", "Wide brand recognition among SMBs", "Large customer base"],
+      "weaknesses": ["Cannot fix structural HTML issues", "Interferes with screen readers", "Legally indefensible", "FTC credibility damage"],
+      "source_urls": [
+        "https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-approves-final-order-requiring-accessibe-pay-1-million",
+        "https://ratedwithai.com/blog/accessibe-review-2026",
+        "https://accessibe.com/pricing/accesswidget"
+      ]
+    },
+    {
+      "name": "UserWay",
+      "tier": "overlay-vendor",
+      "category": "low-end",
+      "founded": 2015,
+      "size": "Acquired by Level Access Dec 2023 for $98.7M; ~118 employees, ~$13-42M revenue",
+      "pricing": {
+        "starting_monthly": 49,
+        "mid_tier_monthly": 149,
+        "enterprise_monthly": "custom",
+        "audit_one_time": null,
+        "rebuild_one_time": null,
+        "monitoring_monthly": null,
+        "notes": "Small Plan $49/mo (100K page views), Medium Plan $149/mo (1M page views)"
+      },
+      "target_customer": "SMB and mid-market websites; now being pushed toward Level Access enterprise clients",
+      "url": "https://userway.org/pricing",
+      "notable_issues": [
+        "Acquired by Level Access in March 2024 - strategy shift underway",
+        "Shares same structural limitations as all overlay vendors",
+        "Widget-equipped sites still face lawsuits at high rates"
+      ],
+      "strengths": ["Large install base (millions of sites)", "Now backed by Level Access expertise", "AI-powered interface adjustments"],
+      "weaknesses": ["Same structural bypass limitations as accessiBe", "Post-acquisition direction unclear for SMBs", "No real remediation"],
+      "source_urls": [
+        "https://getlatka.com/companies/userway.org",
+        "https://tekpon.com/software/userway/pricing/"
+      ]
+    },
+    {
+      "name": "AudioEye",
+      "tier": "overlay-vendor-plus",
+      "category": "low-to-mid",
+      "founded": 2005,
+      "size": "Public (NASDAQ: AEYE), $40.3M revenue 2025, ~120K customers",
+      "pricing": {
+        "starting_monthly": 199,
+        "mid_tier_monthly": "custom",
+        "enterprise_monthly": "custom",
+        "audit_one_time": null,
+        "rebuild_one_time": null,
+        "monitoring_monthly": 199,
+        "notes": "Basic (automated) starts ~$199/mo per domain; Self-Managed and Maximum Protection tiers require demo/quote. 4 pricing editions total."
+      },
+      "target_customer": "SMB to mid-market; claims to serve 120K+ customers across industries",
+      "url": "https://www.audioeye.com/plans-and-pricing/",
+      "notable_issues": [
+        "Still relies partly on overlay approach despite hybrid claims",
+        "Higher price point than competitors but similar structural limitations",
+        "ADA lawsuits filed against AudioEye-equipped sites"
+      ],
+      "strengths": ["Publicly traded = financial transparency", "Human auditor layer on top of automation", "AudioEye Assurance limited legal protection claim", "14.5% revenue growth YoY"],
+      "weaknesses": ["Expensive for pure overlay value", "Overlay component doesn't fix source code", "No SMB-friendly transparent pricing"],
+      "source_urls": [
+        "https://www.g2.com/products/audioeye/pricing",
+        "https://www.audioeye.com/plans-and-pricing/",
+        "https://stockanalysis.com/stocks/aeye/"
+      ]
+    },
+    {
+      "name": "EqualWeb",
+      "tier": "overlay-vendor",
+      "category": "low-end",
+      "founded": 2016,
+      "size": "Private, Israel-based, small",
+      "pricing": {
+        "starting_monthly": 0,
+        "mid_tier_monthly": "unknown",
+        "enterprise_monthly": "custom",
+        "audit_one_time": null,
+        "rebuild_one_time": null,
+        "monitoring_monthly": null,
+        "notes": "Free tier to tailored enterprise plans; claims $1M warranty on compliance"
+      },
+      "target_customer": "SMB websites seeking hybrid AI + human model",
+      "url": "https://www.equalweb.com/pricing",
+      "notable_issues": [
+        "$1M warranty claim is marketing language — no documented payouts",
+        "Overlay-based limitations still apply"
+      ],
+      "strengths": ["Hybrid AI + human review model", "Free entry tier", "VPAT auto-generation claimed"],
+      "weaknesses": ["Unverified warranty claims", "Limited brand recognition", "Same overlay limitations"],
+      "source_urls": [
+        "https://www.g2.com/products/equalweb/pricing",
+        "https://accessibility-test.org/blog/compare/a11y-widgets-in-2025-userway-vs-accessibe-vs-equalweb/"
+      ]
+    },
+    {
+      "name": "Equally AI",
+      "tier": "overlay-vendor",
+      "category": "low-end",
+      "founded": 2019,
+      "size": "Private startup, small",
+      "pricing": {
+        "starting_monthly": "unknown",
+        "enterprise_monthly": "custom",
+        "audit_one_time": null,
+        "rebuild_one_time": null,
+        "notes": "Pricing page exists but rates not publicly disclosed in research"
+      },
+      "target_customer": "SMB websites wanting ADA/EAA/WCAG compliance signal",
+      "url": "https://www.equally.ai/pricing",
+      "notable_issues": ["Early-stage company", "Relatively unreviewed in independent sources"],
+      "strengths": ["Positions away from 'overblown claims'", "ADA + EAA + WCAG focus"],
+      "weaknesses": ["Limited track record", "Unknown remediation depth", "Small footprint"],
+      "source_urls": ["https://www.equally.ai/pricing"]
+    },
+    {
+      "name": "Deque Systems (axe)",
+      "tier": "audit-remediation",
+      "category": "mid-to-high",
+      "founded": 1999,
+      "size": "Private, ~$52M revenue, ~314 employees, Herndon VA",
+      "pricing": {
+        "starting_monthly": null,
+        "enterprise_monthly": "custom",
+        "audit_one_time": "custom (typically $5,000-$50,000+)",
+        "rebuild_one_time": null,
+        "axe_devtools_pro_monthly": 40,
+        "notes": "axe DevTools Pro starts ~$40/mo. Full audit services are custom-quoted. Free axe-core open-source library is industry standard."
+      },
+      "target_customer": "Enterprise, government, large organizations; developers via tooling",
+      "url": "https://www.deque.com/axe/devtools/pricing/",
+      "notable_issues": [
+        "Named Forrester Wave Leader Q4 2025",
+        "axe-core powers most accessibility testing tools in the industry"
+      ],
+      "strengths": ["Gold standard in the industry", "axe-core is the underlying engine for most tools", "8,000+ audits completed", "Deep WCAG expertise"],
+      "weaknesses": ["Enterprise-focused pricing inaccessible to SMBs", "No transparent SMB pricing", "Primarily a tool/platform company, not a 'done for you' service"],
+      "source_urls": [
+        "https://www.deque.com/axe/devtools/pricing/",
+        "https://www.accessibilitychecker.org/blog/review-of-deque-systems/"
+      ]
+    },
+    {
+      "name": "Level Access",
+      "tier": "audit-remediation",
+      "category": "enterprise",
+      "founded": 1999,
+      "size": "Private, $100M+ ARR, KKR-backed, ~500+ employees; acquired UserWay ($98.7M) and eSSENTIAL Accessibility",
+      "pricing": {
+        "starting_monthly": null,
+        "enterprise_monthly": "custom (typically $30,000-$200,000+/year)",
+        "audit_one_time": "custom",
+        "rebuild_one_time": null,
+        "notes": "Platform AMP starts $30K+/year per most buyer guides. Full managed services well into six figures."
+      },
+      "target_customer": "Enterprise Fortune 500, government agencies, large organizations",
+      "url": "https://www.levelaccess.com/",
+      "notable_issues": [
+        "First digital accessibility company to surpass $100M ARR (announced Dec 2024)",
+        "KKR investment signals aggressive growth/acquisition strategy",
+        "Acquired UserWay to add SMB reach — but SMB is not the core focus"
+      ],
+      "strengths": ["Industry's most comprehensive platform", "25+ years experience", "Massive expert team", "Only player at $100M+ ARR in pure-play accessibility"],
+      "weaknesses": ["Priced out of SMB market entirely", "No transparent pricing", "Complexity overkill for small firms"],
+      "source_urls": [
+        "https://www.levelaccess.com/news/level-access-first-digital-accessibility-only-company-to-surpass-100-million-annual-recurring-revenue/",
+        "https://www.trustradius.com/products/level-access-amp-accessibility-management-platform/pricing"
+      ]
+    },
+    {
+      "name": "TPGi (The Paciello Group)",
+      "tier": "audit-remediation",
+      "category": "enterprise",
+      "founded": 2006,
+      "size": "Private, part of Vispero group, ~200 employees",
+      "pricing": {
+        "starting_monthly": null,
+        "enterprise_monthly": "custom",
+        "audit_one_time": "custom (enterprise range $20,000-$100,000+)",
+        "notes": "ARC Platform SaaS + professional services. TPGi as a Service (TaaS) new offering. No public SMB pricing."
+      },
+      "target_customer": "Enterprise, government, regulated industries",
+      "url": "https://www.tpgi.com/",
+      "notable_issues": [
+        "21 team members actively contributing to W3C standards",
+        "JAWS Inspect tool for screen reader simulation",
+        "Launched TaaS (TPGi as a Service) managed service model"
+      ],
+      "strengths": ["Deep standards expertise (W3C contributors)", "JAWS Inspect proprietary tool", "Vispero group owns JAWS screen reader — unique testing advantage"],
+      "weaknesses": ["No SMB play", "Premium pricing", "Less brand recognition than Deque or Level Access outside enterprise"],
+      "source_urls": ["https://whoisaccessible.com/reviews/tpgi/"]
+    },
+    {
+      "name": "Allyant",
+      "tier": "audit-remediation",
+      "category": "mid-market",
+      "founded": 2019,
+      "size": "Private, <$100M revenue, small team",
+      "pricing": {
+        "starting_monthly": null,
+        "enterprise_monthly": "custom",
+        "audit_one_time": "custom",
+        "rebuild_one_time": "custom",
+        "notes": "No public pricing; custom quotes in 2-3 business days. Services include audit, document remediation, website remediation, ongoing maintenance."
+      },
+      "target_customer": "Mid-market organizations needing full-service audit + remediation",
+      "url": "https://allyant.com/",
+      "notable_issues": ["No pricing transparency — cited as a weakness in TechRadar review"],
+      "strengths": ["Full-service audit + remediation + document accessibility", "Honest about limitations of automation"],
+      "weaknesses": ["Pricing opacity frustrates buyers", "Smaller team limits capacity", "Limited online presence vs. Deque/Level Access"],
+      "source_urls": [
+        "https://allyant.com/blog/how-much-digital-web-accessibility-a-comprehensive-cost/",
+        "https://www.techradar.com/pro/software-services/allyant-review"
+      ]
+    },
+    {
+      "name": "WebAIM",
+      "tier": "tools-diy",
+      "category": "non-profit/low-cost",
+      "founded": 1999,
+      "size": "Utah State University affiliated non-profit",
+      "pricing": {
+        "starting_monthly": 0,
+        "wave_api_monthly": 10,
+        "audit_one_time": "low cost, academic focus",
+        "notes": "WAVE browser extension is free. WAVE API starts at $10/mo for 100 credits. Limited commercial services."
+      },
+      "target_customer": "Developers, academics, DIY evaluators, nonprofits",
+      "url": "https://wave.webaim.org/",
+      "notable_issues": ["Publishes annual WebAIM Million report — authoritative industry benchmark"],
+      "strengths": ["Free WAVE tool widely trusted", "Academic credibility", "No commercial bias"],
+      "weaknesses": ["Not a commercial service provider", "Limited remediation capacity", "Cannot serve SMBs at scale"],
+      "source_urls": ["https://wave.webaim.org/"]
+    },
+    {
+      "name": "Siteimprove",
+      "tier": "saas-monitoring",
+      "category": "enterprise-platform",
+      "founded": 2003,
+      "size": "Private, Danish company, ~700 employees",
+      "pricing": {
+        "starting_annual": 12000,
+        "mid_tier_annual": 28000,
+        "enterprise_annual": 70000,
+        "audit_one_time": null,
+        "notes": "Average $28K/year. 1K-5K pages: $12K-$30K/yr. 10K-25K pages: $35K-$70K/yr. Multi-year discounts 10-25%."
+      },
+      "target_customer": "Mid-to-large enterprises, government, higher education",
+      "url": "https://www.siteimprove.com/pricing/",
+      "notable_issues": ["Broader platform: SEO + quality + accessibility + analytics bundle"],
+      "strengths": ["All-in-one DPO platform", "Strong government/edu market presence", "Continuous monitoring"],
+      "weaknesses": ["Expensive for accessibility-only use case", "No SMB pricing tier", "Overkill for small professional services firms"],
+      "source_urls": [
+        "https://www.vendr.com/marketplace/siteimprove",
+        "https://www.simpleanalytics.com/resources/analytics-pricing/siteimprove-pricing-and-a-better-alternative"
+      ]
+    },
+    {
+      "name": "Pope Tech",
+      "tier": "saas-monitoring",
+      "category": "smb-friendly-platform",
+      "founded": 2018,
+      "size": "Private, small (Utah-based)",
+      "pricing": {
+        "free_tier": true,
+        "starting_monthly": 25,
+        "mid_tier_monthly": 225,
+        "enterprise_monthly": 400,
+        "notes": "Free (1-25 pages, 2 users). Team $25/mo annual (50-500 pages). Business Plus $225/mo annual (500+ pages). Professional $400/mo annual (training included)."
+      },
+      "target_customer": "SMB and education — most affordable real monitoring platform",
+      "url": "https://www.pope.tech/websites/pricing",
+      "notable_issues": ["Monitoring tool only — does not do remediation"],
+      "strengths": ["Most affordable real scanning platform", "Free tier available", "WAVE engine powered", "Education/SMB sweet spot"],
+      "weaknesses": ["Scanning only — no remediation service", "Requires technical team to fix issues found", "Light customer support vs. enterprise tools"],
+      "source_urls": ["https://www.pope.tech/websites/pricing"]
+    },
+    {
+      "name": "DubBot",
+      "tier": "saas-monitoring",
+      "category": "education-focused",
+      "founded": 2015,
+      "size": "Private, small",
+      "pricing": {
+        "starting_monthly": null,
+        "enterprise_monthly": "custom",
+        "notes": "Custom pricing only. No public tiers. Education-focused."
+      },
+      "target_customer": "Higher education, multi-site university environments",
+      "url": "https://dubbot.com/",
+      "notable_issues": ["Heavily education-focused — limited relevance outside edu"],
+      "strengths": ["Strong reporting for decentralized content management", "Education workflow specialization"],
+      "weaknesses": ["Not relevant for professional services SMBs", "No public pricing"],
+      "source_urls": ["https://www.g2.com/compare/dubbot-vs-siteimprove"]
+    },
+    {
+      "name": "Silktide",
+      "tier": "saas-monitoring",
+      "category": "mid-market-platform",
+      "founded": 2003,
+      "size": "Private, UK-based",
+      "pricing": {
+        "starting_monthly": null,
+        "enterprise_monthly": "custom",
+        "notes": "No public pricing. Custom quotes. Bundles accessibility + content quality + marketing metrics."
+      },
+      "target_customer": "Mid-to-large organizations, government UK/EU",
+      "url": "https://silktide.com/",
+      "notable_issues": ["Strong Siteimprove alternative per multiple reviews"],
+      "strengths": ["Unified platform for accessibility + content + SEO", "Strong G2/Capterra ratings"],
+      "weaknesses": ["No SMB pricing", "UK-centric", "No remediation services"],
+      "source_urls": ["https://testparty.ai/blog/siteimprove-alternatives"]
+    },
+    {
+      "name": "axe DevTools Pro (Deque)",
+      "tier": "tools-diy",
+      "category": "developer-tool",
+      "founded": null,
+      "size": "Product of Deque Systems",
+      "pricing": {
+        "starting_monthly": 40,
+        "enterprise_monthly": "custom",
+        "notes": "Pro starts ~$40/mo per developer. Free open-source axe-core available. Enterprise pricing custom."
+      },
+      "target_customer": "Developers, QA engineers, accessibility specialists",
+      "url": "https://www.deque.com/axe/devtools/pricing/",
+      "notable_issues": ["Powers testing in 90%+ of other accessibility tools"],
+      "strengths": ["Industry gold standard testing engine", "Zero false positive policy", "CI/CD integration"],
+      "weaknesses": ["Tool only — requires technical expertise", "Not a compliance service", "Does not fix issues, only finds them"],
+      "source_urls": ["https://www.deque.com/axe/devtools/pricing/"]
+    },
+    {
+      "name": "Accessible.org",
+      "tier": "audit-remediation",
+      "category": "mid-market-transparent",
+      "founded": "unknown",
+      "size": "Small boutique firm",
+      "pricing": {
+        "audit_per_page": "100-250",
+        "audit_light_page": "25-100",
+        "vpat_wcag": 350,
+        "user_testing_per_session": 550,
+        "technical_support_hourly": 195,
+        "notes": "$100-$250/page for primary pages. $25-$100 for lighter pages. VPAT $350+. User testing $550/session."
+      },
+      "target_customer": "Organizations needing transparent, itemized audit pricing",
+      "url": "https://accessible.org/pricing/",
+      "notable_issues": ["No longer offers remediation (deprecated service)"],
+      "strengths": ["Only major player with fully public transparent pricing", "IAAP-certified specialists"],
+      "weaknesses": ["No remediation service — audit only", "Small capacity", "Unknown brand outside accessibility community"],
+      "source_urls": ["https://accessible.org/pricing/"]
+    }
+  ],
+  "market_benchmarks": {
+    "audit_pricing": {
+      "basic_automated_scan": "$500-$2,000",
+      "standard_manual_audit_smb": "$3,000-$15,000",
+      "comprehensive_enterprise_audit": "$20,000-$50,000+",
+      "per_page_rate": "$100-$350 per primary page",
+      "source": "https://testparty.ai/blog/accessibility-audit-cost"
+    },
+    "remediation_pricing": {
+      "per_page": "$250-$550 per page",
+      "smb_project_total": "$5,000-$20,000",
+      "enterprise_project_total": "$50,000-$200,000+",
+      "source": "https://www.digitala11y.com/how-much-does-a-web-accessibility-audit-cost/"
+    },
+    "monitoring_pricing": {
+      "overlay_widgets": "$49-$500/month",
+      "saas_platforms_smb": "$25-$400/month",
+      "enterprise_platforms": "$12,000-$70,000/year",
+      "source": "https://testparty.ai/blog/accessibility-compliance-cost-calculator"
+    },
+    "full_rebuild_with_accessibility": {
+      "smb_10_to_50_pages": "$15,000-$35,000",
+      "mid_market": "$35,000-$100,000+",
+      "notes": "No competitor explicitly packages audit + rebuild as one SMB product"
+    }
+  }
+}

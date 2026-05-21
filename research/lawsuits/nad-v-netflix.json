@@ -1,0 +1,48 @@
+{
+  "case_name": "National Association of the Deaf v. Netflix, Inc.",
+  "slug": "nad-v-netflix",
+  "court": "U.S. District Court, District of Massachusetts",
+  "docket": "3:11-cv-30168",
+  "year_filed": 2011,
+  "year_resolved": 2012,
+  "industry": "streaming-entertainment",
+  "defendant_name": "Netflix, Inc.",
+  "defendant_size": "enterprise",
+  "claim_type": "Streaming video platform ('Watch Instantly') lacked closed captioning for deaf and hard-of-hearing users",
+  "wcag_violations_alleged": ["missing-captions", "audio-description-missing"],
+  "outcome": "Consent decree settlement — Netflix paid $755,000 in attorney fees and costs plus $40,000 to NAD for compliance monitoring; committed to 100% captioning of streaming library by September 30, 2014",
+  "settlement_disclosed": 795000,
+  "estimated_defense_cost": "Settlement total approximately $795,000 in fees/monitoring; cost to implement full captioning across streaming library was multimillion dollars",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Civil Rights Litigation Clearinghouse — NAD v. Netflix, 3:11-cv-30168",
+      "url": "https://clearinghouse.net/case/12205/",
+      "tier": 1
+    },
+    {
+      "name": "DREDF — NAD v. Netflix case summary",
+      "url": "https://dredf.org/nad-v-netflix/",
+      "tier": 1
+    },
+    {
+      "name": "Seyfarth Shaw ADA Title III — Netflix settlement Oct 2012",
+      "url": "https://www.adatitleiii.com/2012/10/netflix-settles-massachusetts-web-video-captioning-action/",
+      "tier": 1
+    },
+    {
+      "name": "DOJ Statement of Interest (ADA coverage argument)",
+      "url": "https://archive.ada.gov/briefs/netflix_SOI.doc",
+      "tier": 1
+    },
+    {
+      "name": "Federal judge rules ADA covers web-only businesses — Lainey Feingold",
+      "url": "https://www.lflegal.com/2012/06/netflix/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Established that the ADA applies to web-only businesses with no physical stores; Netflix paid $795k in fees/monitoring and committed to 100% captioning of its entire streaming library.",
+  "notes": "June 2012 ruling by District Judge Michael Ponsor: 'Watch Instantly' is a 'place of public accommodation' under Title III of the ADA — a landmark ruling for online-only businesses. Consent decree approved October 9, 2012. This case is the leading precedent for online video captioning obligations."
+}

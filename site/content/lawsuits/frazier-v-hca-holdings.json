@@ -1,0 +1,50 @@
+{
+  "case_name": "Frazier v. HCA Holdings, Inc.",
+  "slug": "frazier-v-hca-holdings",
+  "court": "U.S. Federal District Court (specific district not confirmed in public sources)",
+  "docket": "Not confirmed in public sources",
+  "year_filed": 2017,
+  "year_resolved": null,
+  "industry": "healthcare",
+  "industry_specific": "For-profit hospital system \u2014 100+ hospitals nationwide",
+  "defendant_name": "HCA Holdings, Inc. (now HCA Healthcare)",
+  "defendant_size": "enterprise",
+  "defendant_revenue_band": ">$50B (largest for-profit hospital operator in the US)",
+  "claim_type": "ADA Title III \u2014 websites of 159 hospitals and healthcare facilities inaccessible to blind users; lack of alt-text for images and inability to navigate by keyboard only",
+  "outcome": "active",
+  "settlement_disclosed": null,
+  "estimated_costs": "Unknown; reported as still open at time of last available source",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Fredrikson & Byron \u2014 HCA Owner of 100+ Hospitals Sued for Inaccessible Websites Violating ADA (January 2017)",
+      "url": "https://www.fredlaw.com/alert-hca-owner-of-100-hospitals-sued-for-inaccessible-websites-violating-ada",
+      "tier": 2,
+      "publish_date": "2017-01-25"
+    },
+    {
+      "name": "Fredrikson & Byron \u2014 Healthcare Sector is Newest Target for Website Accessibility Lawsuits",
+      "url": "https://www.fredlaw.com/alert-healthcare-sector-is-newest-target-for-website-accessibility-lawsuits",
+      "tier": 2,
+      "publish_date": "2017-01-18"
+    },
+    {
+      "name": "Fredrikson & Byron \u2014 HCA, Owner of 100+ Hospitals, Sued for 'Inaccessible' Websites Violating ADA",
+      "url": "https://www.fredlaw.com/alert-hca-owner-of-100-hospitals-sued-for-inaccessible-websites-violating-ada",
+      "tier": 2,
+      "publish_date": "2017-02-01",
+      "publisher": "Fredrikson & Byron, P.A.",
+      "type": "law-firm-analysis"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible",
+    "alt-text-missing",
+    "keyboard-nav"
+  ],
+  "violation_source_evidence": "Fredrikson & Byron legal alert (fredlaw.com/alert-hca-owner-of-100-hospitals-sued-for-inaccessible-websites-violating-ada, January 25 2017): Complaint alleged HCA hospital 'websites do not inter-operate well with assistive technology used by disabled persons such as screen readers.' Case JSON notes (sourced from Carlson Lynch complaint): 'specific barrier: websites do not inter-operate well with assistive technology used by disabled persons such as screen readers.' Complaint also alleged 'lack of alt-text for images and inability to navigate by keyboard only' per case notes citing the original complaint.",
+  "use_in_report": true,
+  "summary_one_line": "A blind plaintiff (represented by Carlson Lynch) sued HCA Holdings in 2017 over 159 hospital websites lacking alt-text and keyboard navigation, making them inaccessible to screen reader users \u2014 the case established healthcare as a high-risk sector.",
+  "notes": "Filed January 25, 2017. Plaintiffs' firm: Carlson Lynch. The case alleged that websites of more than 100 hospitals and healthcare facilities owned by HCA 'are not accessible to blind individuals and therefore violate Title III of the Americans with Disabilities Act.' Specific barrier: websites 'do not inter-operate well with assistive technology used by disabled persons such as screen readers.' Outcome/docket not confirmed \u2014 status unknown after initial filings. Marked verified: false for docket and outcome. HCA is now HCA Healthcare, operating 180+ hospitals and 2,300+ sites of care. Included as historical precedent establishing healthcare sector vulnerability."
+}

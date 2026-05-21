@@ -1,0 +1,33 @@
+{
+  "statistic_id": "2025-filing-volume",
+  "claim": "3,117 ADA web accessibility lawsuits were filed in U.S. federal courts in 2025 — a 27% increase from 2024",
+  "value_primary": "3,117 federal filings",
+  "value_specific": "3,117 federal court website accessibility lawsuits in 2025 (up from 2,452 in 2024). UsableNet projects 5,000+ total including state courts.",
+  "year": 2025,
+  "verified": true,
+  "tier": 1,
+  "sources": [
+    {
+      "name": "Seyfarth Shaw ADA Title III — Federal Court Website Accessibility Lawsuit Filings Bounce Back in 2025 (March 25, 2026)",
+      "url": "https://www.adatitleiii.com/2026/03/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025/",
+      "tier": 1,
+      "publish_date": "2026-03-25",
+      "authors": "Kristina M. Launey & Minh N. Vu"
+    },
+    {
+      "name": "UsableNet — 2025 Year-End Report on Web Accessibility Lawsuits",
+      "url": "https://info.usablenet.com/2025-year-end-report-on-web-accessibility-lawsuits",
+      "tier": 1,
+      "publish_date": "2026-01-15"
+    },
+    {
+      "name": "UsableNet — 2025 Midyear Digital Accessibility Lawsuit Report",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "tier": 1,
+      "publish_date": "2025-07-01"
+    }
+  ],
+  "context": "Website accessibility cases represented 36% of all 8,667 ADA Title III federal lawsuits filed in 2025 (up from 28% in 2024). New York led with 1,021 filings, followed by Florida (961) and Illinois (585). UsableNet projects 5,000+ total when state courts (New York, California) are included. 40% of all federal ADA Title III filings in 2025 came from pro se (self-represented) plaintiffs.",
+  "use_in_report": true,
+  "report_footnote": "1"
+}

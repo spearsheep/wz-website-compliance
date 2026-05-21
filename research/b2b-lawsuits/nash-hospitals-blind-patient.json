@@ -1,0 +1,34 @@
+{
+  "case_name": "Blind Patient v. Nash Hospitals, Inc.",
+  "slug": "nash-hospitals-blind-patient",
+  "court": "Federal court (specific district not confirmed in public sources)",
+  "docket": "Not confirmed in public sources",
+  "year_filed": null,
+  "year_resolved": 2022,
+  "industry": "healthcare",
+  "industry_specific": "Regional hospital system",
+  "defendant_name": "Nash Hospitals, Inc.",
+  "defendant_size": "mid",
+  "defendant_revenue_band": "~$500M (North Carolina regional hospital)",
+  "claim_type": "Federal disability rights law — failure to provide accessible communications and medical information to blind patient",
+  "outcome": "settled",
+  "settlement_disclosed": "Not disclosed",
+  "estimated_costs": "Confidential settlement; patient represented by Brown Goldstein & Levy",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Brown Goldstein & Levy — Blind Patient Receives Settlement from Nash Hospitals, Inc.",
+      "url": "https://browngold.com/news/blind-patient-receives-settlement-from-nash-hospitals-inc/",
+      "tier": 1,
+      "publish_date": "2022-01-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "alternative-format-missing"
+  ],
+  "violation_source_evidence": "Brown Goldstein & Levy case announcement (browngold.com/news/blind-patient-receives-settlement-from-nash-hospitals-inc): Nash Hospitals failed to provide 'bills and other communications from Nash relating to his medical care' in accessible formats (specifically Braille). Patient incurred collection agency debts because he could not read billing statements. No Braille conversion available; no large print or accessible electronic alternative provided. Settlement emphasized that 'with today's technology' providing bills and medical records in alternative formats 'is readily achievable.'",
+  "use_in_report": false,
+  "summary_one_line": "A blind patient settled with Nash Hospitals for failure to provide accessible medical communications — part of a broader NFB enforcement campaign targeting North Carolina hospital systems alongside the UNC Health case.",
+  "notes": "Related to the Bone v. UNC Health Care case. Brown Goldstein & Levy represented the plaintiff. Settlement terms undisclosed. Nash UNC Health Care System was also named in the initial complaints alongside UNC Health. Marked use_in_report: false due to lack of sufficient Tier 1 detail. Docket and year filed unverified. Include as supplementary context for NC healthcare enforcement campaign."
+}

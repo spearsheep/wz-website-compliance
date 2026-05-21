@@ -1,0 +1,38 @@
+{
+  "case_name": "Farmer v. Sweetgreen, Inc.",
+  "slug": "farmer-v-sweetgreen-2016",
+  "court": "U.S. District Court, Southern District of New York",
+  "docket": "1:16-cv-02103",
+  "year_filed": 2016,
+  "year_resolved": 2017,
+  "industry": "food-service",
+  "defendant_name": "Sweetgreen, Inc.",
+  "defendant_size": "mid-market",
+  "claim_type": "Sweetgreen's online ordering system and mobile app inaccessible to blind users",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "keyboard-nav", "alt-text-missing"],
+  "outcome": "Settled — Sweetgreen required to remediate website and app to WCAG 2.0 AA by March 31, 2017; monetary terms confidential",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Settlement document — Farmer v. Sweetgreen, Inc. (S.D.N.Y.)",
+      "url": "https://www.washlaw.org/pdf/sweetgreen_settlement.PDF",
+      "tier": 1
+    },
+    {
+      "name": "National Restaurant News — New lawsuit against Sweetgreen (2024 repeat)",
+      "url": "https://www.nrn.com/fast-casual/new-lawsuit-against-sweetgreen-claims-its-website-violates-the-americans-with-disabilities-act",
+      "tier": 2
+    },
+    {
+      "name": "Equal Entry — Accessibility lawsuit against Sweetgreen",
+      "url": "https://equalentry.com/accessibility-lawsuit-against-sweetgreen/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Sweetgreen settled in 2016 requiring WCAG 2.0 AA compliance — then was sued again in 2024 (Colak v. Sweetgreen, E.D.N.Y. 2:24-cv-00198) for the same violations, settled May 2024.",
+  "notes": "Sweetgreen was sued twice: 2016 (settled, required remediation) and again January 2024 (Colak v. Sweetgreen, Case No. 2:24-cv-00198, E.D.N.Y., settled May 2024 for undisclosed amount). The repeat lawsuit pattern is compelling sales evidence: settling once and doing nothing is not a solution."
+}

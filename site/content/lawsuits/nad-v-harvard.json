@@ -1,0 +1,53 @@
+{
+  "case_name": "National Association of the Deaf v. Harvard University",
+  "slug": "nad-v-harvard",
+  "court": "U.S. District Court, District of Massachusetts",
+  "docket": "3:15-cv-30023",
+  "year_filed": 2015,
+  "year_resolved": 2020,
+  "industry": "higher-education",
+  "defendant_name": "Harvard University",
+  "defendant_size": "enterprise",
+  "claim_type": "Online lectures, MOOCs, podcasts, and public-facing video content lacked accurate closed captioning",
+  "wcag_violations_alleged": ["missing-captions", "inaccurate-captions"],
+  "outcome": "Class action consent decree settlement approved February 27, 2020; Harvard paid $1.5M+ in attorney fees; required to caption all new public-facing online content and all archived content on request within 5 business days",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Attorney fees awarded exceeded $1.5 million; five years of litigation costs not disclosed separately",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Civil Rights Litigation Clearinghouse — NAD v. Harvard, 3:15-cv-30023",
+      "url": "https://clearinghouse.net/case/14352/",
+      "tier": 1
+    },
+    {
+      "name": "Cohen Milstein — Case study page",
+      "url": "https://www.cohenmilstein.com/case-study/national-association-deaf-et-al-v-harvard-and-mit/",
+      "tier": 1
+    },
+    {
+      "name": "Seyfarth Shaw — Four-year battle proceeds to discovery (April 2019)",
+      "url": "https://www.adatitleiii.com/2019/04/four-year-court-battle-between-deaf-advocates-and-harvard-over-closed-captioning-of-videos-proceeds-to-discovery-with-some-limitations/",
+      "tier": 1
+    },
+    {
+      "name": "Harvard Digital Accessibility — Settlement caption requirements",
+      "url": "https://accessibility.huit.harvard.edu/settlement-caption-requirements",
+      "tier": 1
+    },
+    {
+      "name": "Harvard Crimson — Harvard settles caption lawsuit (Dec 2019)",
+      "url": "https://www.thecrimson.com/article/2019/12/2/Harvard-settles-caption-lawsuit/",
+      "tier": 2
+    },
+    {
+      "name": "National Deaf Center — Significance of Harvard settlement",
+      "url": "https://nationaldeafcenter.org/news-items/significance-harvards-settlement-video-accessibility/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Five-year battle over online course captioning; Harvard paid $1.5M+ in attorney fees and must caption all public-facing online content — a warning for any business with video content.",
+  "notes": "Companion case: NAD v. MIT (D. Mass. 3:15-cv-30024) settled similarly July 21, 2020. DOJ filed statement of interest supporting plaintiffs June 25, 2015. Settlement requires live captioning at university-wide streamed events. Sets precedent for any business with online video content (webinars, product demos, course content, YouTube)."
+}

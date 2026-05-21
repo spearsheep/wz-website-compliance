@@ -1,0 +1,41 @@
+{
+  "case_name": "United States v. Springfield Clinic (DJ 202-24-114)",
+  "slug": "doj-v-springfield-clinic-b2b",
+  "court": "U.S. Attorney's Office, Central District of Illinois (administrative settlement, no PACER docket)",
+  "docket": "DJ 202-24-114",
+  "year_filed": 2024,
+  "year_resolved": 2024,
+  "industry": "healthcare",
+  "industry_specific": "Multi-specialty physician clinic / outpatient medical group",
+  "defendant_name": "Springfield Clinic",
+  "defendant_size": "mid",
+  "defendant_revenue_band": "~$500M–$1B (one of Illinois' largest independent physician groups)",
+  "claim_type": "ADA Title III — patient with visual impairment unable to access medical information online or pay bills via website; inaccessible patient portal (FollowMyHealth) and records portal (CIOX)",
+  "outcome": "settled",
+  "settlement_disclosed": "Not disclosed (administrative settlement agreement)",
+  "estimated_costs": "Remediation of website, patient portal, mobile apps to WCAG 2.1 AA within 9 months; ongoing monitoring and annual reporting",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "DOJ — Justice Department Secures Agreement with Springfield Clinic (May 8, 2024)",
+      "url": "https://www.justice.gov/usao-cdil/pr/justice-department-secures-agreement-springfield-clinic-make-its-online-services",
+      "tier": 1,
+      "publish_date": "2024-05-08"
+    },
+    {
+      "name": "DOJ — Springfield Clinic Settlement Agreement Text",
+      "url": "https://www.justice.gov/crt/media/1370426/dl",
+      "tier": 1,
+      "publish_date": "2024-05-08"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible",
+    "wcag-2-1-aa-general"
+  ],
+  "violation_source_evidence": "DOJ press release (justice.gov/usao-cdil, May 8 2024) and settlement agreement (justice.gov/crt/media/1370426/dl) could not be retrieved (HTTP 403). Per case JSON notes documenting the Tier 1 complaint: a visually impaired patient could not access medical information or pay bills via the website, and was forced to call the clinic and have personal medical information read aloud over the phone because the online portal (FollowMyHealth) was inaccessible. inaccessible portals: FollowMyHealth patient portal and CIOX records portal. Settlement required WCAG 2.1 AA remediation for website, patient portal, and mobile apps within 9 months. Specific WCAG criteria not enumerable from available Tier 1 source text.",
+  "use_in_report": true,
+  "summary_one_line": "DOJ forced Springfield Clinic to make its website, patient portal (FollowMyHealth), records portal (CIOX), and mobile apps WCAG 2.1 AA compliant after a visually impaired patient could not access medical information or pay bills online.",
+  "notes": "This is the strongest B2B healthcare/web accessibility case with a named DOJ enforcement action specifically targeting patient-facing digital services. The complaint arose from a patient who had to call the clinic and have personal medical information read aloud over the phone because the online portal was inaccessible. Springfield Clinic must have all web properties WCAG 2.1 AA compliant within 9 months of effective date. Annual reporting to DOJ required. Note: this case also exists in the lawsuits/ directory as doj-v-springfield-clinic.json from prior B2C research — this B2B file adds context on its significance as a healthcare professional services case."
+}

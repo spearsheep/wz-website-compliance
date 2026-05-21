@@ -1,0 +1,33 @@
+{
+  "case_name": "Walsh v. Dania, Inc.",
+  "slug": "walsh-v-dania",
+  "court": "U.S. District Court, Northern District of Illinois",
+  "docket": "Referenced as 2024 U.S. Dist. LEXIS 24037 (N.D. Ill. 2024)",
+  "year_filed": 2023,
+  "year_resolved": 2024,
+  "industry": "retail-furniture",
+  "defendant_name": "Dania, Inc. (mid-size furniture chain)",
+  "defendant_size": "small-mid",
+  "claim_type": "Dania furniture retail website inaccessible to blind users; motion to dismiss denied",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "keyboard-nav", "alt-text-missing"],
+  "outcome": "Court denied motion to dismiss (2024); found that retail website is a place of public accommodation regardless of company size; case demonstrates SMB liability",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed; litigation ongoing or settled after MTD denial",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Accessibility.Works — ADA web accessibility lawsuit trends 2024 in review",
+      "url": "https://www.accessibility.works/blog/ada-lawsuit-trends-statistics-2024-summary/",
+      "tier": 2
+    },
+    {
+      "name": "AccessiBe — Why most accessibility lawsuits target online stores",
+      "url": "https://accessibe.com/blog/knowledgebase/why-most-accessibility-lawsuits-target-online-stores",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "A mid-size furniture chain's motion to dismiss was rejected in 2024 (N.D. Ill.) — the court held that retail websites of any size are subject to ADA regardless of whether the company has physical stores.",
+  "notes": "Case cited in multiple 2024 accessibility reports as evidence SMBs are not protected by their size. The N.D. Illinois ruling explicitly stated that 'a place of public accommodation is not limited to physical spaces' and included 'electronic spaces.' Primary source is the court opinion itself (2024 U.S. Dist. LEXIS 24037) — recommend PACER lookup for full docket number before final publication."
+}

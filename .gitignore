@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables (NEVER commit secrets)
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+
+# Output / generated files
+output/
+**/output/
+prospects/
+**/prospects/
+*.pdf
+**/*.pdf
+
+# Trial / sandbox data
+trial-data/
+trial-output/
+**/trial-data/
+**/trial-output/
+
+# Build artifacts
+.next/
+**/.next/
+dist/
+**/dist/
+out/
+**/out/
+tsconfig.tsbuildinfo
+**/tsconfig.tsbuildinfo
+next-env.d.ts
+**/next-env.d.ts
+
+# OS / editor
+.DS_Store
+**/.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local Claude config
+.claude/
+
+# Lock file lock contention (keep the main ones but skip nested)
+**/package-lock.json.bak
+
+# Email Gmail tokens (if any)
+gmail-credentials.json
+gmail-token.json
+**/gmail-credentials.json
+**/gmail-token.json

@@ -1,0 +1,40 @@
+{
+  "case_name": "Wave of ADA Website Accessibility Threats Against Financial Services Firms (2024)",
+  "slug": "morgan-lewis-financial-services-wave",
+  "court": "Multiple federal and state courts (aggregate — not a single case)",
+  "docket": "Multiple — see notes",
+  "year_filed": 2024,
+  "year_resolved": null,
+  "industry": "financial-services",
+  "industry_specific": "Investment management, wealth management, RIAs, broker-dealers — collective enforcement trend",
+  "defendant_name": "Multiple unnamed financial services firms",
+  "defendant_size": "mid",
+  "defendant_revenue_band": "Varies — primarily mid-to-large RIAs and investment management firms",
+  "claim_type": "ADA Title III — financial services websites inaccessible to blind and visually impaired users; firms cited include Schwab, E-Trade, Wells Fargo in demand letters",
+  "outcome": "active",
+  "settlement_disclosed": null,
+  "estimated_costs": "Demand letters typically seek $5,000–$30,000 + remediation; filed cases average $30,000–$85,000",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Morgan Lewis — ADA Compliant Websites: Uptick in Litigation Against Financial Services Firms, Increased Regulatory Attention (November 2024)",
+      "url": "https://www.morganlewis.com/pubs/2024/11/ada-compliant-websites-uptick-in-litigation-against-financial-services-firms-increased-regulatory-attention",
+      "tier": 2,
+      "publish_date": "2024-11-01"
+    },
+    {
+      "name": "Fredrikson & Byron — Financial Services Industry Targeted in Wave of Lawsuit Threats Over Websites Allegedly Inaccessible to the Visually Impaired",
+      "url": "https://www.fredlaw.com/alert-financial-services-industry-targeted-in-wave-of-lawsuit-threats-over-websites-allegedly-inaccessible-to-the-visually-impaired",
+      "tier": 2,
+      "publish_date": "2024-01-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "wcag-2-1-aa-general"
+  ],
+  "violation_source_evidence": "Morgan Lewis client alert (morganlewis.com/pubs/2024/11/ada-compliant-websites-uptick-in-litigation, November 2024): alert describes 'a notable recent uptick in website accessibility cases, both threatened and filed, against financial services companies' but does not enumerate specific WCAG criteria. Article notes firms implementing 'font size adjustment tools, text alternatives for images, synchronized video captions, compatibility with screen reading programs' as remediation steps, implying those were the deficient areas, but specific violations per named defendant were not publicly disclosed. This is an aggregate trend entry — no individual case complaints retrievable.",
+  "use_in_report": true,
+  "summary_one_line": "Plaintiff firms including Carlson Lynch, KamberLaw, and Lee Litigation Group sent aggressive demand letters to financial services firms (Schwab, E-Trade, Wells Fargo, and others) in 2024, creating a notable 'uptick in website accessibility cases' per Morgan Lewis — specific dockets not publicly disclosed.",
+  "notes": "Aggregate entry representing enforcement trend rather than a single case. Morgan Lewis published November 2024 client alert describing 'a notable recent uptick in website accessibility cases, both threatened and filed, against financial services companies.' Demand letters sent to investment management and wealth management firms. SEC also emphasizing accessibility compliance (October 2022 rule requiring mutual funds to comply with 'all applicable accessibility-related requirements under the ADA'). Defendant names not disclosed publicly. Most settled via demand letter before court filing. This entry serves as a signal of sector-wide risk. Marked tier: 2 because named source is a law firm client alert (acceptable as supplementary). No Tier 1 dockets available for specific financial services cases."
+}

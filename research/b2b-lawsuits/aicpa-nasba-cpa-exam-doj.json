@@ -1,0 +1,40 @@
+{
+  "case_name": "United States v. American Institute of Certified Public Accountants and National Association of State Boards of Accountancy",
+  "slug": "aicpa-nasba-cpa-exam-doj",
+  "court": "U.S. Attorney's Office, District of Massachusetts (administrative settlement)",
+  "docket": "Administrative — no federal court docket; U.S. Attorney's Office, District of Massachusetts",
+  "year_filed": 2017,
+  "year_resolved": 2019,
+  "industry": "accounting",
+  "industry_specific": "Professional accounting certification body and licensing administrator",
+  "defendant_name": "American Institute of Certified Public Accountants (AICPA) and National Association of State Boards of Accountancy (NASBA)",
+  "defendant_size": "large",
+  "defendant_revenue_band": "Non-profit; AICPA ~$200M+ annual revenue (membership fees)",
+  "claim_type": "ADA Title III — Uniform CPA Exam computer-based testing system inaccessible to blind and low-vision test-takers; screen reader and magnification software incompatible with exam platform and Authoritative Literature database",
+  "outcome": "settled",
+  "settlement_disclosed": "$15,000 to named complainant Jane Doe; $1,000–$10,000 to additional aggrieved persons identified by the DOJ",
+  "estimated_costs": "$15,000+ direct payments + technology remediation (JAWS screen reader + ZoomText Magnifier/Reader integration for full exam)",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "DOJ — Settlement Agreement between the United States and AICPA and NASBA (archive.ada.gov)",
+      "url": "https://archive.ada.gov/cpa_exam_sa.html",
+      "tier": 1,
+      "publish_date": "2019-04-01"
+    },
+    {
+      "name": "DOJ USAO Massachusetts — U.S. Attorney's Office Settles Disability Discrimination Allegations Related to the CPA Exam",
+      "url": "https://www.justice.gov/usao-ma/pr/us-attorney-s-office-settles-disability-discrimination-allegations-related-cpa-exam",
+      "tier": 1,
+      "publish_date": "2019-04-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible"
+  ],
+  "violation_source_evidence": "DOJ Settlement Agreement (archive.ada.gov/cpa_exam_sa.html): 'there was no screen reader software for certain portions of the Exam, including the Authoritative Literature.' JAWS Screen Reader and ZoomText Magnifier/Reader were unavailable for portions of the computer-based CPA exam. Test-takers received 'a software-related auxiliary aid that was not appropriate or a reader that was not qualified or appropriate.' JAWS made available as of November 2017 for the Authoritative Literature; ZoomText for entirety of exam.",
+  "use_in_report": true,
+  "summary_one_line": "DOJ forced the AICPA and NASBA — the accounting profession's own gatekeepers — to make the Uniform CPA Exam accessible to blind candidates, paying $15,000+ in damages and integrating JAWS and ZoomText across the entire exam platform.",
+  "notes": "Complaint filed by Jane Doe, a low-vision/legally blind CPA candidate who requested screen magnification and reader software but was offered only a human reader instead. DOJ investigation launched August 2017. Settlement effective April 1, 2019. By November 2017 (before settlement), AICPA had already deployed ZoomText Magnifier/Reader for all exam sections and made Authoritative Literature accessible via JAWS Screen Reader. This is an exceptionally ironic B2B case: the AICPA is the body that sets professional standards for the entire accounting industry. Ongoing commitments include biannual reporting for 2 years and evaluation of emerging accessibility technologies. The 'irony angle': professional gatekeepers for accountants had inaccessible digital testing infrastructure."
+}

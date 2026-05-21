@@ -1,0 +1,38 @@
+{
+  "case_name": "National Association of the Deaf v. Massachusetts Institute of Technology",
+  "slug": "nad-v-mit",
+  "court": "U.S. District Court, District of Massachusetts",
+  "docket": "3:15-cv-30024",
+  "year_filed": 2015,
+  "year_resolved": 2020,
+  "industry": "higher-education",
+  "defendant_name": "Massachusetts Institute of Technology (MIT)",
+  "defendant_size": "enterprise",
+  "claim_type": "Online lectures, OpenCourseWare, podcasts, and public-facing video content lacked closed captioning",
+  "wcag_violations_alleged": ["missing-captions", "inaccurate-captions"],
+  "outcome": "Class action consent decree settlement approved July 21, 2020; companion to NAD v. Harvard; MIT required to caption all public-facing online content",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Five years of litigation costs; attorney fees not separately disclosed (see Harvard case for fee scale)",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Cohen Milstein — Case study: NAD v. Harvard and MIT",
+      "url": "https://www.cohenmilstein.com/case-study/national-association-deaf-et-al-v-harvard-and-mit/",
+      "tier": 1
+    },
+    {
+      "name": "Disability Law United — NAD v. Harvard and NAD v. MIT",
+      "url": "https://disabilitylawunited.org/case/online-content-lawsuit-harvard-mit/",
+      "tier": 2
+    },
+    {
+      "name": "3Play Media — Overview of NAD v. Harvard and NAD v. MIT",
+      "url": "https://www.3playmedia.com/blog/harvard-mit-sued-captioning-violation-ada-rehabilitation-act/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "MIT required to caption all public-facing online content under a 2020 consent decree — companion case to Harvard; together they define captioning obligations for any online content publisher.",
+  "notes": "Filed simultaneously with NAD v. Harvard (February 2015). DOJ filed statement of interest supporting plaintiffs June 25, 2015. Settlement approved July 21, 2020. Sets binding precedent for online video content across all industries, not just education: any business with webinars, tutorials, promotional videos, or courses faces exposure."
+}

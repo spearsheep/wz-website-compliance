@@ -1,0 +1,43 @@
+{
+  "case_name": "Gil v. Winn-Dixie Stores, Inc.",
+  "slug": "gil-v-winn-dixie",
+  "court": "U.S. District Court, Southern District of Florida; affirmed / vacated by 11th Circuit Court of Appeals",
+  "docket": "1:16-cv-23020 (district); 17-13467 (11th Cir.)",
+  "year_filed": 2016,
+  "year_resolved": 2021,
+  "industry": "grocery-retail",
+  "defendant_name": "Winn-Dixie Stores, Inc.",
+  "defendant_size": "enterprise",
+  "claim_type": "Grocery store website inaccessible to blind screen reader users; no accessible online pharmacy refills or store-locator",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "keyboard-nav"],
+  "outcome": "District court injunction in favor of plaintiff (2017); 11th Circuit reversed on grounds website is not 'place of public accommodation' but then vacated its own ruling as moot (2021). Case dismissed. Plaintiff did not prevail at appeal level.",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Multi-year appellate litigation; exact figure not disclosed",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Seyfarth Shaw — 11th Circuit Rules on Winn-Dixie",
+      "url": "https://www.adatitleiii.com/2021/04/eleventh-circuit-says-winn-dixies-inaccessible-website-does-not-violate-the-ada/",
+      "tier": 1
+    },
+    {
+      "name": "Southeast ADA Center — Gil v. Winn-Dixie (2021)",
+      "url": "https://adasoutheast.org/legal/court/gil-v-winn-dixie-2021/",
+      "tier": 2
+    },
+    {
+      "name": "National Law Review — 11th Circuit issues highly-anticipated decision",
+      "url": "https://natlawreview.com/article/eleventh-circuit-court-appeals-issues-its-highly-anticipated-decision-website",
+      "tier": 2
+    },
+    {
+      "name": "Ogletree — 11th Circuit holds websites not places of public accommodation",
+      "url": "https://ogletree.com/insights-resources/blog-posts/eleventh-circuit-holds-websites-not-places-of-public-accommodation-under-ada-rejects-nexus-standard/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "First ADA website accessibility trial in U.S. history (2017); district court ruled for plaintiff but 11th Circuit reversed — illustrates the circuit split and why jurisdiction matters enormously.",
+  "notes": "District court 2017 injunction required WCAG 2.0 AA conformance within 12 months, ADA web policy, and employee training. 11th Circuit 2021 reversal rejected 'nexus' standard; then vacated its own opinion as moot when the injunction expired. The 9th Circuit (Domino's) and 11th Circuit (Winn-Dixie) represent opposite ends of the circuit split — defendants in the 9th Circuit have far greater exposure."
+}

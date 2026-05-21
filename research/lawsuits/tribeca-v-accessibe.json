@@ -1,0 +1,33 @@
+{
+  "case_name": "Tribeca Skin Care v. AccessiBe Ltd.",
+  "slug": "tribeca-v-accessibe",
+  "court": "U.S. District Court (jurisdiction details pending confirmation)",
+  "docket": "Filed June 24, 2024 — docket not confirmed in public sources",
+  "year_filed": 2024,
+  "year_resolved": null,
+  "industry": "healthcare-beauty",
+  "defendant_name": "AccessiBe Ltd. (accessibility overlay software vendor)",
+  "defendant_size": "mid-market",
+  "claim_type": "AccessiBe misrepresented that its overlay widget (AccessWidget) makes websites ADA compliant; Tribeca Skin Care was sued for ADA non-compliance despite having AccessiBe installed and paying $490/year",
+  "wcag_violations_alleged": ["screen-reader-incompatible"],
+  "outcome": "Active litigation as of 2024 — Tribeca sued AccessiBe for deceptive marketing; FTC separately fined AccessiBe $1M in April 2025",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Tribeca paid $490/year for AccessiBe and still faced ADA lawsuit; total defense costs from both lawsuits not disclosed",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Comm Law Group — AccessiBe faces class action lawsuit",
+      "url": "https://commlawgroup.com/2024/accessibe-faces-class-action-lawsuit-over-alleged-misrepresentation-of-ada-compliance-and-ai-accessibility-capabilities/",
+      "tier": 2
+    },
+    {
+      "name": "Law Office of Lainey Feingold — New class action lawsuit against AccessiBe (July 2024)",
+      "url": "https://www.lflegal.com/2024/07/accessibe-class-action/",
+      "tier": 1
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "A small dermatology practice paid $490/year for an accessibility widget, got sued for ADA violations anyway, then sued the widget vendor — and the FTC fined the vendor $1M in 2025 for deceptive marketing.",
+  "notes": "Tribeca Skin Care purchased AccessiBe's AccessWidget in August 2022 for $490/year. In January 2024, Tribeca was sued in an ADA class action despite having the widget installed. Tribeca then filed suit against AccessiBe. The FTC's $1M fine against AccessiBe (April 2025) independently confirms that overlays do not constitute ADA compliance. Over 800 businesses using AccessiBe were sued in 2023-2024 (UsableNet data). FTC action primary source should be confirmed with FTC press release before publication."
+}

@@ -1,0 +1,43 @@
+{
+  "case_name": "Marett v. Five Guys Enterprises, LLC",
+  "slug": "marett-v-five-guys",
+  "court": "U.S. District Court, Southern District of New York",
+  "docket": "1:17-cv-00788",
+  "year_filed": 2017,
+  "year_resolved": 2017,
+  "industry": "food-service",
+  "defendant_name": "Five Guys Enterprises, LLC",
+  "defendant_size": "enterprise",
+  "claim_type": "Online ordering website inaccessible to blind screen reader users; unable to customize burger order",
+  "wcag_violations_alleged": ["alt-text-missing", "keyboard-nav", "screen-reader-incompatible"],
+  "outcome": "Settled — Five Guys agreed to WCAG 2.0 AA compliance; $10,000 in damages and attorney fees reported",
+  "settlement_disclosed": 10000,
+  "estimated_defense_cost": "Reported $10,000 settlement; full defense costs not disclosed",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Klein Moynihan Turco — Five Guys grilled over ADA website accessibility",
+      "url": "https://kleinmoynihan.com/ada-website-accessibility/",
+      "tier": 2
+    },
+    {
+      "name": "Top Class Actions — Five Guys class action says website not accessible to blind users",
+      "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/five-guys-class-action-says-website-not-accessible-blind-users/",
+      "tier": 2
+    },
+    {
+      "name": "Top Class Actions — Five Guys must face ADA class action, judge rules",
+      "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/five-guys-must-face-ada-class-action-judge-rules/",
+      "tier": 2
+    },
+    {
+      "name": "Law360 — Five Guys can't toss blind woman's ADA suit over website",
+      "url": "https://www.law360.com/articles/947041/five-guys-can-t-toss-blind-woman-s-ada-suit-over-website",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Blind woman sued Five Guys because screen reader couldn't add pickles to her burger — court denied dismissal July 2017, settled same year; illustrates how ordinary online menus create legal exposure.",
+  "notes": "Plaintiff Lucia Marett could not add condiments to a burger order using her screen reader. Court ruling July 21, 2017 denied motion to dismiss, stating that 'text and purposes of the ADA suggest that defendant's website is covered.' Settlement amount of $10,000 reported by some sources — verify with primary court record before publishing as exact figure; PACER docket 1:17-cv-00788 (S.D.N.Y.) is the primary record."
+}

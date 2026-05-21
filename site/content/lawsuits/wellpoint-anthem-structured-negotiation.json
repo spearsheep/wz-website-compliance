@@ -1,0 +1,43 @@
+{
+  "case_name": "Mendelsohn and Chen v. WellPoint, Inc. (Structured Negotiation)",
+  "slug": "wellpoint-anthem-structured-negotiation",
+  "court": "No court — resolved through Structured Negotiation (pre-litigation)",
+  "docket": "N/A — structured negotiation, not filed in court",
+  "year_filed": 2011,
+  "year_resolved": 2014,
+  "industry": "financial-services",
+  "industry_specific": "Health insurance / managed care organization",
+  "defendant_name": "WellPoint, Inc. (now Anthem, Inc.)",
+  "defendant_size": "enterprise",
+  "defendant_revenue_band": ">$60B (then; now Elevance Health, >$150B revenue)",
+  "claim_type": "ADA Title III — website (anthem.com, anthem.com/ca) and mobile apps inaccessible to visually impaired members; failure to provide informational materials in accessible formats",
+  "outcome": "settled",
+  "settlement_disclosed": "Confidential (referenced in 'Confidential Addendum' to agreement)",
+  "estimated_costs": "Confidential + enterprise-wide WCAG 2.0 AA remediation across anthem.com, mobile apps, and all print materials",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Law Office of Lainey Feingold — WellPoint Accessible Information Agreement (February 2014)",
+      "url": "https://www.lflegal.com/2014/02/wellpoint-agreement/",
+      "tier": 1,
+      "publish_date": "2014-02-01"
+    },
+    {
+      "name": "Law Office of Lainey Feingold — WellPoint Accessibility Press Release (February 2014)",
+      "url": "https://www.lflegal.com/2014/02/wellpoint-press/",
+      "tier": 1,
+      "publish_date": "2014-02-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible",
+    "captcha-inaccessible",
+    "pdf-inaccessible",
+    "alternative-format-missing"
+  ],
+  "violation_source_evidence": "Lainey Feingold agreement summary (lflegal.com/2014/02/wellpoint-agreement): WellPoint committed to WCAG 2.0 AA for anthem.com and mobile apps — 'Visual verification systems (CAPTCHAs) lacked accessible alternatives for people with visual impairments.' Non-accessible PDFs posted before August 2013 required alternative format availability. WellPoint 'expanded its system for providing Braille, Large Print, electronic, and audio versions' of informational materials, implying those formats were previously unavailable. Press release (lflegal.com/2014/02/wellpoint-press): WellPoint worked to enable blind members to 'independently read important health care information' and 'use WellPoint's digital tools independently,' indicating prior screen reader incompatibility.",
+  "use_in_report": true,
+  "summary_one_line": "Two blind Anthem Blue Cross members used Structured Negotiation to compel WellPoint (Anthem) to make anthem.com, mobile apps, and all member materials WCAG 2.0 AA compliant by mid-2014 — financial terms confidential.",
+  "notes": "Claimants notified WellPoint of dispute April 22, 2011 and offered Structured Negotiations in lieu of litigation. Parties executed Structured Negotiations Agreement August 2011. Resolution: January 2014. WellPoint committed to WCAG 2.0 AA for anthem.com by March 31, 2014; mobile apps by June 30, 2014. Also committed to Braille, large print, audio, and accessible electronic formats for all member print materials. WellPoint denied any ADA violations. Significant: this is health insurance — a B2B-adjacent professional services sector. Attorneys: Lainey Feingold (Law Office of Lainey Feingold) and Linda Dardarian (Goldstein, Borgen, Dardarian & Ho)."
+}

@@ -1,0 +1,48 @@
+{
+  "case_name": "Conner v. Parkwood Entertainment, LLC",
+  "slug": "conner-v-parkwood-beyonce",
+  "court": "U.S. District Court, Southern District of New York",
+  "docket": "1:19-cv-00154",
+  "year_filed": 2019,
+  "year_resolved": 2019,
+  "industry": "entertainment-media",
+  "defendant_name": "Parkwood Entertainment, LLC (Beyoncé Knowles' company)",
+  "defendant_size": "mid-market",
+  "claim_type": "Beyonce.com inaccessible to blind users — no alt text on images, inaccessible menus, no keyboard navigation, mouse-only interaction required",
+  "wcag_violations_alleged": ["alt-text-missing", "keyboard-nav", "inaccessible-menus", "redundant-links", "empty-links"],
+  "outcome": "Settled (terms confidential)",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed; settled in 2019 within months of filing",
+  "tier": 2,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Accessibility.com — Conner v. Parkwood Entertainment",
+      "url": "https://www.accessibility.com/digital-lawsuits/mary-parkwood-2019-01-4",
+      "tier": 2
+    },
+    {
+      "name": "Hollywood Reporter — Beyonce's Parkwood Entertainment sued",
+      "url": "https://www.hollywoodreporter.com/business/business-news/beyonces-parkwood-entertainment-sued-1172909/",
+      "tier": 2
+    },
+    {
+      "name": "Billboard — Beyonce's Parkwood Entertainment sued over website accessibility",
+      "url": "https://www.billboard.com/music/music-news/beyonce-parkwood-entertainment-sued-website-accessibility-8492195/",
+      "tier": 2
+    },
+    {
+      "name": "Fortune — Why your website might not be ADA compliant",
+      "url": "https://fortune.com/2019/09/21/beyonce-lawsuit-website-ada-compliant/",
+      "tier": 2
+    },
+    {
+      "name": "Law.com — Blind fan sues over Beyonce website",
+      "url": "https://www.law.com/legaltechnews/2019/01/08/blind-fan-sues-over-beyonce-website-claiming-ada-violations/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Beyoncé's entertainment company sued by blind fan over inaccessible website; generated massive press coverage and demonstrates that even non-retail businesses face liability.",
+  "notes": "Filed January 3, 2019 by Mary Conner, a legally blind self-described 'big fan.' Specific allegations: image-based interface with no alt text, inaccessible drop-down menus, no keyboard access. Sought class action status for all legally blind U.S. users who attempted to access the site. High PR value for report — illustrates no business is too 'hip' or non-traditional to be sued. Outcome: settled, terms confidential. No primary source on settlement terms available."
+}

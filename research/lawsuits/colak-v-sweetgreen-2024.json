@@ -1,0 +1,38 @@
+{
+  "case_name": "Colak v. Sweetgreen, Inc.",
+  "slug": "colak-v-sweetgreen-2024",
+  "court": "U.S. District Court, Eastern District of New York",
+  "docket": "2:24-cv-00198",
+  "year_filed": 2024,
+  "year_resolved": 2024,
+  "industry": "food-service",
+  "defendant_name": "Sweetgreen, Inc.",
+  "defendant_size": "mid-market",
+  "claim_type": "Sweetgreen website inaccessible to blind users; missing alt-text, hidden elements, incorrectly formatted lists, unannounced pop-ups",
+  "wcag_violations_alleged": ["alt-text-missing", "screen-reader-incompatible", "keyboard-nav", "popup-inaccessible"],
+  "outcome": "Settled May 2024 for undisclosed amount",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "National Restaurant News — New lawsuit against Sweetgreen (2024)",
+      "url": "https://www.nrn.com/fast-casual/new-lawsuit-against-sweetgreen-claims-its-website-violates-the-americans-with-disabilities-act",
+      "tier": 2
+    },
+    {
+      "name": "Level Access — ADA website compliance lawsuits high profile cases",
+      "url": "https://www.levelaccess.com/blog/title-iii-lawsuits-10-big-companies-sued-over-website-accessibility/",
+      "tier": 2
+    },
+    {
+      "name": "Top Class Actions — Sweetgreen class action claims website inaccessible",
+      "url": "https://topclassactions.com/disability-class-action-lawsuit/sweetgreen-class-action-claims-website-inaccessible-to-blind-visually-impaired-consumers/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Sweetgreen's second ADA lawsuit in eight years (sued in 2016 and again in 2024) — settled May 2024; proves that past compliance without ongoing maintenance creates repeat exposure.",
+  "notes": "This is the repeat-suit story: Sweetgreen settled in 2016 requiring WCAG 2.0 AA compliance, then was sued again in January 2024 for the same type of violations. Settled May 2024 for undisclosed amount. Powerful illustration for the ongoing compliance maintenance argument — accessibility is not a one-time fix."
+}

@@ -1,0 +1,58 @@
+{
+  "case_name": "Fowler et al. v. California Department of Insurance and PSI Services LLC",
+  "slug": "fowler-v-california-dept-insurance",
+  "court": "Superior Court of the State of California, County of Alameda, Department 23",
+  "docket": "21CV000126",
+  "year_filed": 2021,
+  "year_resolved": 2024,
+  "industry": "insurance",
+  "industry_specific": "State insurance licensing / private testing vendor (insurance professional services ecosystem)",
+  "defendant_name": "California Department of Insurance (CDI) and PSI Services LLC",
+  "defendant_size": "large",
+  "defendant_revenue_band": "State agency (CDI) + private testing company (PSI Services — ~$200M revenue, acquired by ETS)",
+  "claim_type": "California disability rights laws (Government Code §11135, Unruh Civil Rights Act, Disabled Persons Act) — insurance agent licensing exam online testing platform inaccessible to blind applicants who use screen reading software; CDI required medical documentation before allowing screen reader use",
+  "outcome": "settled",
+  "settlement_disclosed": "Not disclosed (August 2024 settlement)",
+  "estimated_costs": "Confidential settlement + PSI required to make online testing technology independently usable by blind users; CDI barred from requiring medical documentation as precondition",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Disability Rights Advocates — Fowler v. California Department of Insurance case page",
+      "url": "https://dralegal.org/case/fowler-v-california-dept-of-insurance/",
+      "tier": 1,
+      "publish_date": "2021-10-12"
+    },
+    {
+      "name": "Disability Rights Advocates — Settlement Agreement Improves Accessibility for Blind Test-Takers (August 2024)",
+      "url": "https://dralegal.org/press/california-insurance-exam-settlement/",
+      "tier": 1,
+      "publish_date": "2024-08-01"
+    },
+    {
+      "name": "National Federation of the Blind — Settlement Agreement Improves Accessibility for Blind Test-Takers",
+      "url": "https://nfb.org/about-us/press-room/settlement-agreement-improves-accessibility-blind-test-takers",
+      "tier": 1,
+      "publish_date": "2024-08-01"
+    },
+    {
+      "name": "TRE Legal Practice — Case Profile: California Insurance Exam",
+      "url": "https://trelegal.com/cases/california-insurance-exam/",
+      "tier": 2,
+      "publish_date": "2021-10-12"
+    },
+    {
+      "name": "TRE Legal Practice — Settlement Improves Accessibility of California Insurance Exam",
+      "url": "https://trelegal.com/posts/settlement-improves-accessibility-of-california-insurance-exam/",
+      "tier": 2,
+      "publish_date": "2024-08-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible"
+  ],
+  "violation_source_evidence": "Disability Rights Advocates settlement press release (dralegal.org/press/california-insurance-exam-settlement, August 2024) and TRE Legal case profile (trelegal.com/posts/settlement-improves-accessibility-of-california-insurance-exam): The California insurance agent licensing exam online testing platform was 'not independently usable by blind and low-vision users' who rely on screen reading software. Blind test-takers lacked 'access to the same examination scheduling options' as sighted users. Staff 'lacked training on the use of screen reader technology.' Settlement required PSI Services to 'develop online testing technology that permits the use of screen reader software.'",
+  "use_in_report": true,
+  "summary_one_line": "Blind insurance agent candidates sued California's insurance licensing authority and its testing vendor PSI Services for making the online exam unusable by screen readers — a 2024 settlement forced PSI to make the platform independently accessible and barred CDI from demanding medical documentation as a precondition.",
+  "notes": "Filed October 12, 2021 by Angela Fowler and Miguel Mendez. NFB and Hy Cohen joined later. Judge: Hon. Brad Seligman. Represented by Disability Rights Advocates and TRE Legal Practice. Key settlement terms: (1) CDI can no longer require blind/low-vision test-takers using screen readers to first provide medical documentation; (2) PSI will ensure online testing technology is independently usable by blind users per ADA; (3) PSI will develop screen reader-compatible testing with related policies and training; (4) Blind test-takers get same scheduling options as others. This case uniquely targets the INFRASTRUCTURE for professional licensing in the insurance sector — affecting every blind person seeking an insurance license in California. B2B angle: PSI Services is a B2B testing vendor serving professional certification bodies across many industries."
+}

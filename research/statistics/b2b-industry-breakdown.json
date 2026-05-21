@@ -1,0 +1,89 @@
+{
+  "stat_id": "b2b-industry-breakdown",
+  "title": "B2B and Professional Services — Share of ADA Web Accessibility Lawsuits",
+  "description": "Industry breakdown of ADA web accessibility lawsuits, with specific focus on B2B and professional services sectors. Data from UsableNet 2025 annual report and EcomBack 2025 annual report.",
+  "period": "2025",
+  "data": {
+    "overall_industry_distribution_2025": {
+      "source": "EcomBack 2025 Annual ADA Website Accessibility Lawsuit Report",
+      "source_url": "https://www.ecomback.com/annual-2025-ada-website-accessibility-lawsuit-report",
+      "note": "Top 9 industries = 91.51% of all 3,948 federal+state lawsuits in 2025",
+      "breakdown": [
+        {"industry": "Restaurant, Food & Beverage", "pct": 34.65, "count": 1368},
+        {"industry": "Lifestyle, Fashion & Apparel", "pct": 25.96, "count": 1025},
+        {"industry": "Beauty & Personal Care", "pct": 8.03, "count": 317},
+        {"industry": "Furniture & Home Décor", "pct": 7.67, "count": 303},
+        {"industry": "Health & Medical (B2C and B2B)", "pct": 7.17, "count": 283},
+        {"industry": "Sports & Fitness Accessories", "pct": 2.25, "count": 89},
+        {"industry": "General Retail/Multi-Category", "pct": 2.25, "count": 89},
+        {"industry": "Toys, Games, Gifts & Specialty", "pct": 1.72, "count": 68},
+        {"industry": "Other B2B / Professional Services (estimated)", "pct": "<2", "count_est": "<80"}
+      ]
+    },
+    "healthcare_specific": {
+      "source": "UsableNet 2025 Midyear Report",
+      "source_url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "pct_of_total": "~2.5–3%",
+      "trend": "Rising — HHS Section 504 May 2024 final rule has not yet produced enforcement spike but is driving compliance awareness",
+      "hhs_section_504_note": "HHS Section 504 final rule published May 9, 2024; took effect July 8, 2024. Compliance deadlines extended: 15+ employee organizations must comply by May 11, 2027; <15 employees by May 10, 2028. HOWEVER: underlying Section 504 obligation has been enforceable since July 8, 2024 — private right of action available now.",
+      "hhs_enforcement_deadline_extension_source": "https://www.hhs.gov/press-room/hhs-extends-mobile-and-web-accessibility-deadline.html"
+    },
+    "financial_services_specific": {
+      "source": "Morgan Lewis Client Alert (November 2024)",
+      "source_url": "https://www.morganlewis.com/pubs/2024/11/ada-compliant-websites-uptick-in-litigation-against-financial-services-firms-increased-regulatory-attention",
+      "status": "Notable 2024 uptick in both demand letters and filed cases",
+      "pct_of_total": "<2% (estimated; most resolve via demand letter before court filing)",
+      "sec_nexus": "October 2022 SEC mutual fund rules explicitly require ADA accessibility compliance",
+      "plaintiff_firms_active": ["Carlson Lynch", "KamberLaw", "Lee Litigation Group"]
+    },
+    "professional_services_b2b": {
+      "note": "Professional services (law firms, accounting firms, consulting, staffing, real estate B2B, insurance brokers) represent a very small fraction (<1%) of current filed cases — NOT because they are not sued, but because most cases resolve via demand letter before court filing.",
+      "demand_letter_estimate": "Most B2B professional services cases settle for $5,000–$20,000 via demand letter with no public court record",
+      "key_risk_factors": [
+        "ADA Title III covers 'offices of accountants or lawyers' explicitly as places of public accommodation",
+        "B2B firms are increasingly targeted as plaintiff law firms expand beyond retail",
+        "40% of 2025 federal ADA Title III filings are now pro se plaintiffs (AI-assisted) — lowering barrier to targeting any business",
+        "Small professional services firms are preferred targets: less legal firepower, more likely to settle quickly"
+      ]
+    }
+  },
+  "key_insights": [
+    "Healthcare is the fastest-growing B2B/professional services sector for ADA web accessibility enforcement (2.5–3% in 2025, up from <1% in 2020)",
+    "HHS Section 504 (July 2024) creates a parallel enforcement track for all HHS-funded providers — higher stakes than private ADA lawsuits (OCR can terminate federal funding)",
+    "Financial services lawsuits are predominantly resolved via demand letter before court filing — actual exposure is higher than public court data suggests",
+    "Professional services (accounting, legal, consulting) are explicitly listed as ADA Title III 'public accommodations' but rarely appear in public lawsuit databases — demand letters dominate",
+    "The AICPA/NASBA CPA exam case (2019) shows even professional certification bodies are not exempt",
+    "Enterprise healthcare systems face the highest financial exposure: UNC Health ($125K + enterprise remediation), MedStar ($440K), Springfield Clinic (full patient portal overhaul)"
+  ],
+  "sources": [
+    {
+      "id": "src-026",
+      "name": "EcomBack — 2025 Annual ADA Website Compliance Lawsuit Report",
+      "url": "https://www.ecomback.com/annual-2025-ada-website-accessibility-lawsuit-report",
+      "tier": 2,
+      "publish_date": "2026-01-01"
+    },
+    {
+      "id": "src-027",
+      "name": "UsableNet — 2025 Midyear Accessibility Lawsuit Report",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "tier": 1,
+      "publish_date": "2025-07-01"
+    },
+    {
+      "id": "src-028",
+      "name": "HHS — OCR Extends Web and Mobile Accessibility Compliance Deadline (2026)",
+      "url": "https://www.hhs.gov/press-room/hhs-extends-mobile-and-web-accessibility-deadline.html",
+      "tier": 1,
+      "publish_date": "2026-05-01"
+    },
+    {
+      "id": "src-029",
+      "name": "Morgan Lewis — ADA Compliant Websites: Uptick in Litigation Against Financial Services Firms (November 2024)",
+      "url": "https://www.morganlewis.com/pubs/2024/11/ada-compliant-websites-uptick-in-litigation-against-financial-services-firms-increased-regulatory-attention",
+      "tier": 2,
+      "publish_date": "2024-11-01"
+    }
+  ],
+  "compiled_at": "2026-05-21"
+}

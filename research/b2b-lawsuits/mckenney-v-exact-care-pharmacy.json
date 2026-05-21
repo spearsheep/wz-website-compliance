@@ -1,0 +1,46 @@
+{
+  "case_name": "McKenney et al. v. Exact Care Pharmacy, LLC",
+  "slug": "mckenney-v-exact-care-pharmacy",
+  "court": "U.S. District Court, Northern District of Ohio",
+  "docket": "1:2023cv02360",
+  "year_filed": 2023,
+  "year_resolved": null,
+  "industry": "healthcare",
+  "industry_specific": "Mail-order specialty pharmacy (B2B-adjacent — serves managed care patients)",
+  "defendant_name": "Exact Care Pharmacy, LLC",
+  "defendant_size": "mid",
+  "defendant_revenue_band": "~$100M–$500M (Ohio-based specialty mail-order pharmacy)",
+  "claim_type": "ADA Title III and Ohio state law — failure to provide prescription information in accessible formats (audio, Braille, large print, accessible electronic) to blind patients who specifically requested it",
+  "outcome": "active",
+  "settlement_disclosed": null,
+  "estimated_costs": "Unknown; active litigation as of November 2025 (federal judge confirmed NFB has standing)",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "National Federation of the Blind — NFB and Two Blind Patients Sue Exact Care Pharmacy (December 2023)",
+      "url": "https://nfb.org/index.php/about-us/press-room/national-federation-blind-and-two-blind-patients-sue-ohio-based-mail-order",
+      "tier": 1,
+      "publish_date": "2023-12-12"
+    },
+    {
+      "name": "Justia Dockets — McKenney et al. v. Exact Care Pharmacy, 1:2023cv02360 (N.D. Ohio)",
+      "url": "https://dockets.justia.com/docket/ohio/ohndce/1:2023cv02360/302533",
+      "tier": 1,
+      "publish_date": "2023-12-12"
+    },
+    {
+      "name": "Brown Goldstein & Levy — NFB Sues Exact Care Pharmacy",
+      "url": "https://browngold.com/news/nfb-sues-exact-care-pharmacy-violations/",
+      "tier": 2,
+      "publish_date": "2023-12-12"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "alternative-format-missing"
+  ],
+  "violation_source_evidence": "Brown Goldstein & Levy press release (browngold.com/news/nfb-sues-exact-care-pharmacy-violations): Plaintiffs 'repeatedly requesting instructions in alternative formats' (large print, audio) for their prescriptions packaged in ExactPacks. Materials cited as inaccessible: dosage instructions, potential side effects, and medication interactions contained in individualized prescription dose packaging. No WCAG technical violations cited — violations relate to failure to provide accessible prescription information formats. NFB press release (nfb.org, December 12 2023) could not be retrieved (HTTP 403).",
+  "use_in_report": true,
+  "summary_one_line": "NFB sued Ohio-based mail-order pharmacy Exact Care (December 2023) for refusing to provide prescription information in accessible formats despite knowing patients were blind — active as of November 2025 with NFB's standing confirmed by federal judge.",
+  "notes": "Plaintiffs are Theresa McKenney and Shirley Patterson (blind Cleveland residents) and the NFB. Filed December 12, 2023. Both plaintiffs were told by Exact Care representatives when soliciting their business that the service would be 'more useful and convenient' for them — then the company repeatedly failed to provide accessible information. Represented by BGL (Brown Goldstein & Levy) and Marshall Forman & Schlein. November 2025: federal judge ruled NFB has organizational standing to participate in the lawsuit. Case relevant to B2B context as specialty pharmacies often serve institutional clients."
+}

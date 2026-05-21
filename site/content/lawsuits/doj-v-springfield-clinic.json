@@ -1,0 +1,33 @@
+{
+  "case_name": "United States v. Springfield Clinic (DOJ Settlement Agreement)",
+  "slug": "doj-v-springfield-clinic",
+  "court": "U.S. District Court, Central District of Illinois (via DOJ settlement without trial)",
+  "docket": "N/A — DOJ settlement agreement, not docketed as civil suit",
+  "year_filed": 2024,
+  "year_resolved": 2024,
+  "industry": "healthcare",
+  "defendant_name": "Springfield Clinic (private healthcare provider)",
+  "defendant_size": "mid-market",
+  "claim_type": "Website, patient portals, and mobile applications inaccessible to patients with visual and manual impairments; patient could not access medical records or pay bills online",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "keyboard-nav"],
+  "outcome": "DOJ settlement — $5,000 to complainant; Springfield Clinic must conform all digital properties to WCAG 2.1 AA; must hire independent web accessibility consultant within 3 months",
+  "settlement_disclosed": 5000,
+  "estimated_defense_cost": "DOJ enforcement investigation costs plus remediation cost of full digital accessibility overhaul (estimated $50k–$200k for a multi-platform healthcare system)",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "DOJ — Justice Department Secures Agreement with Springfield Clinic (May 8, 2024)",
+      "url": "https://www.justice.gov/usao-cdil/pr/justice-department-secures-agreement-springfield-clinic-make-its-online-services",
+      "tier": 1
+    },
+    {
+      "name": "DOJ — Springfield Clinic Settlement Agreement (full text)",
+      "url": "https://www.justice.gov/crt/media/1370426/dl",
+      "tier": 1
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "DOJ forced a private healthcare clinic to make its patient portal and website WCAG 2.1 AA compliant after a patient couldn't access their own medical records — healthcare digital accessibility is now a DOJ enforcement priority.",
+  "notes": "Announced May 8, 2024. Part of DOJ's Tech Equity Initiative. The $5,000 payment is for complainant's damages. The real cost is the mandatory independent consultant + full remediation of website, portals, and apps to WCAG 2.1 AA. This case is ideal for healthcare client pitches. Settlement requires periodic reporting to DOJ on compliance status."
+}

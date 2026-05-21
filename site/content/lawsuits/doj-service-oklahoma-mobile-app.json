@@ -1,0 +1,52 @@
+{
+  "case_name": "United States v. Service Oklahoma (OK Mobile ID App)",
+  "slug": "doj-service-oklahoma-mobile-app",
+  "court": "U.S. Department of Justice, Civil Rights Division (administrative settlement — Title II, government entity)",
+  "docket": "Administrative — DOJ investigation and settlement agreement (January 22, 2024)",
+  "year_filed": 2023,
+  "year_resolved": 2024,
+  "industry": "other-b2b",
+  "industry_specific": "State government digital services agency (driver's license / ID / REAL ID mobile application)",
+  "defendant_name": "Service Oklahoma",
+  "defendant_size": "large",
+  "defendant_revenue_band": "State agency — not for profit",
+  "claim_type": "ADA Title II — OK Mobile ID App inaccessible to blind Oklahoma residents; photo-scanning and dot-connecting enrollment tasks impossible for blind users without any verbal feedback; blocked access to unemployment benefits, REAL ID applications, and commercial transactions",
+  "outcome": "settled",
+  "settlement_disclosed": "No monetary payment; corrective action required",
+  "estimated_costs": "Full WCAG 2.1 AA compliance for all mobile apps Service Oklahoma creates, administers or maintains; ADA coordinator requirement; ongoing public feedback mechanism; staff training",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "DOJ — Justice Department Secures Agreement with Oklahoma State Agency (January 22, 2024)",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-secures-agreement-oklahoma-state-agency-ensure-oklahoma-mobile-apps-are",
+      "tier": 1,
+      "publish_date": "2024-01-22"
+    },
+    {
+      "name": "DOJ — Settlement Agreement Between the United States and Service Oklahoma (January 22, 2024)",
+      "url": "https://www.justice.gov/d9/2024-01/service_oklahoma_fully_executed_agreement.01.22.24.pdf",
+      "tier": 1,
+      "publish_date": "2024-01-22"
+    },
+    {
+      "name": "DOJ — Justice Department Finds Oklahoma Mobile App Inaccessible (November 2023)",
+      "url": "https://justice.gov/opa/pr/justice-department-finds-oklahoma-mobile-app-inaccessible-people-vision-disabilities",
+      "tier": 1,
+      "publish_date": "2023-11-16"
+    },
+    {
+      "name": "StateScoop — Oklahoma agency, DOJ reach settlement over inaccessible mobile app",
+      "url": "https://statescoop.com/oklahoma-mobile-app-accessibility-doj-settlement/",
+      "tier": 2,
+      "publish_date": "2024-01-22"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "mobile-app-inaccessible"
+  ],
+  "violation_source_evidence": "StateScoop reporting on DOJ settlement (statescoop.com, January 22 2024): A complainant with vision disabilities 'was unable to complete necessary steps to use the mobile application, such as taking a photo of the front and back of her ID and taking a picture of herself by connecting the dots on the screen using only head and eye movements.' The OK Mobile ID app required visually-guided photo-scanning and dot-connecting enrollment tasks with no verbal feedback, making the entire onboarding flow impossible for blind users. DOJ November 2023 letter of findings confirmed app inaccessible to people with vision disabilities.",
+  "use_in_report": true,
+  "summary_one_line": "DOJ forced Oklahoma's digital services agency to make its OK Mobile ID App (used for unemployment, commercial transactions, and REAL ID) WCAG 2.1 AA compliant after a blind Oklahoma resident complained the photo-scanning enrollment process was impossible without vision.",
+  "notes": "DOJ letter of findings issued November 16, 2023. Settlement executed January 22, 2024. Complaint from a blind Oklahoma resident. The OK Mobile ID App allows users to create a digital version of their driver's license usable for unemployment benefits, retail purchases, and REAL ID applications. Inaccessible features: users must scan/photograph ID cards and take a selfie by connecting moving dots on screen — both tasks require sight. No verbal feedback provided. Title II case (government entity) — different from ADA Title III. Included because the app is B2B-adjacent (used for commercial transactions) and illustrates government digital services as a distinct enforcement vector. WCAG 2.1 AA required for all future apps."
+}

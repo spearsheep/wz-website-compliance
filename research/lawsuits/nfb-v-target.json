@@ -1,0 +1,48 @@
+{
+  "case_name": "National Federation of the Blind v. Target Corporation",
+  "slug": "nfb-v-target",
+  "court": "U.S. District Court, Northern District of California",
+  "docket": "3:06-cv-01802",
+  "year_filed": 2006,
+  "year_resolved": 2008,
+  "industry": "retail-ecommerce",
+  "defendant_name": "Target Corporation",
+  "defendant_size": "enterprise",
+  "claim_type": "Target.com inaccessible to blind users; no alt text, no keyboard navigation",
+  "wcag_violations_alleged": ["alt-text-missing", "keyboard-nav", "screen-reader-incompatible"],
+  "outcome": "Class action settlement — $6 million in damages to class members; $3,738,864.96 in attorney fees and costs",
+  "settlement_disclosed": 6000000,
+  "estimated_defense_cost": "Defense costs plus $3.74M attorney fee award; total exposure exceeded $10M",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "National Federation of the Blind — Official settlement announcement",
+      "url": "https://nfb.org/images/nfb/publications/bm/bm08/bm0809/bm080915.htm",
+      "tier": 1
+    },
+    {
+      "name": "Wikipedia — National Federation of the Blind v. Target Corp.",
+      "url": "https://en.wikipedia.org/wiki/National_Federation_of_the_Blind_v._Target_Corp.",
+      "tier": 2
+    },
+    {
+      "name": "Disability Rights Advocates — Case page",
+      "url": "https://dralegal.org/case/national-federation-of-the-blind-nfb-et-al-v-target-corporation/",
+      "tier": 1
+    },
+    {
+      "name": "W3C WAI — Target Corporation Case Study",
+      "url": "https://www.w3.org/WAI/business-case/archive/target-case-study",
+      "tier": 2
+    },
+    {
+      "name": "SitePoint — Target Settles Accessibility Lawsuit for $6 Million",
+      "url": "https://www.sitepoint.com/target-settles-accessibility-lawsuit-for-6-million/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "First major e-commerce ADA settlement in U.S. history; established that commercial websites are covered by ADA and class-action exposure is real — Target paid $6M+ in 2008.",
+  "notes": "Court certified the class action in 2007 (first such certification for website ADA case). Settlement approved August 2008. NFB monitored compliance via quarterly and annual user accessibility tests. Plaintiff Bruce Sexton filed on behalf of all similarly situated blind California residents."
+}

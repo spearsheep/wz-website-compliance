@@ -1,0 +1,48 @@
+{
+  "statistic_id": "state-distribution",
+  "claim": "New York, Florida, and Illinois are the top three states for ADA web accessibility federal filings in 2025; Florida nearly doubled year-over-year",
+  "value_primary": "NY: 1,021 | FL: 961 | IL: 585 (federal filings, 2025)",
+  "value_specific": {
+    "2025_federal_by_state": {
+      "New York": 1021,
+      "Florida": 961,
+      "Illinois": 585,
+      "Minnesota": 162,
+      "Pennsylvania": 137,
+      "Missouri": 86,
+      "Massachusetts": 57,
+      "Wisconsin": 47,
+      "Indiana": 34,
+      "New Jersey": 22,
+      "California_federal": 4,
+      "Washington_DC": 1
+    },
+    "2025_h1_by_state_all_courts": {
+      "New York_total": 1429,
+      "Florida": 487,
+      "California_total": 380,
+      "Illinois": 237
+    },
+    "notes": "New York state court filings are the largest additional volume not captured in federal data. California Unruh Act (state) adds substantial volume. Florida nearly doubled from 470 federal filings in 2024 to 961 in 2025."
+  },
+  "year": 2025,
+  "verified": true,
+  "tier": 1,
+  "sources": [
+    {
+      "name": "Seyfarth Shaw ADA Title III — Federal Court Website Accessibility Lawsuit Filings Bounce Back in 2025 (March 25, 2026)",
+      "url": "https://www.adatitleiii.com/2026/03/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025/",
+      "tier": 1,
+      "publish_date": "2026-03-25"
+    },
+    {
+      "name": "UsableNet — 2025 Midyear Digital Accessibility Lawsuit Report (H1 state data)",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "tier": 1,
+      "publish_date": "2025-07-01"
+    }
+  ],
+  "context": "California appears to have only 4 federal website accessibility filings in 2025 because most California plaintiffs file under the California Unruh Civil Rights Act in state courts rather than the ADA in federal courts. Unruh Act claims allow for statutory damages of $4,000 per violation (vs. injunctive relief only under ADA). Florida emerged as the #2 federal filing state in 2025, nearly doubling from 470 filings in 2024. Illinois surged 746% YoY in H1 2025 (28 cases in H1 2024 to 237 in H1 2025) — driven by new plaintiff attorneys entering the market.",
+  "use_in_report": true,
+  "report_footnote": "5"
+}

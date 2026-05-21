@@ -1,0 +1,15 @@
+{
+  "name": "website-compliance-scout",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "scan": "node src/scan.js",
+    "scan:batch": "node src/scan-batch.js",
+    "discover": "node src/discover.js"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.60.0"
+  }
+}

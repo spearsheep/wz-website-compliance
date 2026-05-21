@@ -1,0 +1,28 @@
+{
+  "case_name": "Unknown Plaintiff v. KitchenAid (Whirlpool Corporation)",
+  "slug": "kitchenaid-whirlpool-2023",
+  "court": "Not confirmed — reported as U.S. federal court, 2023",
+  "docket": "Not confirmed — verify via PACER before publication",
+  "year_filed": 2023,
+  "year_resolved": null,
+  "industry": "retail-appliance-ecommerce",
+  "defendant_name": "KitchenAid / Whirlpool Corporation",
+  "defendant_size": "enterprise",
+  "claim_type": "KitchenAid website created barriers for customers with visual disabilities",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "alt-text-missing"],
+  "outcome": "Status unknown — class action filed 2023",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Level Access — ADA website compliance lawsuits high profile cases",
+      "url": "https://www.levelaccess.com/blog/title-iii-lawsuits-10-big-companies-sued-over-website-accessibility/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": false,
+  "summary_one_line": "KitchenAid (Whirlpool) faced a class action in 2023 for visual accessibility barriers on its website — illustrates that even premium household brand sites face ADA exposure.",
+  "notes": "CAUTION: Docket and plaintiff name not confirmed. Tier 2 source only. Do not use in report without PACER verification. Included in research index only. Recommend dropping from sales report unless confirmed."
+}

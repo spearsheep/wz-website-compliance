@@ -1,0 +1,25 @@
+{
+  "statistic_id": "defendant-revenue-bands",
+  "claim": "64% of ADA web accessibility lawsuits target companies with annual revenues under $25 million — small businesses are the primary target, not just large corporations",
+  "value_primary": "64% of defendants have annual revenue under $25M",
+  "value_specific": "H1 2025 (UsableNet): 64% of defendants had revenue <$25M; 36% had revenue >$25M (up from 33% in H1 2024). Historical 2023 data (various sources): 77% under $25M.",
+  "year": 2025,
+  "verified": true,
+  "tier": 1,
+  "sources": [
+    {
+      "name": "UsableNet — 2025 Midyear Digital Accessibility Lawsuit Report",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "tier": 1,
+      "publish_date": "2025-07-01"
+    },
+    {
+      "name": "Clym — Accessibility lawsuits in 2025: why small business websites",
+      "url": "https://www.clym.io/blog/accessibility-lawsuits-2025-small-business-websites",
+      "tier": 2
+    }
+  ],
+  "context": "The majority of ADA accessibility lawsuits target smaller businesses, not only Fortune 500 companies. Plaintiff law firms target small businesses because they are less likely to have legal resources to fight and more likely to settle quickly. 67% of cases filed were against companies with under $25M in annual revenue (EcomBack 2025 midyear). The percentage targeting larger companies is increasing (36% in 2025 vs. 33% in 2024), showing large businesses are also under growing pressure.",
+  "use_in_report": true,
+  "report_footnote": "3"
+}

@@ -1,0 +1,43 @@
+{
+  "case_name": "Gorecki v. Hobby Lobby Stores, Inc.",
+  "slug": "gorecki-v-hobby-lobby",
+  "court": "U.S. District Court, Central District of California",
+  "docket": "2:17-cv-01131",
+  "year_filed": 2017,
+  "year_resolved": 2017,
+  "industry": "retail-specialty",
+  "defendant_name": "Hobby Lobby Stores, Inc.",
+  "defendant_size": "enterprise",
+  "claim_type": "Hobby Lobby's e-commerce website inaccessible to blind screen reader users",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "alt-text-missing", "keyboard-nav"],
+  "outcome": "Settled (terms confidential); case terminated October 24, 2017 after court denied motion to dismiss in June 2017",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not publicly disclosed",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Seyfarth Shaw — Plaintiffs score another victory (Hobby Lobby MTD denied June 2017)",
+      "url": "https://www.adatitleiii.com/2017/06/plaintiffs-score-another-victory-in-a-website-accessibility-lawsuit/",
+      "tier": 1
+    },
+    {
+      "name": "Court order — Case 2:17-cv-01131-JFW-SK (June 15, 2017)",
+      "url": "https://www.adatitleiii.com/wp-content/uploads/sites/25/2017/06/Hobby-Lobby-Order.pdf",
+      "tier": 1
+    },
+    {
+      "name": "CourtListener — Docket 2:17-cv-01131",
+      "url": "https://www.courtlistener.com/docket/6076282/sean-gorecki-v-hobby-lobby-stores-inc/",
+      "tier": 1
+    },
+    {
+      "name": "BCLP — California federal court denies Hobby Lobby's motion to dismiss",
+      "url": "https://www.bclplaw.com/en-US/insights/blogs/retail-law-bclp/website-accessibility-update-california-federal-court-denies-hobby-lobby-s-motion-to-dismiss.html",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Court held Hobby Lobby's e-commerce website is a 'public accommodation' under ADA, rejecting due-process and primary jurisdiction defenses; settled within months.",
+  "notes": "Filed February 13, 2017. Judge denied motion to dismiss June 15, 2017, finding the website (which enables purchases, coupon use, gift cards, and store-location) constitutes a public accommodation. Case terminated October 24, 2017 — consistent with confidential settlement. Court rejected Hobby Lobby's argument that imposing ADA on websites without DOJ regulations violated due process."
+}

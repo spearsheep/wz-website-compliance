@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Accessibility Report — {{BUSINESS_NAME}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #FFFFFF;
+  --bg-soft:   #F7F7F4;
+  --bg-warn:   #FFF7F2;
+  --ink:       #0A0A0A;
+  --ink-soft:  #3F3F3F;
+  --ink-mute:  #8A8A85;
+  --rule:      #E8E6E2;
+
+  --red:       #DC2626;
+  --red-deep:  #991B1B;
+  --red-bg:    #FEF2F2;
+  --amber:     #D97706;
+  --amber-bg:  #FFF7E6;
+  --green:     #059669;
+  --green-bg:  #ECFDF5;
+
+  --sans:      'Geist', system-ui, sans-serif;
+  --mono:      'Geist Mono', 'JetBrains Mono', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 11px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'ss01', 'cv11';
+}
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── TOP BAR ─────────────────────────────── */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22mm;
+  border-bottom: 1px solid var(--rule);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.brand-mark-svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+.brand-name { font-weight: 700; font-size: 11px; letter-spacing: -0.005em; }
+.brand-tag {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+  margin-left: 4px;
+}
+.top-bar .date {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-mute);
+}
+
+/* ─── HERO ─────────────────────────────── */
+.hero {
+  background: var(--bg);
+  padding: 40px 22mm 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--red);
+}
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.hero-business {
+  font-family: var(--sans);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  line-height: 1.05;
+  margin-bottom: 4px;
+}
+.hero-url {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  margin-bottom: 22px;
+}
+
+/* Gauge */
+.gauge-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.gauge {
+  width: 280px;
+  height: 280px;
+  transform: rotate(-90deg);
+}
+.gauge-bg {
+  fill: none;
+  stroke: var(--rule);
+  stroke-width: 20;
+}
+.gauge-fg {
+  fill: none;
+  stroke-width: 20;
+  stroke-linecap: butt;
+}
+.gauge-fg.high { stroke: var(--red); }
+.gauge-fg.moderate { stroke: var(--amber); }
+.gauge-fg.low { stroke: var(--green); }
+.gauge-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gauge-num {
+  font-family: var(--sans);
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  font-feature-settings: 'tnum', 'ss01';
+}
+.gauge-num.high { color: var(--red-deep); }
+.gauge-num.moderate { color: var(--amber); }
+.gauge-num.low { color: var(--green); }
+.gauge-of {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  margin-top: 6px;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+}
+
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  border-radius: 999px;
+  margin-top: 6px;
+}
+.risk-badge.high { background: var(--red); color: white; }
+.risk-badge.moderate { background: var(--amber); color: white; }
+.risk-badge.low { background: var(--green); color: white; }
+.risk-dot { width: 7px; height: 7px; border-radius: 50%; background: white; }
+
+.hero-statement {
+  margin: 24px auto 0;
+  font-family: var(--sans);
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  max-width: 540px;
+}
+.hero-statement strong { font-weight: 700; }
+.hero-statement .em-red { color: var(--red-deep); font-weight: 700; }
+
+/* ─── STAT STRIP ───────────────────────── */
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--rule);
+}
+.stat-cell {
+  padding: 20px 16px;
+  text-align: center;
+  border-right: 1px solid var(--rule);
+  position: relative;
+}
+.stat-cell:last-child { border-right: none; }
+.stat-num {
+  font-family: var(--sans);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  font-feature-settings: 'tnum';
+  margin-bottom: 6px;
+}
+.stat-num.red { color: var(--red); }
+.stat-num.amber { color: var(--amber); }
+.stat-num.muted { color: var(--ink-mute); }
+.stat-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+
+/* ─── WHO CAN'T USE YOUR SITE ───────────── */
+.audience {
+  padding: 40px 22mm 36px;
+  border-bottom: 1px solid var(--rule);
+}
+.audience-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  align-items: center;
+}
+.audience-hero-num {
+  font-family: var(--sans);
+  font-size: 88px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.88;
+  color: var(--ink);
+  font-feature-settings: 'tnum';
+}
+.audience-hero-num .of {
+  color: var(--ink-mute);
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: -0.015em;
+}
+.audience-hero-cap {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 14px;
+  line-height: 1.4;
+  max-width: 260px;
+}
+
+.audience-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.audience-line {
+  display: grid;
+  grid-template-columns: 28px 1fr 60px;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.audience-line:last-child { border-bottom: none; }
+.audience-line:first-child { padding-top: 0; }
+.audience-icon-sm {
+  width: 24px;
+  height: 24px;
+  color: var(--ink);
+}
+.audience-icon-sm svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.audience-line-label {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.audience-line-pct {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  text-align: right;
+  font-feature-settings: 'tnum';
+  line-height: 1;
+}
+.audience-line-pct .of {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-mute);
+  font-family: var(--mono);
+}
+
+/* ─── ISSUES ─────────────────────────── */
+.section {
+  padding: 30px 22mm 0;
+}
+.section-title {
+  font-family: var(--sans);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 4px;
+}
+.section-sub {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  color: var(--ink-mute);
+  margin-bottom: 18px;
+}
+
+.issue-row {
+  display: grid;
+  grid-template-columns: 56px 1fr 90px 70px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.issue-row:last-child { border-bottom: none; }
+.issue-icon-lg {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.issue-icon-lg.critical { background: var(--red-bg); color: var(--red); }
+.issue-icon-lg.serious  { background: var(--amber-bg); color: var(--amber); }
+.issue-icon-lg.moderate { background: var(--bg-soft); color: var(--ink-soft); }
+.issue-icon-lg svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.issue-content {
+  min-width: 0;
+}
+.issue-title {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+.issue-desc {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+.issue-severity-vis {
+  text-align: center;
+}
+.severity-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--rule);
+  position: relative;
+  margin-bottom: 5px;
+}
+.severity-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+}
+.severity-bar.critical::after { background: var(--red); width: 100%; }
+.severity-bar.serious::after { background: var(--amber); width: 70%; }
+.severity-bar.moderate::after { background: var(--ink-soft); width: 40%; }
+.severity-label {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.severity-label.critical { color: var(--red); }
+.severity-label.serious { color: var(--amber); }
+.severity-label.moderate { color: var(--ink-soft); }
+
+.issue-count-vis {
+  text-align: right;
+}
+.issue-count-num {
+  font-family: var(--sans);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-feature-settings: 'tnum';
+  color: var(--ink);
+}
+.issue-count-label {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+/* ─── COST COMPARISON ────────────────── */
+.cost-band {
+  margin: 30px 0 0;
+  background: var(--ink);
+  color: white;
+  padding: 44px 22mm 36px;
+  position: relative;
+}
+.cost-band-title {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 36px;
+  font-weight: 500;
+}
+.cost-row {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  align-items: end;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.cost-row:last-of-type { border-bottom: none; }
+.cost-row .row-label {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
+  padding-bottom: 12px;
+  letter-spacing: -0.005em;
+}
+.cost-row .row-amt {
+  font-family: var(--sans);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  font-feature-settings: 'tnum';
+}
+.cost-row.lawsuit .row-amt { color: var(--red); }
+.cost-row.fix .row-amt { color: #4ADE80; }
+.cost-row .row-bar-wrap {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+.cost-row .row-bar {
+  height: 28px;
+  border-radius: 2px;
+}
+.cost-row.lawsuit .row-bar { background: var(--red); width: 100%; }
+.cost-row.fix .row-bar { background: #4ADE80; width: 12%; }
+.cost-row .row-cap {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  padding-bottom: 16px;
+  padding-left: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.cost-row .row-cap-old { /* deprecated label class kept for compat */
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+.cost-cell.lawsuit .cost-label { color: var(--red); }
+.cost-cell.fix .cost-label { color: #60D394; }
+.cost-amount {
+  font-family: var(--sans);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-feature-settings: 'tnum';
+}
+.cost-cell.lawsuit .cost-amount { color: var(--red); }
+.cost-cell.fix .cost-amount { color: #60D394; }
+.cost-detail {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.45;
+}
+.cost-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 18px;
+  color: rgba(255,255,255,0.4);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.cost-footer {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-family: var(--sans);
+  font-size: 11.5px;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+}
+.cost-footer strong { color: white; font-weight: 700; }
+
+/* ─── CTA ─────────────────────────────── */
+.cta-section {
+  padding: 32px 22mm 30px;
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 28px;
+  align-items: end;
+}
+.cta-body h3 {
+  font-family: var(--sans);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  margin-bottom: 8px;
+  line-height: 1.05;
+}
+.cta-body p {
+  font-family: var(--sans);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  max-width: 400px;
+}
+.cta-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 14px;
+  background: var(--ink);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.signature {
+  text-align: right;
+  padding-left: 22px;
+  border-left: 1px solid var(--rule);
+}
+.sig-name {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.sig-org {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+.sig-email {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* ─── RECENT SETTLEMENTS ─────────────── */
+.settlements {
+  padding: 32px 22mm 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.settlements-head {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+.settlements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--ink);
+}
+.settle-card {
+  padding: 16px 16px 18px 0;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.settle-card:last-child { border-right: none; }
+.settle-card + .settle-card { padding-left: 16px; }
+.settle-amt {
+  font-family: var(--sans);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 6px;
+  font-feature-settings: 'tnum';
+}
+.settle-defendant {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  margin-bottom: 2px;
+}
+.settle-meta {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+.settlements-note {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-style: italic;
+  color: var(--ink-mute);
+  margin-top: 12px;
+}
+
+/* ─── CITATIONS ──────────────────────── */
+sup.cite, sup.cite-dark {
+  font-family: var(--mono);
+  font-size: 0.55em;
+  font-weight: 600;
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 1px;
+}
+sup.cite { color: var(--ink-mute); }
+sup.cite-dark { color: rgba(255,255,255,0.5); }
+
+/* ─── SOURCES FOOTER ────────────────── */
+.sources {
+  padding: 24px 22mm 18px;
+  border-top: 1px solid var(--rule);
+}
+.sources-head {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.source-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 24px;
+}
+.source-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 9px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.source-num {
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--ink);
+}
+.source-text { color: var(--ink-soft); }
+.source-text em {
+  font-style: italic;
+  color: var(--ink);
+}
+
+/* ─── FINE PRINT ────────────────────── */
+.fine-print {
+  padding: 14px 22mm 20px;
+  font-family: var(--sans);
+  font-size: 8.5px;
+  color: var(--ink-mute);
+  line-height: 1.5;
+  text-align: center;
+  border-top: 1px solid var(--rule);
+}
+.fp-meta {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  font-family: var(--mono);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  font-size: 8.5px;
+}
+.fp-meta span:not(:last-child)::after {
+  content: '·';
+  margin-left: 22px;
+  color: var(--rule);
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="brand">
+      <svg class="brand-mark-svg" viewBox="430 180 400 600" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0F172A" d="M707.16 450c0-57.82.03-115.15-.1-172.47 0-3.58 1.08-5.63 4.04-7.67 29.08-20.03 58.04-40.24 87.04-60.39 2.03-1.41 4.1-2.77 7.16-4.83v6.39c.01 99.31.03 198.63.04 297.94 0 36.99-.04 73.98-.02 110.97.04 78.99-62.04 142.61-141.01 144.36-12.79.28-25.6.04-39.3.04 1.1-.99 1.54-1.6 2.14-1.91 40.39-20.86 64.19-54.67 74.97-97.94 3.23-12.96 4.73-26.65 4.84-40.03.51-57.82.21-115.65.2-173.46Z"/>
+        <path fill="#8B1A1A" d="M583.74 727.75c-18.6 11.12-38.21 18.08-59.56 19.67-2.05.15-4.5.1-6.2-.86-31.48-17.66-53.61-43.25-65.28-77.61-.15-.45-.16-.95-.06-.31 11.95-2.23 24.1-3.37 35.56-6.83 39.07-11.79 68.45-51.83 68.63-92.63.16-35.65 0-71.31.16-106.96.01-2.09 1.12-5.02 2.72-6.15 34-24.01 68.14-47.83 102.27-71.68.67-.47 1.39-.85 2.72-1.66.15 1.79.37 3.14.37 4.5.01 64.14.88 128.3-.34 192.42-1.08 56.99-23.16 104.71-69.03 140.16-3.68 2.84-7.75 5.18-11.95 7.94Z"/>
+      </svg>
+      <span class="brand-name">{{SENDER_COMPANY}}</span>
+      <span class="brand-tag">Accessibility Report</span>
+    </div>
+    <div class="date">{{AUDIT_DATE}}</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Website Health Check</div>
+    <h1 class="hero-business">{{BUSINESS_NAME}}</h1>
+    <div class="hero-url">{{URL}}</div>
+
+    <div class="gauge-wrap">
+      <svg class="gauge" viewBox="0 0 280 280">
+        <circle class="gauge-bg" cx="140" cy="140" r="120" />
+        <circle class="gauge-fg {{RISK_CLASS}}" cx="140" cy="140" r="120"
+                stroke-dasharray="{{GAUGE_DASH}}" />
+      </svg>
+      <div class="gauge-center">
+        <div class="gauge-num {{RISK_CLASS}}">{{SCORE}}</div>
+        <div class="gauge-of">OUT OF 100</div>
+      </div>
+    </div>
+
+    <div>
+      <span class="risk-badge {{RISK_CLASS}}">
+        <span class="risk-dot"></span>{{RISK_LABEL}} Risk
+      </span>
+    </div>
+
+    <p class="hero-statement">
+      <strong>{{TOTAL_ISSUES}} accessibility problems</strong> found. <strong>3,117 businesses</strong><sup class="cite">1</sup> were sued for these issues last year. Settlements have reached <span class="em-red">$5.15M</span><sup class="cite">2</sup>.
+    </p>
+  </div>
+
+  <!-- STAT STRIP -->
+  <div class="stat-strip">
+    <div class="stat-cell">
+      <div class="stat-num red">{{CRITICAL_COUNT}}</div>
+      <div class="stat-label">Critical</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num amber">{{SERIOUS_COUNT}}</div>
+      <div class="stat-label">Serious</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num muted">{{MODERATE_COUNT}}</div>
+      <div class="stat-label">Moderate</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">{{TOTAL_INSTANCES}}</div>
+      <div class="stat-label">Total Places</div>
+    </div>
+  </div>
+
+  <!-- WHO CAN'T USE -->
+  <div class="audience">
+    <div class="audience-row">
+      <div>
+        <div class="audience-hero-num">1 in 4<span class="of"> Americans</span></div>
+        <p class="audience-hero-cap">have a disability that affects how they use the web. Your site fails them.</p>
+      </div>
+      <div class="audience-breakdown">
+        <div class="audience-line">
+          <div class="audience-icon-sm">
+            <svg viewBox="0 0 24 24"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+          </div>
+          <div class="audience-line-label">Blind or low vision</div>
+          <div class="audience-line-pct">8<span class="of">%</span></div>
+        </div>
+        <div class="audience-line">
+          <div class="audience-icon-sm">
+            <svg viewBox="0 0 24 24"><path d="M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46"/><path d="M6 8.5c0-.74.39-2.04.92-2.5"/><path d="M9.65 3.65A6.5 6.5 0 0 1 18.5 8.5c0 1.78-.79 2.94-1.65 3.94"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+          </div>
+          <div class="audience-line-label">Deaf or hard of hearing</div>
+          <div class="audience-line-pct">15<span class="of">%</span></div>
+        </div>
+        <div class="audience-line">
+          <div class="audience-icon-sm">
+            <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0"/><path d="M14 10V4a2 2 0 0 0-4 0v2"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-1.8-5.2-4l-3-5c-.5-.8-.4-1.7.3-2.3.7-.6 1.7-.5 2.3.2L8 13"/></svg>
+          </div>
+          <div class="audience-line-label">Motor or dexterity</div>
+          <div class="audience-line-pct">12<span class="of">%</span></div>
+        </div>
+        <div class="audience-line">
+          <div class="audience-icon-sm">
+            <svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
+          </div>
+          <div class="audience-line-label">Cognitive or learning</div>
+          <div class="audience-line-pct">10<span class="of">%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ISSUES -->
+  <div class="section">
+    <h2 class="section-title">The Problems</h2>
+    <p class="section-sub">These are the issues on your site, in order of legal risk.</p>
+
+    {{ISSUE_ROWS}}
+  </div>
+
+  <!-- COST -->
+  <div class="cost-band">
+    <div class="cost-band-title">The Math</div>
+
+    <div class="cost-row lawsuit">
+      <div class="row-label">Typical settlement<sup class="cite-dark">3</sup></div>
+      <div class="row-amt">$30K — $100K</div>
+      <div class="row-bar-wrap">
+        <div class="row-bar"></div>
+      </div>
+    </div>
+
+    <div class="cost-row fix">
+      <div class="row-label">A fix, starting at</div>
+      <div class="row-amt">$4,000</div>
+      <div class="row-bar-wrap">
+        <div class="row-bar"></div>
+      </div>
+    </div>
+
+    <div class="cost-footer">
+      <strong>3,117 federal lawsuits</strong><sup class="cite-dark">1</sup> filed in 2025 — up <strong>27% YoY</strong>. <strong>64% of defendants</strong><sup class="cite-dark">4</sup> had revenue under $25M.
+    </div>
+  </div>
+
+  <!-- RECENT SETTLEMENTS -->
+  <div class="settlements">
+    <div class="settlements-head">Recent Disclosed Settlements</div>
+    <div class="settlements-grid">
+      <div class="settle-card">
+        <div class="settle-amt">$5.15M</div>
+        <div class="settle-defendant">Fashion Nova</div>
+        <div class="settle-meta">2025 · N.D. Cal. · DOJ intervention<sup class="cite">2</sup></div>
+      </div>
+      <div class="settle-card">
+        <div class="settle-amt">$9.7M</div>
+        <div class="settle-defendant">Target</div>
+        <div class="settle-meta">2008 · NFB class action · $6M + $3.7M fees<sup class="cite">5</sup></div>
+      </div>
+      <div class="settle-card">
+        <div class="settle-amt">$795K</div>
+        <div class="settle-defendant">Netflix</div>
+        <div class="settle-meta">2012 · NAD · fees + captioning mandate<sup class="cite">6</sup></div>
+      </div>
+      <div class="settle-card">
+        <div class="settle-amt">Cited Daily</div>
+        <div class="settle-defendant">Domino's Pizza</div>
+        <div class="settle-meta">2019 · 9th Cir. · ADA applies to websites<sup class="cite">7</sup></div>
+      </div>
+    </div>
+    <p class="settlements-note">Most ADA settlements are confidential. These are the largest publicly disclosed cases.</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-body">
+      <h3>Let's fix this before someone files.</h3>
+      <p>I rebuild small and mid-sized firm websites on accessible architecture, verified at delivery. Modern design, defensible posture, flat fee.</p>
+      <span class="cta-action">Book a 20-minute call →</span>
+    </div>
+    <div class="signature">
+      <div class="sig-name">{{SENDER_NAME}}</div>
+      <div class="sig-org">{{SENDER_COMPANY}}</div>
+      <div class="sig-email">{{SENDER_EMAIL}}</div>
+    </div>
+  </div>
+
+  <!-- Sources -->
+  <div class="sources">
+    <div class="sources-head">Sources</div>
+    <ul class="source-list">
+      {{SOURCES_LIST}}
+    </ul>
+  </div>
+
+  <!-- Fine print -->
+  <div class="fine-print">
+    <div class="fp-meta">
+      <span>Report {{DOSSIER_ID}}</span>
+      <span>WCAG 2.1 AA</span>
+      <span>{{AUDIT_DATE}}</span>
+    </div>
+    Informational only. Not legal advice.
+  </div>
+
+</div>
+</body>
+</html>

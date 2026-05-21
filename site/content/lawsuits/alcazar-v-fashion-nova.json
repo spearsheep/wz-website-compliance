@@ -1,0 +1,53 @@
+{
+  "case_name": "Alcazar v. Fashion Nova, Inc.",
+  "slug": "alcazar-v-fashion-nova",
+  "court": "U.S. District Court, Northern District of California",
+  "docket": "3:20-cv-01434",
+  "year_filed": 2020,
+  "year_resolved": 2025,
+  "industry": "retail-ecommerce",
+  "defendant_name": "Fashion Nova, Inc.",
+  "defendant_size": "mid-market",
+  "claim_type": "Fashion Nova's e-commerce website inaccessible to blind screen reader users; missing alt text on product images",
+  "wcag_violations_alleged": ["alt-text-missing", "screen-reader-incompatible"],
+  "outcome": "Class action settlement — $5,150,000 total; California class members receive up to $4,000 per household; DOJ filed statement of interest opposing settlement as insufficient (Feb 2026); evidentiary hearing set March 30, 2026",
+  "settlement_disclosed": 5150000,
+  "estimated_defense_cost": "Over $2.43M in class member distributions plus attorney fees on top; total exposure $5.15M+",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "DOJ — Civil Rights Division case page: Alcazar v. Fashion Nova Inc.",
+      "url": "https://www.justice.gov/crt/case/alcazar-v-fashion-nova-inc",
+      "tier": 1
+    },
+    {
+      "name": "DOJ — Statement of Interest opposing settlement (Feb 2026)",
+      "url": "https://www.justice.gov/opa/pr/department-justice-opposes-unfair-class-action-settlement-involving-accessibility-website",
+      "tier": 1
+    },
+    {
+      "name": "Lainey Feingold — $5.15M settlement in California web accessibility class action (Oct 2025)",
+      "url": "https://www.lflegal.com/2025/10/fashion-nova-settlement/",
+      "tier": 1
+    },
+    {
+      "name": "Official settlement website — Alcazar v. Fashion Nova",
+      "url": "https://www.fashionnovaaccessibilitysettlement.com/",
+      "tier": 2
+    },
+    {
+      "name": "Seyfarth Shaw ADA Title III — DOJ throws wrench into proposed settlement (Feb 2026)",
+      "url": "https://www.adatitleiii.com/2026/02/doj-throws-wrench-into-proposed-ada-website-accessibility-class-settlement/",
+      "tier": 1
+    },
+    {
+      "name": "PR Newswire — Settlement notice press release",
+      "url": "https://www.prnewswire.com/news-releases/if-you-are-legally-blind-and-attempted-to-access-wwwfashionnovacom-using-screen-reading-software-between-february-26-2018-and-now-you-may-benefit-from-a-proposed-class-action-settlement-302484186.html",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Largest disclosed ADA web accessibility class settlement in recent years at $5.15M — and the DOJ intervened in 2026 to argue even this wasn't enough, signaling elevated federal scrutiny.",
+  "notes": "DOJ Statement of Interest filed February 2, 2026 argued the settlement's injunctive relief (a single sentence requiring site modifications) lacked monitoring or enforcement. DOJ argued settlement 'provided little value to most blind class members' while attorneys received disproportionate fees. Court set evidentiary hearing March 30, 2026. This case signals increasing DOJ scrutiny of hollow settlements — highly relevant for framing why structural compliance matters over quick settlements."
+}

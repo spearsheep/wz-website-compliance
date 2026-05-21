@@ -1,0 +1,43 @@
+id: law-firms-la
+display_name: "LA Law Firms"
+
+# Google Places discovery
+google_places_query: "law firm attorney"
+location: "Los Angeles, CA"
+radius_meters: 50000
+max_per_run: 20
+min_review_count: 5          # filter out totally unestablished businesses
+
+# Lawsuit context (used in email personalization)
+state_law_context: |
+  California's Unruh Civil Rights Act allows individuals to sue for $4,000 minimum
+  in statutory damages PER VIOLATION — without needing to show actual injury or loss.
+  A single inaccessible contact form can generate multiple $4,000 awards.
+
+risk_message_short: "California's Unruh Act allows $4,000 in damages per violation, with mandatory attorney's fees."
+
+sample_recent_case: |
+  In 2025, plaintiff firms filed over 1,400 federal ADA web accessibility lawsuits
+  against California businesses, plus thousands more in state court under Unruh.
+
+# Apify lead enrichment (decision-maker discovery)
+decision_maker_titles:
+  primary:
+    - "managing attorney"
+    - "managing partner"
+    - "firm administrator"
+    - "operations manager"
+  fallback:
+    - "marketing director"
+    - "office manager"
+    - "practice manager"
+
+# Email personalization angle
+pain_point: |
+  Law firms have a unique reputational exposure: being publicly sued for civil rights
+  violations while in the business of advising clients on legal risk. The American Bar
+  Association published guidance on this in 2024.
+
+call_to_action_angle: |
+  Position the rebuild as a defensible posture, not a panic patch. Frame it like
+  liability insurance — cheaper to prevent than to settle.

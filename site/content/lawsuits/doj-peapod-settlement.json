@@ -1,0 +1,38 @@
+{
+  "case_name": "United States v. Ahold U.S.A., Inc. and Peapod LLC (DOJ Settlement)",
+  "slug": "doj-peapod-settlement",
+  "court": "DOJ settlement agreement — no civil docket (administrative enforcement)",
+  "docket": "N/A — DOJ administrative settlement",
+  "year_filed": 2014,
+  "year_resolved": 2014,
+  "industry": "grocery-ecommerce",
+  "defendant_name": "Peapod LLC / Ahold U.S.A., Inc. (online grocery delivery)",
+  "defendant_size": "enterprise",
+  "claim_type": "Online grocery delivery website (Peapod.com) and mobile app inaccessible to blind, deaf, and users with physical disabilities",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "missing-captions", "keyboard-nav"],
+  "outcome": "DOJ settlement — Peapod must conform website and app to WCAG 2.0 AA; designate Web Accessibility Coordinator; adopt accessibility policy; conduct annual user testing; retain independent consultant",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed; remediation costs for full WCAG 2.0 overhaul of grocery platform significant",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "DOJ — Justice Department enters settlement agreement with Peapod (Nov 17, 2014)",
+      "url": "https://www.justice.gov/archives/opa/pr/justice-department-enters-settlement-agreement-peapod-ensure-peapod-grocery-delivery-website",
+      "tier": 1
+    },
+    {
+      "name": "DOJ — Full settlement text (archive.ada.gov)",
+      "url": "https://archive.ada.gov/peapod_sa.htm",
+      "tier": 1
+    },
+    {
+      "name": "Seyfarth Shaw — DOJ enters into another website accessibility agreement (2014)",
+      "url": "https://www.adatitleiii.com/2014/11/justice-department-enters-into-another-website-accessibility-agreement/",
+      "tier": 1
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "DOJ required an online-only grocery delivery business to achieve full WCAG 2.0 AA compliance across its website and mobile app — establishing DOJ's enforcement framework for digital accessibility.",
+  "notes": "November 17, 2014. Part of DOJ's broader push on website accessibility before formal rulemaking. The settlement's requirements (Web Accessibility Coordinator, policy adoption, annual user testing, independent consultant) became a template for subsequent DOJ settlements. No monetary penalty disclosed — the cost is the compliance program."
+}

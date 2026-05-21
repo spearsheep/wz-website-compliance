@@ -1,0 +1,42 @@
+{
+  "case_name": "American Blind Community v. Tenet Healthcare Corporation",
+  "slug": "tenet-healthcare-american-blind-community",
+  "court": "Federal court (specific district not confirmed in public sources)",
+  "docket": "Not confirmed in public sources",
+  "year_filed": 2016,
+  "year_resolved": 2016,
+  "industry": "healthcare",
+  "industry_specific": "For-profit hospital system",
+  "defendant_name": "Tenet Healthcare Corporation",
+  "defendant_size": "enterprise",
+  "defendant_revenue_band": ">$10B (third-largest for-profit hospital chain in the US)",
+  "claim_type": "ADA Title III and Rehabilitation Act Section 504 \u2014 hospital websites inaccessible via screen readers to visually impaired users",
+  "outcome": "settled",
+  "settlement_disclosed": null,
+  "estimated_costs": "Confidential settlement; parties settled shortly after filing",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Mintz Levin \u2014 The Rising Tide of ADA Litigation Against Health Care Entities",
+      "url": "https://www.mintz.com/insights-center/viewpoints/2018-05-15-rising-tide-ada-litigation-against-health-care-entities",
+      "tier": 2,
+      "publish_date": "2018-05-15",
+      "publisher": "Mintz, Levin, Cohn, Ferris, Glovsky and Popeo, P.C.",
+      "type": "law-firm-analysis"
+    },
+    {
+      "name": "Fredrikson & Byron \u2014 Healthcare Sector is Newest Target for Website Accessibility Lawsuits",
+      "url": "https://www.fredlaw.com/alert-healthcare-sector-is-newest-target-for-website-accessibility-lawsuits",
+      "tier": 2,
+      "publish_date": "2017-01-18"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible"
+  ],
+  "violation_source_evidence": "Fredrikson & Byron legal alert (fredlaw.com/alert-healthcare-sector-is-newest-target-for-website-accessibility-lawsuits, January 2017): Tenet Healthcare hospital websites were 'not accessible to blind individuals using screen-reader technology.' No additional WCAG criteria specified in this Tier 2 source. Healthcare Weekly (healthcareweekly.com/ada-compliance-healthcare-websites) is Tier 3 and adds no specifics. No Tier 1 complaint or court document retrieved. Violations limited to what is documented in available sources.",
+  "use_in_report": false,
+  "summary_one_line": "A class action on behalf of all Americans with visual disabilities sued Tenet Healthcare in 2016 for screen-reader-inaccessible hospital websites; parties settled shortly after filing \u2014 terms undisclosed.",
+  "notes": "Filed 2016 as class action on behalf of all Americans with visual impairments. Facilities named include Hahnemann University Hospital, Hialeah Hospital, Coral Gables Hospital. Legal basis: both ADA Title III and Rehabilitation Act Section 504. Settled shortly after filing \u2014 no public terms. Marked use_in_report: false due to lack of Tier 1 sources with specific docket/court information. Docket unverified. Include only as supporting context for healthcare sector vulnerability."
+}

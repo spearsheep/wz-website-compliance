@@ -1,0 +1,52 @@
+{
+  "case_name": "National Federation of the Blind v. Epic Systems Corporation",
+  "slug": "nfb-v-epic-systems",
+  "court": "U.S. District Court, District of Massachusetts",
+  "docket": "Not confirmed (original Morse case settled; NFB refiling in Massachusetts)",
+  "year_filed": 2018,
+  "year_resolved": 2020,
+  "industry": "other-b2b",
+  "industry_specific": "Healthcare software vendor — Electronic Health Records (EHR) platform",
+  "defendant_name": "Epic Systems Corporation",
+  "defendant_size": "large",
+  "defendant_revenue_band": "~$3.3B revenue (2023; privately held)",
+  "claim_type": "Massachusetts state disability law (M.G.L. c. 272, §98) — EHR software sold to hospitals inaccessible to blind hospital employees; screen reader software incompatible with Epic's clinical platform",
+  "outcome": "dismissed",
+  "settlement_disclosed": null,
+  "estimated_costs": "Epic prevailed; no payment required. Plaintiff (Manuel Morse, blind hospital dispatcher at Brigham and Women's Hospital) and NFB bore own costs.",
+  "tier": 1,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Healthcare Dive — Epic found not liable for product inaccessible to blind employee",
+      "url": "https://www.healthcaredive.com/news/epic-found-not-liable-for-product-inaccessible-to-blind-employee/571862/",
+      "tier": 2,
+      "publish_date": "2020-01-01"
+    },
+    {
+      "name": "Becker's Hospital Review — Epic sued by National Federation of the Blind: 4 things to know",
+      "url": "https://www.beckershospitalreview.com/ehrs/epic-sued-by-national-federation-of-the-blind-4-things-to-know.html",
+      "tier": 2,
+      "publish_date": "2018-12-01"
+    },
+    {
+      "name": "Modern Healthcare — Epic Systems Corp. disability lawsuit dismissed by federal judge",
+      "url": "https://www.modernhealthcare.com/information-technology/epic-systems-corp-disability-lawsuit-dismissed-federal-judge",
+      "tier": 2,
+      "publish_date": "2020-01-01"
+    },
+    {
+      "name": "Becker's Hospital Review — Blind advocacy group's lawsuit against Epic tossed by judge",
+      "url": "https://www.beckershospitalreview.com/ehrs/blind-advocacy-group-s-lawsuit-against-epic-tossed-by-judge.html",
+      "tier": 2,
+      "publish_date": "2020-01-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible"
+  ],
+  "violation_source_evidence": "Becker's Hospital Review (beckershospitalreview.com, 2020): 'an October 2018 software update broke the link between the EHR and the hospital's text-to-speech feature,' making the Epic EHR platform unable to interoperate with screen reader / text-to-speech software used by blind hospital dispatcher Manuel Morse at Brigham and Women's Hospital. NFB alleged Epic EHR 'isn't accessible to the blind' and that Epic should 'equip their products with text-to-speech features.' Healthcare Dive (healthcaredive.com/news/epic-found-not-liable, 2020): 'Manuel Morse, a blind hospital dispatcher at Boston's Brigham and Women's Hospital, could no longer use the EHR after it failed to interoperate with the needed text-to-speech software.'",
+  "use_in_report": true,
+  "summary_one_line": "NFB sued Epic Systems for selling hospitals an EHR platform incompatible with screen readers used by blind employees — the federal judge dismissed the case, ruling Epic cannot be held liable for its hospital customers' employment practices, but the case established EHR accessibility as a contested legal frontier.",
+  "notes": "Background: Manuel Morse, a blind dispatcher at Brigham and Women's Hospital (Boston), could no longer use Epic EHR after a 2018 software update broke screen reader interoperability. Original case filed 2017, settled, then refiled December 2018 after update re-broke accessibility. Federal judge ruling: Epic's 'knowing sale' of inaccessible software is insufficient to trigger liability under Massachusetts disability law for customers' treatment of their blind employees. Judge noted: 'If NFB's argument is taken to its logical conclusion, no company could sell any product to employers in the Commonwealth of Massachusetts that was not fully accessible to employee users.' IMPORTANT: case was dismissed — Epic prevailed. But it signals an emerging theory of B2B vendor liability for inaccessible software sold to professional services firms. Included as illustrative of B2B technology vendor risk landscape."
+}

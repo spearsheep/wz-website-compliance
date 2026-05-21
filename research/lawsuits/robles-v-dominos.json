@@ -1,0 +1,48 @@
+{
+  "case_name": "Robles v. Domino's Pizza, LLC",
+  "slug": "robles-v-dominos",
+  "court": "9th Circuit Court of Appeals (Central District of California at trial level)",
+  "docket": "17-55504",
+  "year_filed": 2016,
+  "year_resolved": 2022,
+  "industry": "food-service",
+  "defendant_name": "Domino's Pizza, LLC",
+  "defendant_size": "enterprise",
+  "claim_type": "Website and mobile app inaccessible to blind users; screen reader incompatible",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "alt-text-missing", "keyboard-nav"],
+  "outcome": "Settled (terms confidential) after six years of litigation",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Defense costs over six years of multi-level federal litigation estimated at $500k–$1M+ per public filings and counsel estimates; exact figure not disclosed",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "9th Circuit Opinion — Robles v. Domino's Pizza, LLC, 913 F.3d 898 (9th Cir. 2019)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/17-55504/17-55504-2019-01-15.html",
+      "tier": 1
+    },
+    {
+      "name": "Full 9th Circuit PDF Opinion",
+      "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2019/01/15/17-55504.pdf",
+      "tier": 1
+    },
+    {
+      "name": "Supreme Court Docket — certiorari denied Oct 7, 2019 (18-1539)",
+      "url": "https://www.supremecourt.gov/DocketPDF/18/18-1539/102950/20190613153344483_DominosPetitionAppendix.pdf",
+      "tier": 1
+    },
+    {
+      "name": "Seyfarth Shaw ADA Title III — Settlement announcement June 2022",
+      "url": "https://www.adatitleiii.com/2022/06/robles-v-dominos-settles-after-six-years-of-litigation/",
+      "tier": 1
+    },
+    {
+      "name": "Wikipedia case summary",
+      "url": "https://en.wikipedia.org/wiki/Robles_v._Domino%27s_Pizza",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Cornerstone federal ruling establishing that the ADA applies to websites and apps; the 9th Circuit reversed dismissal, Supreme Court declined to hear appeal, and case settled in 2022 after six years.",
+  "notes": "The 9th Circuit held ADA applies to 'services of a public accommodation' not merely services 'in' a physical place. Supreme Court denied cert Oct 7, 2019. Final settlement June 6, 2022 with terms confidential. Cited in virtually every subsequent ADA web accessibility case. Domino's committed to WCAG 2.0 AA compliance."
+}

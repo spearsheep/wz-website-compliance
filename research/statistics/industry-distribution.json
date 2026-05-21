@@ -1,0 +1,26 @@
+{
+  "statistic_id": "industry-distribution",
+  "claim": "E-commerce accounts for 69% of all digital accessibility lawsuits; food service is second at 18%; healthcare is 4% and rising fast",
+  "value_primary": "69% e-commerce, 18% food service, 4% healthcare",
+  "value_specific": "H1 2025 (UsableNet midyear): E-commerce 69%, Food Services 18%, Healthcare 4%, Fitness & Wellness 3%, Education 2%, Other <1%. 2024 full year (Seyfarth): website accessibility lawsuits at 28% of total ADA Title III caseload.",
+  "year": 2025,
+  "verified": true,
+  "tier": 1,
+  "sources": [
+    {
+      "name": "UsableNet — 2025 Midyear Digital Accessibility Lawsuit Report (H1 2025 data)",
+      "url": "https://blog.usablenet.com/2025-midyear-accessibility-lawsuit-report-key-legal-trends",
+      "tier": 1,
+      "publish_date": "2025-07-01"
+    },
+    {
+      "name": "UsableNet — 2025 Midyear PDF Report",
+      "url": "https://info.usablenet.com/hubfs/2025-MidYear-Report-FINAL.pdf",
+      "tier": 1,
+      "publish_date": "2025-07-01"
+    }
+  ],
+  "context": "E-commerce has consistently been the top target since 2018. Food service surged as online ordering became mainstream. Healthcare is rising fastest as a percentage — HHS Section 504 digital deadline (May 11, 2026) is driving enforcement attention. One in five of the top 500 e-commerce retailers has already been sued in 2025 (UsableNet midyear 2025).",
+  "use_in_report": true,
+  "report_footnote": "2"
+}

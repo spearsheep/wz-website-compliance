@@ -1,0 +1,36 @@
+{
+  "case_name": "Carmain et al. v. Charles Schwab & Co., Inc. (Structured Negotiation)",
+  "slug": "schwab-blind-clients-structured-negotiation",
+  "court": "No court — resolved through Structured Negotiation (pre-litigation)",
+  "docket": "N/A — structured negotiation, not filed in court",
+  "year_filed": null,
+  "year_resolved": 2024,
+  "industry": "financial-services",
+  "industry_specific": "Retail brokerage / wealth management platform",
+  "defendant_name": "Charles Schwab & Co., Inc.",
+  "defendant_size": "enterprise",
+  "defendant_revenue_band": ">$18B revenue (2024; one of the largest US retail brokerages)",
+  "claim_type": "ADA Title III — schwab.com, Schwab Mobile, and Thinkorswim web platform inaccessible to blind and visually impaired retail clients; violations of WCAG standards",
+  "outcome": "settled",
+  "settlement_disclosed": null,
+  "estimated_costs": "No monetary amount disclosed; WCAG 2.2 AA remediation of all Schwab digital properties, quarterly usability testing, third-party vendor compliance requirements",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Law Office of Lainey Feingold — Charles Schwab 2024 Web and Mobile Accessibility Settlement Agreement (November 2024)",
+      "url": "https://www.lflegal.com/2024/11/schwab-2024-agreement/",
+      "tier": 1,
+      "publish_date": "2024-11-01"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "screen-reader-incompatible",
+    "captcha-inaccessible",
+    "wcag-2-2-aa-general"
+  ],
+  "violation_source_evidence": "Lainey Feingold settlement summary (lflegal.com/2024/11/schwab-2024-agreement): Specific violations listed in 'Exhibit 1 to the Confidential Addendum' and not publicly disclosed. However, the settlement explicitly required: (1) WCAG 2.2 AA remediation for schwab.com, Schwab Mobile, and Thinkorswim — implying broad non-conformance; (2) 'No inaccessible CAPTCHA' commitment — directly indicating CAPTCHAs lacked accessible alternatives; (3) Critical conformance issues on 'top 10 experiences' remediated by September 30, 2024 — implying core user flows were inaccessible to blind clients using screen readers. Claimants were four blind Schwab retail clients who could not independently access brokerage services.",
+  "use_in_report": true,
+  "summary_one_line": "Four blind Charles Schwab clients secured a 2024 structured negotiation agreement requiring Schwab to achieve WCAG 2.2 AA compliance across schwab.com, Schwab Mobile, and Thinkorswim — with quarterly disability usability testing and vendor compliance obligations.",
+  "notes": "Effective Date: August 26, 2024. Duration: through October 31, 2026. Claimants: Jon Carmain, Joel Isaac, Kit Lau, Victor Tsaran (four blind Schwab retail clients). Claimants' counsel: Matthew Handley (Handley Farah & Anderson PLLC) and Lainey Feingold (Law Office of Lainey Feingold). Key terms: (1) All new content must conform before release; (2) Critical issues on top 10 experiences remediated by Sept 30, 2024; (3) Mobile app critical issues by Dec 31, 2024; (4) Quarterly usability testing by persons with disabilities; (5) No inaccessible CAPTCHA; (6) Third-party vendors must achieve conformance within 30 days of request. Schwab denied any ADA violations. This is the most recent high-profile financial services accessibility resolution and covers B2B-relevant wealth management platforms. No lawsuit filed — structured negotiation used."
+}

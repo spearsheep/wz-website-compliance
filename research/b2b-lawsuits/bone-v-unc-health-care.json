@@ -1,0 +1,65 @@
+{
+  "case_name": "Bone et al. v. University of North Carolina Health Care System",
+  "slug": "bone-v-unc-health-care",
+  "court": "U.S. District Court, Middle District of North Carolina",
+  "docket": "1:18-cv-00994",
+  "year_filed": 2018,
+  "year_resolved": 2023,
+  "industry": "healthcare",
+  "industry_specific": "University health system — hospitals and outpatient clinics",
+  "defendant_name": "University of North Carolina Health Care System (UNC Health)",
+  "defendant_size": "enterprise",
+  "defendant_revenue_band": ">$3B (major academic medical center)",
+  "claim_type": "ADA Title III and Rehabilitation Act Section 504 — systematic failure to provide written materials (after-visit summaries, billing, medication instructions, patient forms) in accessible formats (Braille, large print, accessible electronic) to blind patients",
+  "outcome": "settled",
+  "settlement_disclosed": "$125,000 in damages to affected patients",
+  "estimated_costs": "$125,000 damages + plaintiff attorney fees + mandatory injunction compliance costs (enterprise-wide accessible communications overhaul)",
+  "tier": 1,
+  "hero_anchor": true,
+  "sources": [
+    {
+      "name": "Disability Rights North Carolina — Blind Patients Receive Settlement from UNC Health Care System (July 2022)",
+      "url": "https://disabilityrightsnc.org/news/press-release/blind-patients-receive-settlement-from-unc-health-care-system/",
+      "tier": 1,
+      "publish_date": "2022-07-14"
+    },
+    {
+      "name": "CourtListener — Bone v. University of North Carolina Health Care System, 1:18-cv-00994",
+      "url": "https://www.courtlistener.com/docket/8439484/bone-v-university-of-north-carolina-health-care-system/",
+      "tier": 1,
+      "publish_date": "2018-01-01"
+    },
+    {
+      "name": "Civil Rights Litigation Clearinghouse — Bone v. UNC Health Care System, 1:18-cv-00994",
+      "url": "https://clearinghouse.net/case/43408/",
+      "tier": 1,
+      "publish_date": "2022-07-01"
+    },
+    {
+      "name": "FindLaw — Bone v. University of North Carolina Health Care System (2023)",
+      "url": "https://caselaw.findlaw.com/court/us-dis-crt-m-d-nor-car/2347538.html",
+      "tier": 1,
+      "publish_date": "2023-01-01"
+    },
+    {
+      "name": "WSOC TV — UNC Health Care System set to pay $125K in damages",
+      "url": "https://www.wsoctv.com/news/local/unc-health-care-system-set-pay-125k-damages-violating-federal-disability-rights-law/ALTVBNPNZ5EFZBDFVROZYEA64M/",
+      "tier": 2,
+      "publish_date": "2022-07-14"
+    },
+    {
+      "name": "NC Newsline — Blind patients partial settlement announcement",
+      "url": "https://ncnewsline.com/briefs/advocacy-groups-announce-partial-settlement-in-lawsuit-over-hospital-discrimination-against-blind-patients/",
+      "tier": 2,
+      "publish_date": "2022-07-14"
+    }
+  ],
+  "wcag_violations_alleged": [
+    "pdf-inaccessible",
+    "alternative-format-missing"
+  ],
+  "violation_source_evidence": "Disability Rights North Carolina press release (disabilityrightsnc.org, July 14 2022): UNC Health 'provided information critical to the health of their patients in standard print only, without a statutorily required accessible alternative.' Specific inaccessible materials: patient history forms, after-visit summaries, billing information, and general written communications — provided exclusively in standard print with no Braille, large print, or accessible electronic formats. Clearinghouse.net case summary: MyChart online health portal disputed as 'not sufficiently accessible' for blind patients.",
+  "use_in_report": true,
+  "summary_one_line": "NFB and Disability Rights NC won a $125,000 settlement against UNC Health (2022) for systematically denying blind patients accessible medical records, billing, and forms; a 2023 federal injunction then required a system-wide overhaul of patient communications.",
+  "notes": "Plaintiffs were Timothy Miles, John Bone, the National Federation of the Blind, and Disability Rights NC. Filed 2018, partial settlement on damages ($125K) reached July 2022. After damages settled, litigation continued on injunctive relief. In June 2023, judge issued a 109-page order and permanent injunction requiring UNC Health to ensure all patient communications are accessible to blind patients. This is a 5-year case showing sustained litigation pressure on healthcare providers. The injunction required electronic records, patient portals, after-visit summaries, billing statements, and all communications to be accessible. Strong precedent for post-2024 HHS Section 504 enforcement."
+}

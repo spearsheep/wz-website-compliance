@@ -1,0 +1,42 @@
+id: financial-advisors-ny
+display_name: "NY Financial Advisors"
+
+google_places_query: "financial advisor wealth management"
+location: "New York, NY"
+radius_meters: 30000
+max_per_run: 15
+min_review_count: 10
+
+state_law_context: |
+  New York's NYC Human Rights Law (NYCHRL) is among the broadest anti-discrimination
+  laws in the country — it allows compensatory AND punitive damages with no statutory cap.
+  Combined with the state's #1 position for federal ADA filings (1,021 cases in 2025),
+  NY is the single highest-risk jurisdiction for web accessibility lawsuits.
+
+risk_message_short: "NYC Human Rights Law allows uncapped punitive damages; NY is #1 in federal ADA filings."
+
+sample_recent_case: |
+  Stein Saks LLP filed 395 web-focused lawsuits in 2024 alone. NY federal courts have
+  begun scrutinizing serial plaintiffs, but filings have shifted to state court — net
+  exposure is unchanged or higher.
+
+decision_maker_titles:
+  primary:
+    - "chief compliance officer"
+    - "chief operating officer"
+    - "operations manager"
+    - "managing director"
+  fallback:
+    - "marketing director"
+    - "chief technology officer"
+    - "office manager"
+
+pain_point: |
+  Financial services firms already have compliance budgets and regulatory awareness.
+  The DOJ has explicitly stated digital accessibility is a civil rights issue, and
+  CFPB scrutiny adds a parallel regulatory exposure. RIAs and wealth managers are
+  pre-sold on proactive risk mitigation as a category.
+
+call_to_action_angle: |
+  Frame as standard regulatory hygiene — same posture as their SEC compliance program.
+  Reference the dual ADA + CFPB exposure to elevate from "website issue" to "regulatory gap".

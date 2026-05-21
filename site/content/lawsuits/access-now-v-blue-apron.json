@@ -1,0 +1,38 @@
+{
+  "case_name": "Access Now, Inc. v. Blue Apron, LLC",
+  "slug": "access-now-v-blue-apron",
+  "court": "U.S. District Court, District of New Hampshire",
+  "docket": "1:17-cv-00370",
+  "year_filed": 2017,
+  "year_resolved": 2018,
+  "industry": "food-delivery-ecommerce",
+  "defendant_name": "Blue Apron, LLC",
+  "defendant_size": "mid-market",
+  "claim_type": "Online meal kit subscription website inaccessible to blind screen reader users; online-only business with no physical stores",
+  "wcag_violations_alleged": ["screen-reader-incompatible", "alt-text-missing", "keyboard-nav"],
+  "outcome": "Motion to dismiss denied November 2017; settled 2018 with Blue Apron agreeing to improve website accessibility",
+  "settlement_disclosed": null,
+  "estimated_defense_cost": "Not disclosed",
+  "tier": 2,
+  "hero_anchor": false,
+  "sources": [
+    {
+      "name": "Bloomberg Law — Blue Apron must defend website access claims",
+      "url": "https://news.bloomberglaw.com/tech-and-telecom-law/blue-apron-must-defend-website-access-claims",
+      "tier": 2
+    },
+    {
+      "name": "Lexology — Online retailers beware: court holds website violates ADA despite lack of physical store",
+      "url": "https://www.lexology.com/library/detail.aspx?g=77bced23-dc9c-49ee-8613-ea29a1ff3a50",
+      "tier": 2
+    },
+    {
+      "name": "AudioEye — Breaking down four landmark web accessibility lawsuits",
+      "url": "https://www.audioeye.com/post/four-landmark-web-accessibility-lawsuits/",
+      "tier": 2
+    }
+  ],
+  "use_in_report": true,
+  "summary_one_line": "Online-only business (no physical stores) held to be subject to ADA; court ruled excluding internet-only businesses would 'run afoul of the purposes of the ADA.'",
+  "notes": "Filed by accessibility organization Access Now on behalf of four plaintiffs with visual disabilities. Judge Laplante's ruling is significant: ADA applies even to businesses with zero physical locations. Settled 2018 — Blue Apron committed to website remediation. Important precedent for any business operating online-only (SaaS, e-commerce, subscription)."
+}

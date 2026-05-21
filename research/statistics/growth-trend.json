@@ -1,0 +1,49 @@
+{
+  "statistic_id": "growth-trend",
+  "claim": "ADA web accessibility federal lawsuit filings have grown dramatically since 2018, peaked at 3,255 in 2022, dipped in 2023-2024, then rebounded 27% in 2025",
+  "value_primary": "27% YoY increase in 2025 (2,452 to 3,117 federal filings)",
+  "value_specific": {
+    "annual_federal_web_accessibility_filings": {
+      "2018": 814,
+      "2019": 2235,
+      "2020": 2523,
+      "2021": 2895,
+      "2022": 3255,
+      "2023": 2794,
+      "2024": 2452,
+      "2025": 3117
+    },
+    "notes": "2018-2022 data from Seyfarth Shaw annual reports. 2025 data: Seyfarth Shaw March 2026. The 2019 surge coincided with the 9th Circuit Domino's ruling. The 2023-2024 dip was partly driven by procedural/jurisdictional tightening; the 2025 rebound is attributed to new plaintiff attorney firms entering the market."
+  },
+  "year": 2025,
+  "verified": true,
+  "tier": 1,
+  "sources": [
+    {
+      "name": "Seyfarth Shaw ADA Title III — 2025 annual report (March 2026)",
+      "url": "https://www.adatitleiii.com/2026/03/federal-court-website-accessibility-lawsuit-filings-bounce-back-in-2025/",
+      "tier": 1,
+      "publish_date": "2026-03-25"
+    },
+    {
+      "name": "Seyfarth Shaw — 2024 filings continued to decrease (April 2025)",
+      "url": "https://www.adatitleiii.com/2025/04/federal-court-website-accessibility-lawsuit-filings-continue-to-decrease-in-2024/",
+      "tier": 1,
+      "publish_date": "2025-04-01"
+    },
+    {
+      "name": "Seyfarth Shaw — Plaintiffs set new record in 2022 (January 2023)",
+      "url": "https://www.adatitleiii.com/2023/01/plaintiffs-set-a-new-record-for-website-accessibility-lawsuit-filings-in-2022/",
+      "tier": 1,
+      "publish_date": "2023-01-01"
+    },
+    {
+      "name": "WCAGsafe — ADA lawsuit statistics 2025-2026 (historical chart compilation)",
+      "url": "https://wcagsafe.com/blog/ada-lawsuit-statistics",
+      "tier": 2
+    }
+  ],
+  "context": "2018 pre-Domino's ruling: 814 filings. Post-Domino's 9th Circuit opinion (Jan 2019): immediate surge to 2,235 in 2019. Long-term trajectory is strongly upward despite 2023-2024 dip. 2025 represents a return toward the 2022 peak. Note: these figures are federal courts only; state court filings (NY, CA) add substantial additional volume not captured here. The long-term growth is structural, not cyclical.",
+  "use_in_report": true,
+  "report_footnote": "6"
+}
