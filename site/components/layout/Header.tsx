@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import {
   Menu,
   X,
@@ -43,6 +43,16 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [industryOpen, setIndustryOpen] = useState(false)
   const industryRef = useRef<HTMLLIElement>(null)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const openDropdown = useCallback(() => {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setIndustryOpen(true)
+  }, [])
+
+  const closeDropdown = useCallback(() => {
+    closeTimer.current = setTimeout(() => setIndustryOpen(false), 150)
+  }, [])
 
   // Close dropdown on outside click + Escape
   useEffect(() => {
@@ -84,22 +94,19 @@ export function Header() {
           >
             <Image
               src="/logo-mark.svg"
-              alt="Jobs Junior logo mark"
+              alt="JustCompliant logo mark"
               width={32}
               height={32}
             />
             <span className="text-slate-900 font-bold text-base leading-none">
-              Jobs Junior
-              <span className="block text-[10px] font-semibold text-slate-400 tracking-widest uppercase mt-0.5">
-                Compliance
-              </span>
+              JustCompliant
             </span>
           </Link>
           <SparkDot
             criterionId="1.1.1"
             criterionName="Non-text Content"
             wcagLevel="A"
-            summary="Our logo image has descriptive alt text ('Jobs Junior logo mark') so screen readers can announce it to blind users."
+            summary="Our logo image has descriptive alt text ('JustCompliant logo mark') so screen readers can announce it to blind users."
             position="bottom"
           />
         </div>
@@ -107,7 +114,12 @@ export function Header() {
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-1" role="list">
           {/* Industries dropdown */}
-          <li className="relative" ref={industryRef}>
+          <li
+            className="relative"
+            ref={industryRef}
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeDropdown}
+          >
             <button
               type="button"
               aria-haspopup="true"
@@ -129,6 +141,8 @@ export function Header() {
             {industryOpen && (
               <div
                 role="menu"
+                onMouseEnter={openDropdown}
+                onMouseLeave={closeDropdown}
                 className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[640px] rounded-2xl bg-white border border-slate-200 shadow-xl p-3 grid grid-cols-2 gap-1"
               >
                 {industries.map((i) => {
@@ -201,7 +215,7 @@ export function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-slate-500 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
+          className="md:hidden p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-slate-500 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
@@ -217,14 +231,14 @@ export function Header() {
           id="mobile-menu"
           role="navigation"
           aria-label="Mobile navigation"
-          className="md:hidden border-t border-slate-100 px-6 py-4 bg-white max-h-[calc(100vh-65px)] overflow-y-auto"
+          className="md:hidden border-t border-slate-100 px-4 py-4 bg-white max-h-[calc(100vh-65px)] overflow-y-auto"
         >
           <div className="space-y-1">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
-                className="block px-4 py-3 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors"
+                className="block px-4 py-3.5 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors min-h-[44px] flex items-center"
               >
                 {label}
               </Link>
@@ -233,7 +247,7 @@ export function Header() {
 
           {/* Industries section in mobile menu */}
           <div className="mt-4 pt-4 border-t border-slate-100">
-            <p className="px-4 text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-2">
+            <p className="px-4 text-[11px] font-semibold uppercase tracking-widest text-slate-500 mb-2">
               Industries
             </p>
             <div className="space-y-1">
@@ -243,7 +257,7 @@ export function Header() {
                   <Link
                     key={i.slug}
                     href={`/industries/${i.slug}`}
-                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors"
+                    className="flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors min-h-[44px]"
                   >
                     <div
                       className="w-7 h-7 rounded-lg flex items-center justify-center"
@@ -260,8 +274,15 @@ export function Header() {
           </div>
 
           <Link
+            href="/industries"
+            className="mt-2 block px-4 py-3 text-sm font-semibold text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+          >
+            See all industries →
+          </Link>
+
+          <Link
             href="/contact"
-            className="mt-4 block rounded-xl px-5 py-3 text-sm font-semibold text-white text-center"
+            className="mt-4 block rounded-xl px-5 py-3.5 text-sm font-semibold text-white text-center min-h-[44px] flex items-center justify-center"
             style={{ background: "#015DF1" }}
           >
             Get Free Audit

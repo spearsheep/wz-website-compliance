@@ -3,6 +3,7 @@ import { ArrowRight, Search, Wrench, Building2, RefreshCw } from "lucide-react"
 import { ScannerHero } from "@/components/home/ScannerHero"
 import { Approaches } from "@/components/home/Approaches"
 import { SparkDot } from "@/components/compliance/SparkDot"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 import { FAQ } from "@/components/shared/FAQ"
 
 export default function HomePage() {
@@ -11,61 +12,71 @@ export default function HomePage() {
 
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative overflow-hidden" style={{ background: "linear-gradient(160deg, #FFFFFF 0%, #F0F4FF 100%)" }}>
-        <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-10 sm:py-16 md:py-28">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
             {/* Left */}
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 mb-8 shadow-sm">
-                <span className="w-2 h-2 rounded-full" style={{ background: "#0DAB66" }} />
+                <span className="w-2 h-2 rounded-full" style={{ background: "#078250" }} />
                 <span className="text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  ADA Compliance Specialists
+                  Website Compliance Specialists
                 </span>
               </div>
 
-              <h1
-                className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-tight tracking-tight mb-6"
-                style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+              {/* Compliant area: high-contrast headline */}
+              <ComplianceHighlight
+                label="Easy-to-read text"
+                explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting. Faint gray text would fail this test — ours passes with lots of room to spare."
+                wcagId="1.4.3"
+                wcagName="Contrast (Minimum)"
+                position="bottom"
+                className="mb-6"
               >
-                One lawsuit can
-                <br />
-                cost more than
-                <br />
-                <span style={{ color: "#0DAB66" }}>we do.</span>
-              </h1>
+                <h1
+                  className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-tight tracking-tight"
+                  style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+                >
+                  One lawsuit can
+                  <br />
+                  cost more than
+                  <br />
+                  <span style={{ color: "#078250" }}>we do.</span>
+                </h1>
+              </ComplianceHighlight>
 
               <p className="text-lg text-slate-500 mb-8 max-w-md leading-relaxed">
-                ADA web compliance. We audit, fix, and protect your business before the lawyers do.
+                Website compliance. We audit, fix, and protect your business before the lawyers do.
               </p>
 
-              <div className="flex flex-wrap items-center gap-3 mb-8 relative">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 font-semibold text-white transition-all hover:opacity-90 focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 shadow-lg"
-                  style={{ background: "#015DF1", boxShadow: "0 4px 20px rgba(1,93,241,0.3)" }}
-                >
-                  Get Free Audit
-                  <ArrowRight size={16} />
-                </Link>
-                <Link
-                  href="/compliance"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 font-semibold text-slate-700 hover:border-slate-300 hover:bg-slate-50 transition-all focus-visible:outline-2 focus-visible:outline-slate-400 focus-visible:outline-offset-2"
-                >
-                  See the Law
-                </Link>
-                {/* Real dot on a real CTA: focus-visible ring proves WCAG 2.4.7 */}
-                <span className="absolute -top-2 left-[152px]">
-                  <SparkDot
-                    criterionId="2.4.7"
-                    criterionName="Focus Visible"
-                    wcagLevel="AA"
-                    summary="Tab to this button and you'll see a visible outline appear — keyboard users need that to know where they are."
-                    position="top"
-                  />
-                </span>
-              </div>
+              {/* Compliant area: keyboard-reachable buttons with a visible focus outline */}
+              <ComplianceHighlight
+                label="Keyboard-friendly"
+                explanation="Some people cannot use a mouse and press the Tab key to move around a page. When they land on these buttons, a clear outline appears so they always know where they are."
+                wcagId="2.4.7"
+                wcagName="Focus Visible"
+                position="top"
+                className="mb-8"
+              >
+                <div className="flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 font-semibold text-white transition-all hover:opacity-90 focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 shadow-lg"
+                    style={{ background: "#015DF1", boxShadow: "0 4px 20px rgba(1,93,241,0.3)" }}
+                  >
+                    Get Free Audit
+                    <ArrowRight size={16} />
+                  </Link>
+                  <Link
+                    href="/compliance"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 font-semibold text-slate-700 hover:border-slate-300 hover:bg-slate-50 transition-all focus-visible:outline-2 focus-visible:outline-slate-400 focus-visible:outline-offset-2"
+                  >
+                    See the Law
+                  </Link>
+                </div>
+              </ComplianceHighlight>
 
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-500">
                 No commitment · Results in 48 hours · Covers CA, NY, FL, and federal requirements
               </p>
             </div>
@@ -90,13 +101,13 @@ export default function HomePage() {
           />
         </div>
         <div className="mx-auto max-w-5xl px-6">
-          <div className="grid grid-cols-3 gap-0 divide-x divide-slate-100">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
             {[
-              { value: "4,605", label: "ADA lawsuits filed in 2023 alone" },
+              { value: "$500K+", label: "what one lawsuit costs an SMB to defend & settle" },
               { value: "$9.7M", label: "Target's settlement — one case" },
               { value: "90%", label: "of websites fail basic checks" },
             ].map(({ value, label }) => (
-              <div key={value} className="text-center px-6 py-4">
+              <div key={value} className="text-center px-4 sm:px-6 py-5 sm:py-4">
                 <p
                   className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-1 tabular-nums"
                   style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
@@ -114,7 +125,7 @@ export default function HomePage() {
       <Approaches />
 
       {/* ── EXPOSURE BY STATE ────────────────────────────────── */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 md:py-20 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2
@@ -144,7 +155,7 @@ export default function HomePage() {
                 damage: "$125,000",
                 unit: "per complaint",
                 note: "No physical location nexus required. NYC customers = NYC exposure.",
-                color: "#D97706",
+                color: "#B45309",
               },
               {
                 state: "Federal",
@@ -152,7 +163,7 @@ export default function HomePage() {
                 damage: "$200K+",
                 unit: "attorney's fees",
                 note: "No statutory damages, but plaintiff attorneys average $50K–$200K+ per case.",
-                color: "#6366F1",
+                color: "#4F46E5",
               },
             ].map(({ state, law, damage, unit, note, color }) => (
               <div
@@ -162,7 +173,7 @@ export default function HomePage() {
                 <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color }}>
                   {state}
                 </p>
-                <p className="text-xs text-slate-400 mb-4">{law}</p>
+                <p className="text-xs text-slate-500 mb-4">{law}</p>
                 <p
                   className="text-4xl font-extrabold mb-0.5"
                   style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui", color }}
@@ -170,7 +181,7 @@ export default function HomePage() {
                   {damage}
                 </p>
                 <p className="text-sm font-medium text-slate-500 mb-3">{unit}</p>
-                <p className="text-sm text-slate-400 leading-relaxed">{note}</p>
+                <p className="text-sm text-slate-500 leading-relaxed">{note}</p>
               </div>
             ))}
           </div>
@@ -178,7 +189,7 @@ export default function HomePage() {
       </section>
 
       {/* ── SERVICES ─────────────────────────────────────────── */}
-      <section className="py-20 px-6" style={{ background: "#F8FAFC" }}>
+      <section className="py-12 md:py-20 px-4 sm:px-6" style={{ background: "#F8FAFC" }}>
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2
@@ -204,21 +215,21 @@ export default function HomePage() {
                 name: "Fix",
                 tagline: "Targeted remediation",
                 desc: "We fix violations directly in your existing codebase.",
-                color: "#0DAB66",
+                color: "#078250",
               },
               {
                 icon: Building2,
                 name: "Rebuild",
                 tagline: "Compliance from scratch",
                 desc: "Full site rebuild to WCAG 2.1 AA with VPAT documentation.",
-                color: "#8B5CF6",
+                color: "#7C3AED",
               },
               {
                 icon: RefreshCw,
                 name: "Maintenance",
                 tagline: "Ongoing protection",
                 desc: "Quarterly scans to keep you protected as your site grows.",
-                color: "#F59E0B",
+                color: "#92400E",
               },
             ].map(({ icon: Icon, name, tagline, desc, color }) => (
               <Link
@@ -247,7 +258,7 @@ export default function HomePage() {
       </section>
 
       {/* ── HOW IT WORKS ─────────────────────────────────────── */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 md:py-20 px-4 sm:px-6 bg-white">
         <div className="mx-auto max-w-4xl text-center">
           <h2
             className="text-3xl md:text-4xl font-bold text-slate-900 mb-12"
@@ -284,7 +295,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CASE STUDIES ─────────────────────────────────────── */}
-      <section className="py-20 px-6" style={{ background: "#F8FAFC" }}>
+      <section className="py-12 md:py-20 px-4 sm:px-6" style={{ background: "#F8FAFC" }}>
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2
@@ -327,7 +338,7 @@ export default function HomePage() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <p className="text-xl font-bold text-slate-900">{company}</p>
-                    <p className="text-sm text-slate-400">{year}</p>
+                    <p className="text-sm text-slate-500">{year}</p>
                   </div>
                   <p
                     className="text-2xl font-extrabold"
@@ -337,7 +348,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <p className="text-sm text-slate-600 mb-1">{detail}</p>
-                <p className="text-xs text-slate-400">{law}</p>
+                <p className="text-xs text-slate-500">{law}</p>
               </div>
             ))}
           </div>
@@ -383,7 +394,7 @@ export default function HomePage() {
       />
 
       {/* ── FINAL CTA ─────────────────────────────────────────── */}
-      <section className="py-24 px-6" style={{ background: "#0F172A" }}>
+      <section className="py-14 md:py-24 px-4 sm:px-6" style={{ background: "#0F172A" }}>
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex items-center justify-center gap-2 mb-8">
             <SparkDot
@@ -394,7 +405,7 @@ export default function HomePage() {
               position="top"
               color="green"
             />
-            <span className="text-slate-500 text-xs font-medium">This section is WCAG compliant — hover the dot</span>
+            <span className="text-slate-400 text-xs font-medium">This section is WCAG compliant — hover the dot</span>
           </div>
 
           <h2
@@ -416,7 +427,7 @@ export default function HomePage() {
             Request Free Audit
             <ArrowRight size={16} />
           </Link>
-          <p className="mt-4 text-sm text-slate-500">Results in 48 hours · WCAG 2.1 AA</p>
+          <p className="mt-4 text-sm text-slate-400">Results in 48 hours · WCAG 2.1 AA</p>
         </div>
       </section>
 

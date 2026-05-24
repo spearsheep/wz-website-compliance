@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, Gavel } from "lucide-react"
 import { getAllLawsuits, getTotalKnownSettlements, type Lawsuit } from "@/lib/lawsuits"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 export const metadata: Metadata = {
   title: "ADA Lawsuit Case Studies — Real Companies, Real Settlements",
@@ -43,7 +44,7 @@ export default function CasesPage() {
   }
 
   return (
-    <div className="py-16 px-6 bg-white">
+    <div className="py-10 md:py-16 px-4 sm:px-6 bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
@@ -57,12 +58,21 @@ export default function CasesPage() {
               {all.length} documented ADA lawsuits
             </span>
           </div>
-          <h1
-            className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight"
-            style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-4 mx-auto"
           >
-            Companies sued. Settlements paid.
-          </h1>
+            <h1
+              className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight"
+              style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+            >
+              Companies sued. Settlements paid.
+            </h1>
+          </ComplianceHighlight>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
             Real ADA Title III lawsuits and DOJ enforcement actions against household-name companies.
             Click any case to see exactly what went wrong, what it cost, and the legal precedent it set.
@@ -101,7 +111,7 @@ export default function CasesPage() {
             >
               Consumer-facing (B2C)
             </h2>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-500">
               {b2c.length} cases · Retail, restaurants, streaming, healthcare, entertainment
             </p>
           </div>
@@ -121,7 +131,7 @@ export default function CasesPage() {
             >
               Institutional / B2B
             </h2>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-500">
               {b2b.length} cases · Higher ed, healthcare systems, financial services, govt, exam authorities
             </p>
           </div>
@@ -186,12 +196,12 @@ function LawsuitCard({ lawsuit: l }: { lawsuit: Lawsuit }) {
             >
               {l.cost}
             </p>
-            <p className="text-[10px] text-slate-400 uppercase tracking-wider">Settlement</p>
+            <p className="text-[10px] text-slate-500 uppercase tracking-wider">Settlement</p>
           </div>
         )}
       </div>
       <div className="flex items-center justify-between text-xs">
-        <span className="text-slate-400 font-mono truncate max-w-[55%]">
+        <span className="text-slate-500 font-mono truncate max-w-[55%]">
           {l.yearResolved} · {l.court.replace("U.S. District Court, ", "").replace(/ \(.*$/, "")}
         </span>
         <span className="inline-flex items-center gap-1 font-semibold text-blue-600 group-hover:text-blue-700 whitespace-nowrap">

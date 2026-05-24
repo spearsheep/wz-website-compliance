@@ -26,22 +26,18 @@ const links = {
 export function Footer() {
   return (
     <footer className="border-t border-slate-100 bg-slate-50" role="contentinfo">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-5">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-10 md:py-16">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-12">
           {/* Brand */}
           <div className="col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4 rounded focus-visible:outline-2 focus-visible:outline-[var(--blue)] focus-visible:outline-offset-2">
-              <Image src="/logo-mark.svg" alt="Jobs Junior logo mark" width={32} height={32} />
+              <Image src="/logo-mark.svg" alt="JustCompliant logo mark" width={32} height={32} />
               <span className="font-semibold text-[var(--foreground)]">
-                Jobs Junior<br />
-                <span className="text-xs font-normal text-[var(--muted-foreground)] tracking-wider uppercase">Compliance</span>
+                JustCompliant
               </span>
             </Link>
             <p className="text-sm text-[var(--muted-foreground)] leading-relaxed">
               Making the web accessible — and keeping your business protected from ADA liability.
-            </p>
-            <p className="mt-4 text-xs text-[var(--muted-foreground)]">
-              Domain & contact coming soon.
             </p>
           </div>
 
@@ -88,7 +84,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-[var(--border)] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--muted-foreground)]">
-            © {new Date().getFullYear()} Jobs Junior. All rights reserved.
+            © {new Date().getFullYear()} JustCompliant · Owned and operated by Jobs Jr. LLC
           </p>
           <p className="text-xs text-[var(--muted-foreground)] text-center">
             This website is built to WCAG 2.1 Level AA standards —{" "}

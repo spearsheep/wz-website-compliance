@@ -6,6 +6,7 @@ import { AltTextDemo } from "@/components/compliance/AltTextDemo"
 import { KeyboardDemo } from "@/components/compliance/KeyboardDemo"
 import { ComplianceBadge } from "@/components/compliance/ComplianceBadge"
 import { Shield, BookOpen } from "lucide-react"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 export const metadata: Metadata = {
   title: "Compliance Guide — WCAG 2.1 & ADA Requirements",
@@ -25,36 +26,45 @@ const categoryDescriptions: Record<string, string> = {
 
 export default function CompliancePage() {
   return (
-    <div className="py-16 px-6">
+    <div className="py-10 md:py-16 px-4 sm:px-6">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 rounded-full border border-[var(--green)]/30 bg-[var(--green)]/10 px-4 py-2 mb-6">
-            <BookOpen size={14} className="text-[var(--green)]" aria-hidden="true" />
-            <span className="text-xs font-semibold text-[var(--green)] uppercase tracking-wider">
+            <BookOpen size={14} className="text-[#065F3B]" aria-hidden="true" />
+            <span className="text-xs font-semibold text-[#065F3B] uppercase tracking-wider">
               Complete Compliance Reference
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
-            What your website{" "}
-            <span className="text-[var(--blue)]">must</span> do
-          </h1>
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-4 mx-auto"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)]">
+              What your website{" "}
+              <span className="text-[var(--blue)]">must</span> do
+            </h1>
+          </ComplianceHighlight>
           <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg leading-relaxed">
             Every requirement below is drawn from WCAG 2.1, ADA Title III, and applicable state laws.
             Click any{" "}
-            <span className="font-mono text-xs border border-[var(--blue)]/30 bg-[var(--blue)]/10 text-[var(--blue)] px-1 py-0.5 rounded">ⓘ</span>{" "}
+            <span className="font-mono text-xs border border-[var(--blue)]/30 bg-[var(--blue)]/10 text-[#1E40AF] px-1 py-0.5 rounded">ⓘ</span>{" "}
             badge to see the exact law — in plain English and legal language, with real lawsuit citations.
           </p>
         </div>
 
         {/* This page's own compliance badges — meta-demonstration */}
         <div className="rounded-xl border border-[var(--green)]/30 bg-[var(--green)]/5 p-5 mb-14 flex flex-col sm:flex-row items-start gap-4">
-          <Shield size={20} className="text-[var(--green)] shrink-0 mt-0.5" aria-hidden="true" />
+          <Shield size={20} className="text-[#065F3B] shrink-0 mt-0.5" aria-hidden="true" />
           <div>
             <p className="text-sm font-semibold text-[var(--foreground)] mb-1">
               This page itself is compliant — here&apos;s proof
             </p>
-            <div className="flex flex-wrap gap-2 text-xs text-[var(--muted-foreground)]">
+            <div className="flex flex-wrap gap-2 text-xs text-slate-600">
               <span>H1 heading (WCAG 2.4.6)</span>
               <ComplianceBadge
                 criterionId="2.4.6"
@@ -159,7 +169,7 @@ export default function CompliancePage() {
                 plain: "The most expansive anti-discrimination law in the US. Applies to any business with NYC customers — even if you're physically located outside the city. Civil penalties up to $125,000. Does not require a nexus to a physical location.",
                 legal: "NYC Admin. Code § 8-107(4)(a) prohibits disability discrimination by any 'place or provider of public accommodation.' § 8-502(a) allows private right of action with compensatory, punitive damages, and civil penalties up to $125,000 for unlawful discriminatory practices.",
                 damage: "Up to $125,000 per complaint",
-                color: "#f59e0b",
+                color: "#B45309",
               },
               {
                 name: "Florida — ADA Title III (11th Circuit)",
@@ -175,7 +185,7 @@ export default function CompliancePage() {
                 plain: "The Americans with Disabilities Act requires any business open to the public to provide equal access to people with disabilities. Courts consistently apply WCAG 2.1 AA as the technical standard. No statutory damages for private suits, but attorney's fees alone average $50,000–$200,000+.",
                 legal: "42 U.S.C. § 12182(a): 'No individual shall be discriminated against on the basis of disability in the full and equal enjoyment of the goods, services, facilities, privileges, advantages, or accommodations of any place of public accommodation.' DOJ Title II Final Rule (2024) codified WCAG 2.1 AA for government entities; private business rule forthcoming.",
                 damage: "Injunctive + attorney's fees ($50K–$200K+)",
-                color: "#6366f1",
+                color: "#4F46E5",
               },
             ].map((law) => (
               <article

@@ -105,7 +105,7 @@ export default async function BlogPostPage({
   }
 
   return (
-    <div className="py-16 px-6 bg-white">
+    <div className="py-10 md:py-16 px-4 sm:px-6 bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -120,7 +120,7 @@ export default async function BlogPostPage({
         </Link>
 
         <header className="mb-10">
-          <div className="flex items-center gap-3 text-xs text-slate-400 mb-4">
+          <div className="flex items-center gap-3 text-xs text-slate-500 mb-4">
             <span className="inline-flex items-center gap-1">
               <Calendar size={12} aria-hidden="true" />
               {formatDate(post.date)}

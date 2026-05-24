@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { useState } from "react"
 import { Mail, Clock, Shield, CheckCircle } from "lucide-react"
 import { ComplianceBadge } from "@/components/compliance/ComplianceBadge"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 // Can't export metadata from a "use client" component — using static values inline
 
@@ -63,13 +64,22 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="py-16 px-6">
+    <div className="py-10 md:py-16 px-4 sm:px-6">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-14">
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
-            Start with a free audit
-          </h1>
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-4 mx-auto"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)]">
+              Start with a free audit
+            </h1>
+          </ComplianceHighlight>
           <p className="text-[var(--muted-foreground)] text-lg max-w-xl mx-auto">
             No commitment. No sales pressure. Just a clear picture of your compliance risk within 48 hours.
           </p>
@@ -85,8 +95,8 @@ export default function ContactPage() {
               className="space-y-5"
             >
               {/* This form itself is a live compliance demo */}
-              <div className="rounded-lg border border-[var(--green)]/20 bg-[var(--green)]/5 p-4 flex items-start gap-2 text-xs text-[var(--muted-foreground)]">
-                <Shield size={14} className="text-[var(--green)] shrink-0 mt-0.5" aria-hidden="true" />
+              <div className="rounded-lg border border-[var(--green)]/20 bg-[var(--green)]/5 p-4 flex items-start gap-2 text-xs text-slate-600">
+                <Shield size={14} className="text-[#065F3B] shrink-0 mt-0.5" aria-hidden="true" />
                 <span>
                   This form is WCAG 2.1 compliant — all fields have labels, errors are announced to screen readers, and required fields are marked.{" "}
                   <ComplianceBadge
@@ -151,7 +161,7 @@ export default function ContactPage() {
                 )}
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Company */}
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-[var(--foreground)] mb-1.5">
@@ -282,8 +292,8 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-xl border border-[var(--fail)]/20 bg-[var(--fail)]/5 p-5">
-              <p className="text-xs font-semibold text-[var(--fail)] mb-2">Received a demand letter?</p>
-              <p className="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              <p className="text-xs font-semibold text-red-700 mb-2">Received a demand letter?</p>
+              <p className="text-xs text-slate-600 leading-relaxed">
                 If you&apos;ve already received an ADA demand letter or lawsuit notice, contact us immediately. We can provide an emergency audit and remediation plan to support your legal response.
               </p>
             </div>

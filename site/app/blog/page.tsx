@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, Calendar, Clock } from "lucide-react"
 import { getAllPosts } from "@/lib/blog"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 export const metadata: Metadata = {
   title: "Blog — ADA & WCAG accessibility insights",
@@ -27,21 +28,30 @@ export default function BlogIndex() {
   const posts = getAllPosts()
 
   return (
-    <div className="py-16 px-6 bg-white">
+    <div className="py-10 md:py-16 px-4 sm:px-6 bg-white">
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 mb-6 shadow-sm">
-            <span className="w-2 h-2 rounded-full" style={{ background: "#0DAB66" }} aria-hidden="true" />
+            <span className="w-2 h-2 rounded-full" style={{ background: "#078250" }} aria-hidden="true" />
             <span className="text-xs font-semibold text-slate-600 uppercase tracking-wider">
               Updated daily
             </span>
           </div>
-          <h1
-            className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight"
-            style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-4 mx-auto"
           >
-            ADA & WCAG, in plain English
-          </h1>
+            <h1
+              className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight"
+              style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+            >
+              ADA & WCAG, in plain English
+            </h1>
+          </ComplianceHighlight>
           <p className="text-slate-500 max-w-xl mx-auto text-lg leading-relaxed">
             Lawsuit breakdowns, state-by-state guides, and the practical things business owners actually need to know.
           </p>
@@ -59,7 +69,7 @@ export default function BlogIndex() {
                   href={`/blog/${p.slug}`}
                   className="block rounded-2xl border border-slate-200 bg-white p-6 hover:border-slate-300 hover:shadow-md transition-all focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2"
                 >
-                  <div className="flex items-center gap-3 text-xs text-slate-400 mb-3">
+                  <div className="flex items-center gap-3 text-xs text-slate-500 mb-3">
                     <span className="inline-flex items-center gap-1">
                       <Calendar size={12} aria-hidden="true" />
                       {formatDate(p.date)}
@@ -76,7 +86,7 @@ export default function BlogIndex() {
                           {p.tags.map((t) => (
                             <span
                               key={t}
-                              className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full"
+                              className="text-[10px] font-semibold uppercase tracking-wider text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full"
                             >
                               {t}
                             </span>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Search, Wrench, Building2, RefreshCw, Check, ArrowRight } from "lucide-react"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 export const metadata: Metadata = {
   title: "Services — ADA Compliance Audit, Fix, Rebuild & Maintenance",
@@ -69,8 +70,8 @@ const services = [
     ],
     timeline: "4–8 weeks depending on site size",
     bestFor: "Sites with pervasive violations, or businesses with high legal exposure",
-    color: "#a78bfa",
-    borderHover: "hover:border-purple-400/50",
+    color: "#7C3AED",
+    borderHover: "hover:border-purple-600/50",
   },
   {
     id: "maintenance",
@@ -90,20 +91,29 @@ const services = [
     ],
     timeline: "Ongoing — quarterly cycle",
     bestFor: "Businesses that publish new content regularly or want ongoing legal protection",
-    color: "#fbbf24",
-    borderHover: "hover:border-amber-400/50",
+    color: "#B45309",
+    borderHover: "hover:border-amber-700/50",
   },
 ]
 
 export default function ServicesPage() {
   return (
-    <div className="py-16 px-6">
+    <div className="py-10 md:py-16 px-4 sm:px-6">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
-            Four ways to get <span className="text-[var(--green)]">compliant</span>
-          </h1>
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-4 mx-auto"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)]">
+              Four ways to get <span className="text-[var(--green)]">compliant</span>
+            </h1>
+          </ComplianceHighlight>
           <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto text-lg">
             Whether you want to understand your risk or want full long-term protection, we have a service for every business and budget.
           </p>
@@ -176,11 +186,11 @@ export default function ServicesPage() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 rounded-2xl border border-[var(--blue)]/30 bg-[var(--blue)]/5 p-10 text-center">
+        <div className="mt-16 rounded-2xl border border-[var(--blue)]/30 bg-[var(--blue)]/5 p-6 md:p-10 text-center">
           <h2 className="text-2xl font-bold text-[var(--foreground)] mb-3">
             Not sure which service you need?
           </h2>
-          <p className="text-[var(--muted-foreground)] mb-6 max-w-lg mx-auto">
+          <p className="text-slate-600 mb-6 max-w-lg mx-auto">
             Start with a free audit. We&apos;ll show you exactly what&apos;s wrong and recommend the right-sized fix — no overselling.
           </p>
           <Link

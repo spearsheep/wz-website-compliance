@@ -115,7 +115,7 @@ const approaches: Approach[] = [
 
 export function Approaches() {
   return (
-    <section className="py-20 md:py-24 px-6 border-b border-slate-200">
+    <section className="py-12 md:py-24 px-4 sm:px-6 border-b border-slate-200">
       <div className="mx-auto max-w-7xl">
 
         {/* Header */}
@@ -127,7 +127,7 @@ export function Approaches() {
             Four approaches
           </p>
           <h2
-            className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.05] mb-5"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.05] mb-5"
             style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
           >
             Most accessibility solutions don&apos;t actually fix anything.
@@ -145,7 +145,7 @@ export function Approaches() {
             return (
               <div
                 key={a.num}
-                className={`relative flex flex-col rounded-2xl border p-7 ${
+                className={`relative flex flex-col rounded-2xl border p-5 md:p-7 ${
                   isFeatured
                     ? "bg-slate-900 text-white border-slate-900 shadow-2xl lg:-translate-y-3"
                     : "bg-white border-slate-200"
@@ -155,7 +155,7 @@ export function Approaches() {
                 {isFeatured && (
                   <div
                     className="absolute -top-3 right-5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.14em] text-white"
-                    style={{ background: "#0DAB66" }}
+                    style={{ background: "#078250" }}
                   >
                     Recommended
                   </div>
@@ -163,7 +163,7 @@ export function Approaches() {
 
                 {/* Number + Icon */}
                 <div className="flex items-center justify-between mb-5">
-                  <p className={`font-mono text-[11px] uppercase tracking-[0.14em] ${isFeatured ? "text-slate-400" : "text-slate-400"}`}>
+                  <p className={`font-mono text-[11px] uppercase tracking-[0.14em] ${isFeatured ? "text-slate-400" : "text-slate-500"}`}>
                     Approach {a.num}
                   </p>
                   <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
@@ -201,7 +201,7 @@ export function Approaches() {
                     {a.price}
                   </p>
                   <p className={`font-mono text-[10px] tracking-[0.06em] mb-5 ${
-                    isFeatured ? "text-slate-500" : "text-slate-400"
+                    isFeatured ? "text-slate-400" : "text-slate-500"
                   }`}>
                     {a.priceSub}
                   </p>
@@ -244,7 +244,7 @@ export function Approaches() {
 
                 {/* Footnote */}
                 <p className={`text-[11px] mt-auto pt-4 leading-snug border-t italic ${
-                  isFeatured ? "text-slate-400 border-slate-700" : "text-slate-400 border-slate-100"
+                  isFeatured ? "text-slate-400 border-slate-700" : "text-slate-500 border-slate-100"
                 }`}>
                   {a.footnote}
                 </p>
@@ -254,7 +254,7 @@ export function Approaches() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-6 rounded-2xl border border-slate-200 bg-slate-50 px-6 py-5">
+        <div className="mt-8 md:mt-12 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5">
           <div>
             <p className="text-sm font-semibold text-slate-900 mb-1">
               Want to see what your site costs to actually fix?

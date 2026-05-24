@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 import {
   ArrowRight,
   ShoppingBag,
@@ -34,15 +35,24 @@ export const metadata: Metadata = {
 
 export default function IndustriesIndex() {
   return (
-    <div className="py-16 px-6 bg-white">
+    <div className="py-10 md:py-16 px-4 sm:px-6 bg-white">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-14">
-          <h1
-            className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight"
-            style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-4 mx-auto"
           >
-            ADA compliance, by industry
-          </h1>
+            <h1
+              className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight"
+              style={{ fontFamily: "var(--font-jakarta), var(--font-inter), system-ui" }}
+            >
+              ADA compliance, by industry
+            </h1>
+          </ComplianceHighlight>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg leading-relaxed">
             Different industries get sued for different things. Pick yours to see documented cases,
             the specific WCAG failures plaintiffs target, and what to fix first.
@@ -71,7 +81,7 @@ export default function IndustriesIndex() {
                 </h2>
                 <p className="text-sm text-slate-500 leading-relaxed mb-4">{i.oneLiner}</p>
                 <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate-400">
+                  <span className="text-slate-500">
                     {caseCount} documented {caseCount === 1 ? "case" : "cases"}
                   </span>
                   <span
