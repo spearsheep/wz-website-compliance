@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "businessName": "Kimpton Hotels",
+    "url": "https://kimptonhotels.com",
+    "urlDisplay": "kimptonhotels.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-524",
+    "scannedAt": "2026-05-26T09:39:50.338Z"
+  },
+  "score": {
+    "value": 94,
+    "gaugeDash": "708.74 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 0,
+    "moderate": 1,
+    "minor": 1,
+    "totalIssues": 3,
+    "totalInstances": 12
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Images missing descriptions",
+      "desc": "Images have no alt text, making them invisible to screen readers and users who cannot see them.",
+      "count": 1
+    },
+    {
+      "icon": "warning",
+      "severity": "moderate",
+      "title": "Heading structure is broken",
+      "desc": "Headings skip levels (e.g. H1 jumps to H3), disrupting how screen readers navigate the page.",
+      "count": 1
+    },
+    {
+      "icon": "form",
+      "severity": "minor",
+      "title": "Your forms confuse blind visitors",
+      "desc": "Form field visible label does not match its accessible name, causing confusion for screen reader users.",
+      "count": 10
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

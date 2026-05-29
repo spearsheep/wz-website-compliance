@@ -1,0 +1,219 @@
+{
+  "industry": "Mid-Market E-Commerce (DTC)",
+  "scanMethod": "combined-scan: Lighthouse + axe-core + heuristic checks",
+  "scannedAt": "2026-05-26T10:55:06.780Z",
+  "summary": {
+    "totalScanned": 10,
+    "avgScore": 91,
+    "criticalRiskCount": 0,
+    "highRiskCount": 0,
+    "moderateRiskCount": 3,
+    "lowRiskCount": 7,
+    "totalViolationInstances": 415
+  },
+  "sites": [
+    {
+      "company": "Bombas",
+      "url": "https://bombas.com",
+      "score": 82,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 3,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0,
+        "totalIssues": 5,
+        "totalInstances": 7
+      },
+      "topIssues": [
+        "Images missing descriptions",
+        "Language not declared",
+        "Your forms confuse blind visitors",
+        "Heading structure is broken",
+        "Navigation is broken"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/bombas-report.json"
+    },
+    {
+      "company": "Brooklinen",
+      "url": "https://brooklinen.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 1,
+        "moderate": 2,
+        "minor": 1,
+        "totalIssues": 5,
+        "totalInstances": 27
+      },
+      "topIssues": [
+        "Images missing descriptions",
+        "Maps and widgets are invisible",
+        "Navigation is broken",
+        "Heading structure is broken",
+        "Your forms confuse blind visitors"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/brooklinen-report.json"
+    },
+    {
+      "company": "Caraway",
+      "url": "https://carawayhome.com",
+      "score": 85,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 3,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 4,
+        "totalInstances": 25
+      },
+      "topIssues": [
+        "Images missing descriptions",
+        "Your forms confuse blind visitors",
+        "Screen reader markup is broken",
+        "Heading structure is broken"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/caraway-report.json"
+    },
+    {
+      "company": "Manduka",
+      "url": "https://manduka.com",
+      "score": 92,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 1,
+        "moderate": 1,
+        "minor": 1,
+        "totalIssues": 4,
+        "totalInstances": 84
+      },
+      "topIssues": [
+        "Screen reader markup is broken",
+        "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+        "Navigation is broken",
+        "Your forms confuse blind visitors"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/manduka-report.json"
+    },
+    {
+      "company": "Outdoor Voices",
+      "url": "https://outdoorvoices.com",
+      "score": 97,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 1,
+        "totalInstances": 11
+      },
+      "topIssues": [
+        "Mystery links with no name"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/outdoor-voices-report.json"
+    },
+    {
+      "company": "Four Sigmatic",
+      "url": "https://foursigmatic.com",
+      "score": 90,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 2,
+        "serious": 2,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 4,
+        "totalInstances": 158
+      },
+      "topIssues": [
+        "Screen reader markup is broken",
+        "Images missing descriptions",
+        "Your text is too hard to read",
+        "Mystery links with no name"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/four-sigmatic-report.json"
+    },
+    {
+      "company": "Branch Furniture",
+      "url": "https://branchfurniture.com",
+      "score": 90,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 1,
+        "totalInstances": 56
+      },
+      "topIssues": [
+        "Your text is too hard to read"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/branch-furniture-report.json"
+    },
+    {
+      "company": "Pela Case",
+      "url": "https://pelacase.com",
+      "score": 88,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 3,
+        "serious": 1,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 4,
+        "totalInstances": 19
+      },
+      "topIssues": [
+        "Your text is too hard to read",
+        "Images missing descriptions",
+        "Your forms confuse blind visitors",
+        "Maps and widgets are invisible"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/pela-case-report.json"
+    },
+    {
+      "company": "Beardbrand",
+      "url": "https://beardbrand.com",
+      "score": 100,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 0,
+        "serious": 1,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 2,
+        "totalInstances": 22
+      },
+      "topIssues": [
+        "Screen reader markup is broken",
+        "Navigation is broken"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/beardbrand-report.json"
+    },
+    {
+      "company": "Ekster",
+      "url": "https://ekster.com",
+      "score": 91,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 1,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 3,
+        "totalInstances": 6
+      },
+      "topIssues": [
+        "Screen reader markup is broken",
+        "Keyboard navigation is broken",
+        "Heading structure is broken"
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/ekster-report.json"
+    }
+  ]
+}

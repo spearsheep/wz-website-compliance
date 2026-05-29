@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "businessName": "Proper Hotels",
+    "url": "https://theproperhotel.com",
+    "urlDisplay": "theproperhotel.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-821",
+    "scannedAt": "2026-05-26T09:41:54.176Z"
+  },
+  "score": {
+    "value": 80,
+    "gaugeDash": "603.19 753.98",
+    "riskClass": "moderate",
+    "riskLabel": "Moderate"
+  },
+  "counts": {
+    "critical": 2,
+    "serious": 0,
+    "moderate": 1,
+    "minor": 0,
+    "totalIssues": 3,
+    "totalInstances": 3
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Page has no title",
+      "desc": "The browser tab and screen reader cannot identify this page because it has no title.",
+      "count": 1
+    },
+    {
+      "icon": "nav",
+      "severity": "critical",
+      "title": "Keyboard navigation is broken",
+      "desc": "The page disables zoom, preventing users with low vision from enlarging text.",
+      "count": 1
+    },
+    {
+      "icon": "nav",
+      "severity": "moderate",
+      "title": "Navigation is broken",
+      "desc": "The page has no main content landmark, so screen reader users cannot jump directly to the content.",
+      "count": 1
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

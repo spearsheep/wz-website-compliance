@@ -40,7 +40,7 @@ export function AltTextDemo() {
         <div
           className="w-full h-40 flex items-center justify-center"
           style={{
-            background: "linear-gradient(135deg, #015DF1 0%, #0DAB66 100%)",
+            background: "linear-gradient(135deg, #015DF1 0%, #078250 100%)",
           }}
           role="img"
           aria-label="Abstract gradient showing Jobs Junior brand colors — blue transitioning to green, representing the company's visual identity"

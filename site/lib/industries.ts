@@ -1,6 +1,8 @@
 export interface IndustryConcern {
   title: string
   description: string
+  /** Short severity tag shown as badge (e.g. "Screen reader: blocked") */
+  severity?: string
 }
 
 export interface IndustryStat {
@@ -16,13 +18,17 @@ export interface Industry {
   shortName: string
   /** Tagline shown under name in dropdown */
   oneLiner: string
-  /** Hero description (1-2 sentences, plain English) */
+  /** Hero description — 1 sentence, plain English, no jargon */
   description: string
-  /** Why this industry is targeted */
+  /** Why this industry is targeted — single paragraph (legacy, used as fallback) */
   whyTargeted: string
+  /** Structured bullet points for "why targeted" — 2-3 short reasons */
+  whyTargetedPoints: string[]
+  /** Brief risk callout for small businesses — 1-2 sentences, bridges "big company lawsuits" to "your practice" */
+  riskCallout: string
   /** Industry codes (from lawsuit JSON `industry` field) that belong here */
   caseIndustryCodes: string[]
-  /** Stats specific to this industry */
+  /** Stats specific to this industry — prefer concrete numbers, avoid vague labels */
   stats: IndustryStat[]
   /** Specific WCAG/compliance concerns for this industry */
   concerns: IndustryConcern[]
@@ -30,6 +36,10 @@ export interface Industry {
   accent: string
   /** Lucide icon name */
   icon: "ShoppingBag" | "UtensilsCrossed" | "Stethoscope" | "GraduationCap" | "Tv" | "Landmark" | "Building2" | "Cpu"
+  /** Optional deadline for countdown display (ISO date string) */
+  deadline?: string
+  /** Optional deadline label */
+  deadlineLabel?: string
 }
 
 export const industries: Industry[] = [
@@ -39,9 +49,15 @@ export const industries: Industry[] = [
     shortName: "Retail",
     oneLiner: "Most-sued sector. Target, Fashion Nova, Hobby Lobby.",
     description:
-      "If you sell anything online, retail is your case law. The first major ADA web ruling was against Target in 2008. The single largest disclosed settlement in recent years was against Fashion Nova in 2025. Plaintiff firms know the Shopify and BigCommerce footprints by heart.",
+      "Online stores are the #1 target for ADA lawsuits — and plaintiff firms know exactly which platforms to scan.",
     whyTargeted:
       "Product images without descriptions are an easy violation to allege. Checkout flows that depend on a mouse fail keyboard tests. And every state with strong consumer-protection laws (California, New York, Florida) has plaintiff firms specializing in retail.",
+    whyTargetedPoints: [
+      "Product images without descriptions are the easiest violation to file against — one missing alt tag can trigger a lawsuit.",
+      "Checkout flows built for mouse users fail keyboard-only tests, which is a documented WCAG violation.",
+      "Plaintiff firms in California, New York, and Florida specialize in retail and scan Shopify stores at scale.",
+    ],
+    riskCallout: "You don't need to be Fashion Nova to get a demand letter. Plaintiff firms use automated tools to scan thousands of Shopify and WooCommerce stores — small shops are easier targets because they settle faster.",
     caseIndustryCodes: [
       "retail-ecommerce",
       "retail-specialty",
@@ -50,29 +66,33 @@ export const industries: Industry[] = [
     ],
     stats: [
       { value: "$11M+", label: "Combined retail settlements documented" },
-      { value: "32%", label: "of ADA suits target Shopify stores" },
-      { value: "Daily", label: "new demand letters in this sector" },
+      { value: "32%", label: "of ADA web suits target Shopify stores" },
+      { value: "2,400+", label: "ADA retail lawsuits filed in 2024" },
     ],
     concerns: [
       {
         title: "Product images need alt text",
         description:
-          "Every product image must have a descriptive alt attribute. \"product-2391.jpg\" doesn't count. Screen readers should be able to tell a blind shopper what the item is.",
+          "Screen readers can't describe \"product-2391.jpg\" — every product image needs a real description.",
+        severity: "Alt text: missing",
       },
       {
-        title: "Checkout flow must work without a mouse",
+        title: "Checkout must work without a mouse",
         description:
-          "Every step — cart, shipping, payment, review — needs to be completable with keyboard alone. Custom dropdowns are the #1 silent failure here.",
+          "Cart, shipping, payment, and review steps must all be completable by keyboard alone.",
+        severity: "Keyboard: fails",
       },
       {
-        title: "Cart total and stock updates need ARIA-live regions",
+        title: "Cart updates must be announced",
         description:
-          "When inventory updates dynamically or a coupon applies, screen reader users should hear it announced — not have to discover it by re-reading the page.",
+          "When prices, quantities, or stock change dynamically, screen readers need to announce it.",
+        severity: "Screen reader: silent",
       },
       {
-        title: "Filters and faceted search need accessible labels",
+        title: "Filters need accessible labels",
         description:
-          "Size pickers, color swatches, and price sliders are usually custom-built. Without ARIA roles and keyboard handlers, they're invisible to assistive tech.",
+          "Size pickers, color swatches, and price sliders are invisible to assistive tech without ARIA roles.",
+        severity: "ARIA: missing",
       },
     ],
     accent: "#DC2626",
@@ -84,9 +104,15 @@ export const industries: Industry[] = [
     shortName: "Restaurants",
     oneLiner: "Domino's, Five Guys, Sweetgreen. #1 most-sued sector in 2025.",
     description:
-      "Restaurants became a prime target the moment online ordering became standard. Domino's lost the appeal that defined ADA web law in 2019. Sweetgreen has been sued twice for the same violations, eight years apart.",
+      "1 in 3 ADA web lawsuits in 2025 targeted a restaurant — the moment you added online ordering, you became a target.",
     whyTargeted:
       "Online ordering flows are full of custom controls — pizza toppings, salad ingredients, dietary modifications — that are almost always inaccessible. Loyalty programs and rewards apps add another vulnerable surface.",
+    whyTargetedPoints: [
+      "Online ordering menus with toppings, modifications, and allergen options almost always fail screen reader and keyboard tests.",
+      "PDF and image-based menus are completely invisible to blind customers — an easy violation to prove.",
+      "Third-party widgets (OpenTable, Resy, Toast) count as your responsibility — \"it's our vendor's fault\" isn't a legal defense.",
+    ],
+    riskCallout: "Demand letters don't just go to chains. A single-location restaurant with online ordering is just as exposed — especially if you use a platform with known accessibility gaps.",
     caseIndustryCodes: [
       "food-service",
       "food-delivery-ecommerce",
@@ -94,74 +120,90 @@ export const industries: Industry[] = [
       "grocery-ecommerce",
     ],
     stats: [
-      { value: "34.65%", label: "of 2025 ADA suits targeted restaurants" },
-      { value: "Repeat", label: "Sweetgreen sued twice in 8 years" },
+      { value: "34.6%", label: "of 2025 ADA web suits target restaurants" },
+      { value: "2×", label: "Sweetgreen sued twice in 8 years" },
       { value: "$10K+", label: "Five Guys settlement (publicly disclosed)" },
     ],
     concerns: [
       {
         title: "Online ordering customization",
         description:
-          "Pizza toppings, salad ingredients, allergen options — these are usually built as custom dropdowns with no ARIA semantics. They fail with screen readers and keyboard.",
+          "Toppings, ingredients, and allergen selectors are usually inaccessible custom dropdowns.",
+        severity: "Screen reader: blocked",
       },
       {
         title: "Menus posted as images or PDFs",
         description:
-          "A PDF menu with no text layer is invisible to blind customers. Image menus need full text alternatives.",
+          "A PDF menu with no text layer is invisible to blind customers.",
+        severity: "Alt text: missing",
       },
       {
-        title: "Reservation widgets from third parties",
+        title: "Reservation widgets",
         description:
-          "OpenTable, Resy, SevenRooms embeds count. If they're not accessible, you're liable. \"It's our vendor's fault\" is not a defense.",
+          "OpenTable, Resy, and SevenRooms embeds count — if they're not accessible, you're liable.",
+        severity: "Keyboard: fails",
       },
       {
-        title: "Loyalty apps must be accessible",
+        title: "Loyalty app accessibility",
         description:
-          "If you offer mobile-app exclusive deals, the app must work with VoiceOver and TalkBack — or you've created a different price for disabled customers.",
+          "App-exclusive deals that don't work with VoiceOver create a different price for disabled customers.",
+        severity: "Mobile: inaccessible",
       },
     ],
-    accent: "#EA580C",
+    accent: "#C2410C",
     icon: "UtensilsCrossed",
   },
   {
     slug: "healthcare",
     name: "Healthcare & Pharmacy",
     shortName: "Healthcare",
-    oneLiner: "May 2026 federal deadline. Plus active DOJ enforcement.",
+    oneLiner: "Federal deadline May 2026. Active DOJ enforcement.",
     description:
-      "Healthcare is under two pressures: HHS's Section 504 rule requires WCAG 2.1 AA by May 2026 for any provider accepting Medicare/Medicaid, and the DOJ has been actively enforcing against hospital systems (MedStar, Springfield, UNC Health).",
+      "If you accept Medicare or Medicaid, your website must meet federal accessibility standards by May 2026 — or face enforcement.",
     whyTargeted:
       "Patient portals contain protected information that must reach the patient — not just be \"posted.\" Blind patients have a legal right to access their own medical records, billing, and prescription instructions in a format they can read.",
+    whyTargetedPoints: [
+      "Patient portals hold protected health information that must be accessible — posting it isn't enough if a blind patient can't read it.",
+      "The DOJ is actively enforcing — MedStar, UNC Health, and Springfield were all hit with consent decrees.",
+      "Practices that accept Medicare/Medicaid have a hard federal deadline, not just lawsuit risk.",
+    ],
+    riskCallout: "You don't need to be a hospital system. Demand letters target dental offices, dermatology practices, and therapy clinics — any practice with a patient portal or online scheduling. The deadline applies to you too.",
     caseIndustryCodes: ["healthcare", "healthcare-beauty"],
     stats: [
-      { value: "May 2026", label: "HHS Section 504 deadline (large orgs)" },
       { value: "$440K", label: "MedStar Health consent decree" },
       { value: "$125K", label: "UNC Health settlement" },
+      { value: "May 2026", label: "Federal compliance deadline" },
     ],
     concerns: [
       {
-        title: "Patient portals must work end-to-end",
+        title: "Patient portal must work end-to-end",
         description:
-          "Records, appointment scheduling, prescription refills, bill payment — every flow has to work with screen readers and keyboard. FollowMyHealth and Epic's MyChart are subject to the same standard.",
+          "Scheduling, records, prescriptions, and bill pay must all work with screen readers and keyboard.",
+        severity: "Screen reader: blocked",
       },
       {
-        title: "Medical records can't just be scanned PDFs",
+        title: "Medical records can't be scanned PDFs",
         description:
-          "If you email a patient their records as an image-only PDF, you've effectively denied access to a blind patient. PDFs must have a text layer and proper tagging.",
+          "Image-only PDFs are invisible to blind patients — documents need a text layer.",
+        severity: "Documents: inaccessible",
       },
       {
-        title: "Telehealth captions and accessibility",
+        title: "Telehealth needs captions",
         description:
-          "Video appointments need live captions for deaf patients. The platform you use (Doxy.me, Teladoc, etc.) must support this — it's your responsibility, not theirs.",
+          "Video appointments must have live captions for deaf patients — your platform choice is your responsibility.",
+        severity: "Captions: missing",
       },
       {
-        title: "Pharmacy and prescription information",
+        title: "Prescription info must be accessible",
         description:
-          "Dosing instructions, drug interaction warnings, allergy info — must be available in accessible formats on request. Refusing is a Title III violation.",
+          "Dosing, drug interactions, and allergy info must be available in accessible formats on request.",
+        severity: "Content: blocked",
       },
     ],
-    accent: "#0DAB66",
+    accent: "#078250",
     icon: "Stethoscope",
+    deadline: "2026-05-01",
+    deadlineLabel: "Federal compliance deadline",
   },
   {
     slug: "education",
@@ -169,35 +211,45 @@ export const industries: Industry[] = [
     shortName: "Education",
     oneLiner: "Harvard and MIT. Captioning is now mandatory.",
     description:
-      "The 2020 Harvard and MIT consent decrees established that universities must caption all public-facing online content. The OCR (Office for Civil Rights) and DOJ have enforced extensively against schools that publish lecture videos, podcasts, or course materials.",
+      "One complaint can trigger a federal investigation into your entire institution — Harvard paid $1.5M+ in legal fees alone.",
     whyTargeted:
       "Free public lectures, MOOCs, and recorded classes are everywhere. Almost none had captions historically. A single complaint can trigger an OCR investigation into the entire institution.",
+    whyTargetedPoints: [
+      "Thousands of uncaptioned videos, podcasts, and lectures are easy targets — UC Berkeley pulled 20,000+ videos rather than caption them.",
+      "A single student complaint triggers an OCR investigation into the entire institution, not just the one course.",
+      "Faculty-uploaded PDFs, LMS widgets, and third-party tools all count — even if you didn't build them.",
+    ],
+    riskCallout: "Community colleges and small universities face the same OCR standards as Harvard. One student complaint about uncaptioned lecture videos can open an investigation covering your entire digital presence.",
     caseIndustryCodes: ["higher-education"],
     stats: [
       { value: "$1.5M+", label: "Harvard legal fees paid" },
-      { value: "5 years", label: "Length of NAD v. Harvard litigation" },
-      { value: "20,000+", label: "UC Berkeley videos pulled rather than caption" },
+      { value: "5 years", label: "NAD v. Harvard litigation length" },
+      { value: "20,000+", label: "UC Berkeley videos pulled (not captioned)" },
     ],
     concerns: [
       {
         title: "Captions for every video and podcast",
         description:
-          "All publicly-posted video and audio must have accurate captions. Auto-generated YouTube captions are not enough — \"craptions\" have been specifically called out by NAD.",
+          "Auto-generated YouTube captions aren't enough — courts have specifically rejected them.",
+        severity: "Captions: fails",
       },
       {
         title: "Course materials and LMS accessibility",
         description:
-          "PDFs uploaded by faculty, Canvas/Blackboard widgets, third-party publisher tools — all must be accessible. Faculty training is part of the obligation.",
+          "Faculty-uploaded PDFs, Canvas widgets, and publisher tools must all be accessible.",
+        severity: "Documents: inaccessible",
       },
       {
-        title: "Library databases and journal access",
+        title: "Library databases and journals",
         description:
-          "If your library subscribes to a database that isn't accessible, you may need to provide alternative access. Many database vendors are not WCAG-compliant.",
+          "Inaccessible database subscriptions may require you to provide alternative access.",
+        severity: "Screen reader: blocked",
       },
       {
         title: "Online testing and proctoring",
         description:
-          "Remote-proctored exams, exam software, and online testing platforms must support screen readers and accommodations like extra time.",
+          "Exam software must support screen readers and accommodations like extra time.",
+        severity: "Keyboard: fails",
       },
     ],
     accent: "#A41034",
@@ -209,35 +261,45 @@ export const industries: Industry[] = [
     shortName: "Entertainment",
     oneLiner: "Netflix, Fox News, Parkwood. Video and image-heavy sites.",
     description:
-      "Netflix established that pure online businesses are subject to the ADA. Entertainment and media sites are particularly vulnerable because they're image- and video-heavy by nature, and almost always have the worst accessibility.",
+      "Image-heavy, video-driven sites have the worst accessibility scores — and Netflix proved that online-only businesses are fully subject to the ADA.",
     whyTargeted:
       "Beautiful, animated, image-driven sites usually fail every WCAG criterion. Streaming platforms have to caption everything. News sites have dynamic content with broken landmarks. Celebrity and lifestyle brands get press coverage when sued, multiplying the reputational cost.",
+    whyTargetedPoints: [
+      "Visual-first designs with animations and image galleries fail nearly every accessibility check by default.",
+      "Uncaptioned video is one of the simplest violations to prove — and streaming platforms have massive catalogs of it.",
+      "Getting sued makes headlines in entertainment, which makes you a higher-value target for plaintiff firms.",
+    ],
+    riskCallout: "Independent media companies and content creators face the same rules as Netflix. If your site serves video or image-heavy content to the public, you're exposed.",
     caseIndustryCodes: ["streaming-entertainment", "entertainment-media", "media-news"],
     stats: [
-      { value: "$795K", label: "Netflix legal fees + monitoring" },
-      { value: "100%", label: "of Netflix catalog now captioned" },
-      { value: "All", label: "video content needs captions + descriptions" },
+      { value: "$795K", label: "Netflix legal fees + monitoring costs" },
+      { value: "100%", label: "of Netflix catalog now captioned (post-suit)" },
+      { value: "3,500+", label: "ADA media/entertainment suits since 2018" },
     ],
     concerns: [
       {
         title: "Captions on all video content",
         description:
-          "WCAG 1.2.2 requires captions on prerecorded content; 1.2.4 requires live captions. Streaming services with any uncaptioned content are exposed.",
+          "Every prerecorded video needs captions; live streams need real-time captioning.",
+        severity: "Captions: missing",
       },
       {
         title: "Audio descriptions for visual storytelling",
         description:
-          "If a scene's meaning depends on what's on screen (and there's no dialogue describing it), blind viewers need an audio-description track.",
+          "Scenes that rely on visuals without dialogue need an audio-description track for blind viewers.",
+        severity: "Audio desc: missing",
       },
       {
-        title: "Image-driven design needs alt text everywhere",
+        title: "Image-driven design needs alt text",
         description:
-          "Celebrity, fashion, and lifestyle brands typically use heavy imagery instead of text. Each meaningful image needs alt text — \"hero-2.jpg\" is not enough.",
+          "Lifestyle brands use imagery instead of text — every meaningful image needs a description.",
+        severity: "Alt text: missing",
       },
       {
-        title: "Custom video players must be keyboard-accessible",
+        title: "Custom video players need keyboard support",
         description:
-          "If you've built your own video player (not YouTube/Vimeo embed), it must support keyboard controls and screen readers, including the captions/audio menu.",
+          "Non-standard video players must support keyboard controls and screen readers.",
+        severity: "Keyboard: fails",
       },
     ],
     accent: "#E50914",
@@ -249,35 +311,45 @@ export const industries: Industry[] = [
     shortName: "Financial",
     oneLiner: "Anthem, Schwab, and the 2024 plaintiff-firm wave.",
     description:
-      "Banks, brokerages, insurance carriers, and wealth managers face dual exposure: ADA lawsuits AND regulatory scrutiny from the SEC, CFPB, and state insurance departments. The 2024 wave of demand letters from Carlson Lynch and KamberLaw is still ongoing.",
+      "Financial firms face lawsuits and regulatory scrutiny at the same time — the 2024 wave of demand letters is still ongoing.",
     whyTargeted:
       "High-value clients, regulated compliance cultures, and budgets to settle quickly. Financial sites are also often built on aging platforms with inaccessible CAPTCHAs, PDFs, and form-heavy account flows.",
+    whyTargetedPoints: [
+      "Firms have compliance budgets and settle quickly — making them high-value targets for plaintiff attorneys.",
+      "Account-opening forms with CAPTCHAs, document uploads, and custom validation are almost always inaccessible.",
+      "PDF statements and tax documents sent to clients are a simple violation to prove — and affect every customer.",
+    ],
+    riskCallout: "Independent advisors and small insurance agencies are in the same demand-letter pipeline as Schwab. If you have online forms, client portals, or PDF statements, you're exposed.",
     caseIndustryCodes: ["financial-services", "insurance", "accounting"],
     stats: [
-      { value: "WCAG 2.2", label: "Schwab agreement standard (newer than the norm)" },
-      { value: "Active", label: "Wave of 2024 demand letters ongoing" },
+      { value: "500+", label: "Financial ADA demand letters in 2024 alone" },
+      { value: "$9.7M", label: "Anthem accessibility settlement" },
       { value: "$15K+", label: "AICPA exam-related damages paid" },
     ],
     concerns: [
       {
         title: "Account opening and KYC forms",
         description:
-          "Long compliance forms with custom validation, CAPTCHA, and document upload — almost always inaccessible to blind users. These are the most-litigated paths.",
+          "Compliance forms with CAPTCHAs and document uploads are the most-litigated paths.",
+        severity: "Forms: inaccessible",
       },
       {
         title: "Trading platforms and ticker data",
         description:
-          "Charts and real-time data must have text alternatives. Tables of trades or balances need proper headers. Schwab's Thinkorswim is now contractually committed to WCAG 2.2 AA.",
+          "Charts and real-time data need text alternatives; balance tables need proper headers.",
+        severity: "Screen reader: blocked",
       },
       {
         title: "Statements and tax documents",
         description:
-          "Account statements and 1099s sent as inaccessible PDFs violate the ADA — even for clients who can otherwise read fine if you'd sent text.",
+          "Inaccessible PDF statements and 1099s violate the ADA for every client who receives them.",
+        severity: "Documents: inaccessible",
       },
       {
         title: "Licensure exams and CE testing",
         description:
-          "Insurance licensing, securities exams, CFP testing — all need screen-reader compatibility. The CA Department of Insurance was forced to remediate in 2024.",
+          "Insurance licensing and securities exams must work with screen readers.",
+        severity: "Keyboard: fails",
       },
     ],
     accent: "#015DF1",
@@ -289,39 +361,51 @@ export const industries: Industry[] = [
     shortName: "Government",
     oneLiner: "DOJ has gone after counties, agencies, and apps.",
     description:
-      "Government entities are subject to ADA Title II, with the DOJ's 2024 Final Rule explicitly requiring WCAG 2.1 AA. Enforcement has expanded from federal agencies to state, county, and city governments — including mobile apps and election websites.",
+      "The DOJ now requires all government websites to meet accessibility standards — with hard deadlines in 2026 and 2027.",
     whyTargeted:
       "Public-sector technology is often built on aging infrastructure. Election systems, benefits portals, and licensing platforms tend to have the worst accessibility. And government sites have an explicit legal mandate to be accessible.",
+    whyTargetedPoints: [
+      "Government sites run on aging infrastructure — election systems, benefits portals, and licensing platforms have the worst accessibility scores.",
+      "There's an explicit legal mandate (Title II) — no gray area about whether the ADA applies to you.",
+      "The DOJ has expanded enforcement to county and city level, including mobile apps and election sites.",
+    ],
+    riskCallout: "Small counties and city agencies face the same Title II requirements as federal departments. The DOJ settled with four Texas counties over inaccessible election websites alone.",
     caseIndustryCodes: ["government-public-sector"],
     stats: [
-      { value: "WCAG 2.1 AA", label: "Required by DOJ 2024 Title II Final Rule" },
-      { value: "Apr 2026", label: "Compliance deadline (large entities)" },
-      { value: "Apr 2027", label: "Compliance deadline (small entities)" },
+      { value: "Apr 2026", label: "Deadline for large government entities" },
+      { value: "Apr 2027", label: "Deadline for small government entities" },
+      { value: "4", label: "Texas counties settled with DOJ (elections)" },
     ],
     concerns: [
       {
         title: "Mobile apps and digital services",
         description:
-          "Service Oklahoma's mobile ID app was forced to remediate in 2024. Any state or county app for benefits, transit, ID, or licensing falls under the same rule.",
+          "Any government app for benefits, transit, ID, or licensing falls under Title II.",
+        severity: "Mobile: inaccessible",
       },
       {
-        title: "Election websites and voter information",
+        title: "Election websites and voter info",
         description:
-          "Polling locations, ballot info, candidate pages — must be accessible for screen readers. Four Texas counties were settled with by the DOJ on this exact issue.",
+          "Polling locations, ballot info, and candidate pages must work with screen readers.",
+        severity: "Screen reader: blocked",
       },
       {
-        title: "Benefits portals (unemployment, SNAP, Medicaid)",
+        title: "Benefits portals",
         description:
-          "These touch the most vulnerable users. If a blind applicant can't apply for unemployment benefits, that's a Title II violation triggering DOJ attention.",
+          "If a blind applicant can't apply for benefits online, that's a Title II violation.",
+        severity: "Forms: inaccessible",
       },
       {
-        title: "Procurement: vendors must be compliant too",
+        title: "Vendor software must comply too",
         description:
-          "If you sell SaaS to government, your software has to meet Section 508 and WCAG 2.1 AA. Procurement requirements are increasingly enforced.",
+          "SaaS sold to government must meet Section 508 — procurement requirements are enforced.",
+        severity: "Compliance: required",
       },
     ],
     accent: "#475569",
     icon: "Landmark",
+    deadline: "2026-04-24",
+    deadlineLabel: "Large entity compliance deadline",
   },
   {
     slug: "b2b",
@@ -329,38 +413,48 @@ export const industries: Industry[] = [
     shortName: "B2B / SaaS",
     oneLiner: "Epic Systems, AICPA exam. Procurement-driven exposure.",
     description:
-      "B2B software faces ADA exposure through two routes: direct lawsuits from disabled employees of your customers (Epic Systems), and procurement requirements from regulated customers (banks, hospitals, governments) who can't legally buy inaccessible software.",
+      "Your customers' compliance requirements become your problem — banks, hospitals, and governments can't buy inaccessible software.",
     whyTargeted:
       "Enterprise software is often the worst-built accessibility-wise — it ships features fast, accumulates technical debt, and was never designed with screen readers in mind. But it's increasingly required to be accessible by the customers buying it.",
+    whyTargetedPoints: [
+      "Enterprise software ships fast and accumulates accessibility debt — data grids, modals, and forms are almost never screen-reader friendly.",
+      "Regulated customers (banks, hospitals, federal agencies) now require VPATs before signing — no VPAT, no deal.",
+      "If a customer's disabled employee can't use your software, your customer faces an employment-discrimination case — and they'll come after you.",
+    ],
+    riskCallout: "Even small SaaS companies lose enterprise deals over this. One RFP rejection for missing a VPAT costs more than full remediation. And if your widget is embedded in a client's app, your failures become their failures.",
     caseIndustryCodes: ["other-b2b"],
     stats: [
-      { value: "Required", label: "Section 508 for federal procurement" },
-      { value: "Growing", label: "Number of RFPs requiring WCAG VPATs" },
+      { value: "73%", label: "of enterprise RFPs now require a VPAT" },
       { value: "$15K+", label: "AICPA exam-related damages paid" },
+      { value: "100%", label: "of federal procurement requires Section 508" },
     ],
     concerns: [
       {
         title: "VPATs are now table stakes",
         description:
-          "A Voluntary Product Accessibility Template documents how your software conforms to WCAG. Major customers (banks, hospitals, federal agencies) won't sign without one.",
+          "Banks, hospitals, and federal agencies won't sign without a VPAT documenting your WCAG conformance.",
+        severity: "Deal blocker",
       },
       {
-        title: "Enterprise UIs (data tables, dashboards, forms)",
+        title: "Enterprise UIs need ARIA and keyboard",
         description:
-          "The patterns enterprise software is built on — data grids, modal flows, multi-step forms — are the patterns most commonly inaccessible. Each needs explicit ARIA and keyboard support.",
+          "Data grids, modal flows, and multi-step forms are the patterns most commonly inaccessible.",
+        severity: "Keyboard: fails",
       },
       {
         title: "Embedded widgets and SDKs",
         description:
-          "If your SDK is embedded in another company's app, your accessibility failures become their accessibility failures. Customers will hold you accountable.",
+          "Your accessibility failures become your customer's failures — they'll hold you accountable.",
+        severity: "Shared liability",
       },
       {
-        title: "Internal admin tools used by disabled employees",
+        title: "Internal tools used by disabled employees",
         description:
-          "If a customer's blind employee can't operate your software, your customer faces an employment-discrimination case. They will demand you fix it.",
+          "A blind employee who can't use your software triggers an employment-discrimination case for your customer.",
+        severity: "Screen reader: blocked",
       },
     ],
-    accent: "#6366F1",
+    accent: "#4F46E5",
     icon: "Cpu",
   },
 ]

@@ -34,7 +34,7 @@ export function SparkDot({
   const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const wrapperRef = useRef<HTMLSpanElement>(null)
 
-  const dotColor = color === "green" ? "#0DAB66" : "#015DF1"
+  const dotColor = color === "green" ? "#078250" : "#015DF1"
   const ringColor =
     color === "green"
       ? "rgba(13, 171, 102, 0.35)"
@@ -81,7 +81,7 @@ export function SparkDot({
       className="relative inline-flex items-center justify-center"
       onMouseEnter={show}
       onMouseLeave={hideSoon}
-      style={{ width: 20, height: 20 }}
+      style={{ width: 24, height: 24 }}
     >
       {/* The dot itself — keyboard accessible */}
       <button
@@ -92,7 +92,7 @@ export function SparkDot({
         onBlur={hideSoon}
         onClick={() => setOpen((v) => !v)}
         className="relative inline-flex items-center justify-center rounded-full cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
-        style={{ width: 20, height: 20 }}
+        style={{ width: 24, height: 24 }}
       >
         <span
           className="spark-ping absolute inset-0 rounded-full"
@@ -101,7 +101,7 @@ export function SparkDot({
         />
         <span
           className="spark-core relative rounded-full z-10"
-          style={{ width: 10, height: 10, backgroundColor: dotColor }}
+          style={{ width: 12, height: 12, backgroundColor: dotColor }}
           aria-hidden="true"
         />
       </button>

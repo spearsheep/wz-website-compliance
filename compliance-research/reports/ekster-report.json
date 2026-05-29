@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "businessName": "Ekster",
+    "url": "https://ekster.com",
+    "urlDisplay": "ekster.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-359",
+    "scannedAt": "2026-05-26T10:54:42.523Z"
+  },
+  "score": {
+    "value": 91,
+    "gaugeDash": "686.12 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "totalIssues": 3,
+    "totalInstances": 6
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Screen reader markup is broken",
+      "desc": "ARIA child elements are not inside the required parent, breaking screen reader behavior.",
+      "count": 1
+    },
+    {
+      "icon": "nav",
+      "severity": "serious",
+      "title": "Keyboard navigation is broken",
+      "desc": "Touch targets are too small for users with motor impairments.",
+      "count": 4
+    },
+    {
+      "icon": "warning",
+      "severity": "moderate",
+      "title": "Heading structure is broken",
+      "desc": "Headings skip levels (e.g. H1 jumps to H3), disrupting how screen readers navigate the page.",
+      "count": 1
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

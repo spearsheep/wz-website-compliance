@@ -1,0 +1,151 @@
+{
+  "industry": "Auto Dealerships",
+  "scannedAt": "2026-05-26T09:10:00.920Z",
+  "scanMethod": "axe-core via Playwright (WCAG 2.1 AA) — homepage scan. Scoring: start 100, deduct 15 per critical, 8 per serious, 4 per moderate, 1 per minor violation. Axe-core detects ~40-57% of real WCAG 2.1 AA issues.",
+  "summary": {
+    "totalScanned": 10,
+    "successfulScans": 10,
+    "avgScore": 74,
+    "criticalRiskCount": 1,
+    "highRiskCount": 4,
+    "moderateRiskCount": 2,
+    "lowRiskCount": 3,
+    "unknownCount": 0
+  },
+  "sites": [
+    {
+      "company": "Schomp Automotive",
+      "url": "https://www.schompauto.com",
+      "score": 88,
+      "riskLevel": "LOW",
+      "failedAuditCount": 2,
+      "topFailures": ["document-title", "meta-viewport"],
+      "violationBreakdown": { "critical": 0, "serious": 1, "moderate": 1, "minor": 0 },
+      "notes": "Colorado regional group, multiple rooftops. Relatively clean site. Missing document title and meta-viewport are mobile accessibility issues."
+    },
+    {
+      "company": "Serra Automotive",
+      "url": "https://www.serraautomotive.com",
+      "score": 46,
+      "riskLevel": "CRITICAL",
+      "failedAuditCount": 5,
+      "topFailures": [
+        "image-alt",
+        "select-name",
+        "aria-prohibited-attr",
+        "color-contrast",
+        "link-name"
+      ],
+      "violationBreakdown": { "critical": 2, "serious": 3, "moderate": 0, "minor": 0 },
+      "notes": "Midwest group, multiple states. Critical violations include missing image alt text and unlabeled form controls — both high-frequency ADA lawsuit triggers. Color contrast and unlabeled links compound the exposure."
+    },
+    {
+      "company": "Tom Wood Automotive",
+      "url": "https://www.tomwood.com",
+      "score": 84,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 2,
+      "topFailures": [
+        "document-title",
+        "html-has-lang"
+      ],
+      "violationBreakdown": { "critical": 0, "serious": 2, "moderate": 0, "minor": 0 },
+      "notes": "Indiana group, multiple rooftops. Missing page language declaration (html-has-lang) affects screen reader users — a WCAG 2.1 AA requirement. Document title issue also present."
+    },
+    {
+      "company": "Bergstrom Automotive",
+      "url": "https://www.bergstromauto.com",
+      "score": 68,
+      "riskLevel": "HIGH",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "color-contrast",
+        "link-in-text-block",
+        "role-img-alt",
+        "scrollable-region-focusable"
+      ],
+      "violationBreakdown": { "critical": 0, "serious": 4, "moderate": 0, "minor": 0 },
+      "notes": "Wisconsin group, regional chain. Four serious violations — scrollable regions not keyboard-accessible (scrollable-region-focusable) and missing image alt roles directly affect screen reader and keyboard-only users browsing inventory."
+    },
+    {
+      "company": "Garff Enterprises (Ken Garff)",
+      "url": "https://www.kengarff.com",
+      "score": 61,
+      "riskLevel": "HIGH",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "button-name",
+        "aria-prohibited-attr",
+        "color-contrast",
+        "link-name"
+      ],
+      "violationBreakdown": { "critical": 1, "serious": 3, "moderate": 0, "minor": 0 },
+      "notes": "Utah group, regional chain. Unlabeled buttons (button-name) are critical — screen readers cannot identify interactive elements. Improper ARIA usage (aria-prohibited-attr) and color contrast failures add to exposure."
+    },
+    {
+      "company": "Tasca Automotive",
+      "url": "https://www.tasca.com",
+      "score": 68,
+      "riskLevel": "HIGH",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "color-contrast",
+        "frame-title",
+        "link-name",
+        "scrollable-region-focusable"
+      ],
+      "violationBreakdown": { "critical": 0, "serious": 4, "moderate": 0, "minor": 0 },
+      "notes": "New England group. Unlabeled iframes (frame-title) block screen reader users from embedded content like vehicle search tools or financing widgets. Color contrast and unlabeled links are commonly cited in demand letters."
+    },
+    {
+      "company": "Crown Automotive",
+      "url": "https://www.crownauto.com",
+      "score": 77,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 2,
+      "topFailures": ["image-alt", "color-contrast"],
+      "violationBreakdown": { "critical": 1, "serious": 1, "moderate": 0, "minor": 0 },
+      "notes": "Mid-Atlantic regional group. Critical image-alt failure means screen readers cannot identify vehicle images — one of the most common violations cited in ADA website demand letters against auto dealers."
+    },
+    {
+      "company": "Joe Machens Dealerships",
+      "url": "https://www.machens.com",
+      "score": 100,
+      "riskLevel": "LOW",
+      "failedAuditCount": 0,
+      "topFailures": [],
+      "violationBreakdown": { "critical": 0, "serious": 0, "moderate": 0, "minor": 0 },
+      "notes": "Missouri regional group. Cleanest homepage in the set — zero axe-core violations detected. Note: axe-core detects ~50% of real WCAG issues; deeper multi-page crawl (inventory, financing forms) recommended before drawing final conclusions."
+    },
+    {
+      "company": "Findlay Automotive",
+      "url": "https://www.findlayauto.com",
+      "score": 92,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": ["color-contrast"],
+      "violationBreakdown": { "critical": 0, "serious": 1, "moderate": 0, "minor": 0 },
+      "notes": "Nevada regional group. Single serious violation — color contrast. Low overall risk on homepage, but interior pages (financing, service booking) should be checked."
+    },
+    {
+      "company": "Larry H. Miller Dealerships",
+      "url": "https://www.lhmauto.com",
+      "score": 54,
+      "riskLevel": "HIGH",
+      "failedAuditCount": 4,
+      "topFailures": ["button-name", "select-name", "aria-prohibited-attr", "link-name"],
+      "violationBreakdown": { "critical": 2, "serious": 2, "moderate": 0, "minor": 0 },
+      "notes": "Utah/West regional chain, multiple rooftops. Unlabeled buttons and form select elements (select-name) directly block screen reader users from vehicle search and contact forms — high litigation risk. Two critical violations."
+    },
+    {
+      "company": "Mile One Automotive",
+      "url": "https://www.mileone.com",
+      "score": 69,
+      "riskLevel": "HIGH",
+      "failedAuditCount": 3,
+      "topFailures": ["image-alt", "color-contrast", "link-name"],
+      "violationBreakdown": { "critical": 1, "serious": 2, "moderate": 0, "minor": 0 },
+      "notes": "Southeast/Mid-Atlantic regional group. Missing alt text on vehicle images (critical) and color contrast failures are the two violations cited most often in ADA demand letters targeting auto dealers."
+    }
+  ]
+}

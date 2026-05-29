@@ -23,6 +23,10 @@
   --amber-bg:  #FFF7E6;
   --green:     #059669;
   --green-bg:  #ECFDF5;
+  --brand:     #0DAB66;
+  --brand-deep:#078250;
+  --brand-blue:#015DF1;
+  --brand-bg:  #ECFDF5;
 
   --sans:      'Geist', system-ui, sans-serif;
   --mono:      'Geist Mono', 'JetBrains Mono', monospace;
@@ -39,11 +43,21 @@ html, body {
 }
 .page {
   width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
   padding: 0;
   position: relative;
   overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
 }
+.page:last-of-type {
+  page-break-after: auto;
+  break-after: auto;
+}
+.page-fill { flex: 1; }
+@page { size: A4; margin: 0; }
 
 /* ─── TOP BAR ─────────────────────────────── */
 .top-bar {
@@ -59,9 +73,19 @@ html, body {
   gap: 9px;
 }
 .brand-mark-svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 28px;
   display: block;
+}
+.client-logo-fallback {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #0DAB66 0%, #015DF1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .brand-name { font-weight: 700; font-size: 11px; letter-spacing: -0.005em; }
 .brand-tag {
@@ -74,6 +98,71 @@ html, body {
 .top-bar .date {
   font-family: var(--mono);
   font-size: 9.5px;
+  color: var(--ink-mute);
+}
+
+/* ─── CLIENT CARD (customization signal) ─────────────────── */
+.client-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22mm;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--rule);
+}
+.client-note {
+  margin-left: auto;
+  max-width: 200px;
+  font-family: var(--sans);
+  font-size: 9.5px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  text-align: right;
+  font-style: italic;
+  padding-left: 14px;
+  border-left: 1px solid var(--rule);
+}
+.client-logo {
+  max-width: 160px;
+  max-height: 56px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.client-logo img {
+  max-width: 100%;
+  max-height: 40px;
+  object-fit: contain;
+}
+/* fallback styling defined below near brand-mark */
+.client-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.client-prepared {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 500;
+}
+.client-name {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.client-url {
+  font-family: var(--mono);
+  font-size: 10px;
   color: var(--ink-mute);
 }
 
@@ -343,17 +432,17 @@ html, body {
 
 .issue-row {
   display: grid;
-  grid-template-columns: 56px 1fr 90px 70px;
+  grid-template-columns: 44px 1fr 90px 70px;
   align-items: center;
-  gap: 16px;
-  padding: 14px 0;
+  gap: 14px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--rule);
 }
 .issue-row:last-child { border-bottom: none; }
 .issue-icon-lg {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,9 +548,9 @@ html, body {
 }
 .cost-row {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr;
+  grid-template-columns: 1fr auto;
   align-items: end;
-  padding: 18px 0;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .cost-row:last-of-type { border-bottom: none; }
@@ -475,10 +564,10 @@ html, body {
 }
 .cost-row .row-amt {
   font-family: var(--sans);
-  font-size: 64px;
+  font-size: 44px;
   font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 0.9;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
   font-feature-settings: 'tnum';
 }
 .cost-row.lawsuit .row-amt { color: var(--red); }
@@ -583,12 +672,12 @@ html, body {
   font-family: var(--sans);
   font-size: 13px;
   font-weight: 700;
-  color: var(--ink);
   margin-top: 14px;
-  background: var(--ink);
+  background: var(--brand);
   color: white;
-  padding: 10px 16px;
+  padding: 11px 18px;
   border-radius: 6px;
+  letter-spacing: -0.005em;
 }
 .signature {
   text-align: right;
@@ -761,14 +850,27 @@ sup.cite-dark { color: rgba(255,255,255,0.5); }
   <!-- Top bar -->
   <div class="top-bar">
     <div class="brand">
-      <svg class="brand-mark-svg" viewBox="430 180 400 600" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#0F172A" d="M707.16 450c0-57.82.03-115.15-.1-172.47 0-3.58 1.08-5.63 4.04-7.67 29.08-20.03 58.04-40.24 87.04-60.39 2.03-1.41 4.1-2.77 7.16-4.83v6.39c.01 99.31.03 198.63.04 297.94 0 36.99-.04 73.98-.02 110.97.04 78.99-62.04 142.61-141.01 144.36-12.79.28-25.6.04-39.3.04 1.1-.99 1.54-1.6 2.14-1.91 40.39-20.86 64.19-54.67 74.97-97.94 3.23-12.96 4.73-26.65 4.84-40.03.51-57.82.21-115.65.2-173.46Z"/>
-        <path fill="#8B1A1A" d="M583.74 727.75c-18.6 11.12-38.21 18.08-59.56 19.67-2.05.15-4.5.1-6.2-.86-31.48-17.66-53.61-43.25-65.28-77.61-.15-.45-.16-.95-.06-.31 11.95-2.23 24.1-3.37 35.56-6.83 39.07-11.79 68.45-51.83 68.63-92.63.16-35.65 0-71.31.16-106.96.01-2.09 1.12-5.02 2.72-6.15 34-24.01 68.14-47.83 102.27-71.68.67-.47 1.39-.85 2.72-1.66.15 1.79.37 3.14.37 4.5.01 64.14.88 128.3-.34 192.42-1.08 56.99-23.16 104.71-69.03 140.16-3.68 2.84-7.75 5.18-11.95 7.94Z"/>
+      <svg class="brand-mark-svg" viewBox="430 180 400 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#0DAB66" d="M707.16 450c0-57.82.03-115.15-.1-172.47 0-3.58 1.08-5.63 4.04-7.67 29.08-20.03 58.04-40.24 87.04-60.39 2.03-1.41 4.1-2.77 7.16-4.83v6.39c.01 99.31.03 198.63.04 297.94 0 36.99-.04 73.98-.02 110.97.04 78.99-62.04 142.61-141.01 144.36-12.79.28-25.6.04-39.3.04 1.1-.99 1.54-1.6 2.14-1.91 40.39-20.86 64.19-54.67 74.97-97.94 3.23-12.96 4.73-26.65 4.84-40.03.51-57.82.21-115.65.2-173.46Z"/>
+        <path fill="#015DF1" d="M583.74 727.75c-18.6 11.12-38.21 18.08-59.56 19.67-2.05.15-4.5.1-6.2-.86-31.48-17.66-53.61-43.25-65.28-77.61-.15-.45-.16-.95-.06-.31 11.95-2.23 24.1-3.37 35.56-6.83 39.07-11.79 68.45-51.83 68.63-92.63.16-35.65 0-71.31.16-106.96.01-2.09 1.12-5.02 2.72-6.15 34-24.01 68.14-47.83 102.27-71.68.67-.47 1.39-.85 2.72-1.66.15 1.79.37 3.14.37 4.5.01 64.14.88 128.3-.34 192.42-1.08 56.99-23.16 104.71-69.03 140.16-3.68 2.84-7.75 5.18-11.95 7.94Z"/>
       </svg>
-      <span class="brand-name">{{SENDER_COMPANY}}</span>
-      <span class="brand-tag">Accessibility Report</span>
+      <span class="brand-name">JustCompliant</span>
+      <span class="brand-tag">ADA Compliance Audit</span>
     </div>
     <div class="date">{{AUDIT_DATE}}</div>
+  </div>
+
+  <!-- CLIENT CARD — visible customization signal -->
+  <div class="client-card">
+    {{CLIENT_LOGO_HTML}}
+    <div class="client-meta">
+      <span class="client-prepared">Tailored audit for</span>
+      <span class="client-name">{{BUSINESS_NAME}}</span>
+      <span class="client-url">{{URL}}</span>
+    </div>
+    <div class="client-note">
+      Yours to keep. Hand it to your tech team as a fix-list — no obligation.
+    </div>
   </div>
 
   <!-- HERO -->
@@ -796,8 +898,25 @@ sup.cite-dark { color: rgba(255,255,255,0.5); }
     </div>
 
     <p class="hero-statement">
-      <strong>{{TOTAL_ISSUES}} accessibility problems</strong> found. <strong>3,117 businesses</strong><sup class="cite">1</sup> were sued for these issues last year. Settlements have reached <span class="em-red">$5.15M</span><sup class="cite">2</sup>.
+      <strong>{{TOTAL_ISSUES}} ADA violations</strong> on your site. <strong>3,117 businesses</strong><sup class="cite">1</sup> were sued for the same issues last year — the largest settlement reached <span class="em-red">$9.7M</span><sup class="cite">5</sup>.
     </p>
+  </div>
+  <div class="page-fill"></div>
+</div>
+<!-- ═══════════════════════════ PAGE 2 ═══════════════════════════ -->
+<div class="page">
+
+  <!-- Top bar (compact recap) -->
+  <div class="top-bar">
+    <div class="brand">
+      <svg class="brand-mark-svg" viewBox="430 180 400 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#0DAB66" d="M707.16 450c0-57.82.03-115.15-.1-172.47 0-3.58 1.08-5.63 4.04-7.67 29.08-20.03 58.04-40.24 87.04-60.39 2.03-1.41 4.1-2.77 7.16-4.83v6.39c.01 99.31.03 198.63.04 297.94 0 36.99-.04 73.98-.02 110.97.04 78.99-62.04 142.61-141.01 144.36-12.79.28-25.6.04-39.3.04 1.1-.99 1.54-1.6 2.14-1.91 40.39-20.86 64.19-54.67 74.97-97.94 3.23-12.96 4.73-26.65 4.84-40.03.51-57.82.21-115.65.2-173.46Z"/>
+        <path fill="#015DF1" d="M583.74 727.75c-18.6 11.12-38.21 18.08-59.56 19.67-2.05.15-4.5.1-6.2-.86-31.48-17.66-53.61-43.25-65.28-77.61-.15-.45-.16-.95-.06-.31 11.95-2.23 24.1-3.37 35.56-6.83 39.07-11.79 68.45-51.83 68.63-92.63.16-35.65 0-71.31.16-106.96.01-2.09 1.12-5.02 2.72-6.15 34-24.01 68.14-47.83 102.27-71.68.67-.47 1.39-.85 2.72-1.66.15 1.79.37 3.14.37 4.5.01 64.14.88 128.3-.34 192.42-1.08 56.99-23.16 104.71-69.03 140.16-3.68 2.84-7.75 5.18-11.95 7.94Z"/>
+      </svg>
+      <span class="brand-name">JustCompliant</span>
+      <span class="brand-tag">{{BUSINESS_NAME}} · The Problems & The Cost</span>
+    </div>
+    <div class="date">Page 2 of 3</div>
   </div>
 
   <!-- STAT STRIP -->
@@ -820,51 +939,9 @@ sup.cite-dark { color: rgba(255,255,255,0.5); }
     </div>
   </div>
 
-  <!-- WHO CAN'T USE -->
-  <div class="audience">
-    <div class="audience-row">
-      <div>
-        <div class="audience-hero-num">1 in 4<span class="of"> Americans</span></div>
-        <p class="audience-hero-cap">have a disability that affects how they use the web. Your site fails them.</p>
-      </div>
-      <div class="audience-breakdown">
-        <div class="audience-line">
-          <div class="audience-icon-sm">
-            <svg viewBox="0 0 24 24"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
-          </div>
-          <div class="audience-line-label">Blind or low vision</div>
-          <div class="audience-line-pct">8<span class="of">%</span></div>
-        </div>
-        <div class="audience-line">
-          <div class="audience-icon-sm">
-            <svg viewBox="0 0 24 24"><path d="M6 18.5a3.5 3.5 0 1 0 7 0c0-1.57.92-2.52 2.04-3.46"/><path d="M6 8.5c0-.74.39-2.04.92-2.5"/><path d="M9.65 3.65A6.5 6.5 0 0 1 18.5 8.5c0 1.78-.79 2.94-1.65 3.94"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
-          </div>
-          <div class="audience-line-label">Deaf or hard of hearing</div>
-          <div class="audience-line-pct">15<span class="of">%</span></div>
-        </div>
-        <div class="audience-line">
-          <div class="audience-icon-sm">
-            <svg viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0"/><path d="M14 10V4a2 2 0 0 0-4 0v2"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-1.8-5.2-4l-3-5c-.5-.8-.4-1.7.3-2.3.7-.6 1.7-.5 2.3.2L8 13"/></svg>
-          </div>
-          <div class="audience-line-label">Motor or dexterity</div>
-          <div class="audience-line-pct">12<span class="of">%</span></div>
-        </div>
-        <div class="audience-line">
-          <div class="audience-icon-sm">
-            <svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
-          </div>
-          <div class="audience-line-label">Cognitive or learning</div>
-          <div class="audience-line-pct">10<span class="of">%</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- ISSUES -->
   <div class="section">
     <h2 class="section-title">The Problems</h2>
-    <p class="section-sub">These are the issues on your site, in order of legal risk.</p>
-
     {{ISSUE_ROWS}}
   </div>
 
@@ -873,67 +950,65 @@ sup.cite-dark { color: rgba(255,255,255,0.5); }
     <div class="cost-band-title">The Math</div>
 
     <div class="cost-row lawsuit">
-      <div class="row-label">Typical settlement<sup class="cite-dark">3</sup></div>
-      <div class="row-amt">$30K — $100K</div>
-      <div class="row-bar-wrap">
-        <div class="row-bar"></div>
-      </div>
+      <div class="row-label">If you get sued<sup class="cite-dark">3</sup></div>
+      <div class="row-amt">$30K — $100K+</div>
     </div>
 
     <div class="cost-row fix">
-      <div class="row-label">A fix, starting at</div>
-      <div class="row-amt">$4,000</div>
-      <div class="row-bar-wrap">
-        <div class="row-bar"></div>
-      </div>
+      <div class="row-label">Your audit</div>
+      <div class="row-amt">{{AUDIT_PRICE}}</div>
     </div>
 
-    <div class="cost-footer">
-      <strong>3,117 federal lawsuits</strong><sup class="cite-dark">1</sup> filed in 2025 — up <strong>27% YoY</strong>. <strong>64% of defendants</strong><sup class="cite-dark">4</sup> had revenue under $25M.
+    <div class="cost-row fix">
+      <div class="row-label">Your remediation</div>
+      <div class="row-amt">{{FIX_PRICE}}</div>
     </div>
+
+    {{REBUILD_ROW}}
+
+    <div class="cost-footer">
+      <strong>3,117 ADA lawsuits</strong><sup class="cite-dark">1</sup> in 2025 — <strong>64%</strong> against firms under $25M revenue<sup class="cite-dark">4</sup>.
+    </div>
+  </div>
+  <div class="page-fill"></div>
+</div>
+<!-- ═══════════════════════════ PAGE 3 ═══════════════════════════ -->
+<div class="page">
+
+  <!-- Top bar (compact recap) -->
+  <div class="top-bar">
+    <div class="brand">
+      <svg class="brand-mark-svg" viewBox="430 180 400 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#0DAB66" d="M707.16 450c0-57.82.03-115.15-.1-172.47 0-3.58 1.08-5.63 4.04-7.67 29.08-20.03 58.04-40.24 87.04-60.39 2.03-1.41 4.1-2.77 7.16-4.83v6.39c.01 99.31.03 198.63.04 297.94 0 36.99-.04 73.98-.02 110.97.04 78.99-62.04 142.61-141.01 144.36-12.79.28-25.6.04-39.3.04 1.1-.99 1.54-1.6 2.14-1.91 40.39-20.86 64.19-54.67 74.97-97.94 3.23-12.96 4.73-26.65 4.84-40.03.51-57.82.21-115.65.2-173.46Z"/>
+        <path fill="#015DF1" d="M583.74 727.75c-18.6 11.12-38.21 18.08-59.56 19.67-2.05.15-4.5.1-6.2-.86-31.48-17.66-53.61-43.25-65.28-77.61-.15-.45-.16-.95-.06-.31 11.95-2.23 24.1-3.37 35.56-6.83 39.07-11.79 68.45-51.83 68.63-92.63.16-35.65 0-71.31.16-106.96.01-2.09 1.12-5.02 2.72-6.15 34-24.01 68.14-47.83 102.27-71.68.67-.47 1.39-.85 2.72-1.66.15 1.79.37 3.14.37 4.5.01 64.14.88 128.3-.34 192.42-1.08 56.99-23.16 104.71-69.03 140.16-3.68 2.84-7.75 5.18-11.95 7.94Z"/>
+      </svg>
+      <span class="brand-name">JustCompliant</span>
+      <span class="brand-tag">{{BUSINESS_NAME}} · Precedent & Next Steps</span>
+    </div>
+    <div class="date">Page 3 of 3</div>
   </div>
 
   <!-- RECENT SETTLEMENTS -->
   <div class="settlements">
     <div class="settlements-head">Recent Disclosed Settlements</div>
     <div class="settlements-grid">
-      <div class="settle-card">
-        <div class="settle-amt">$5.15M</div>
-        <div class="settle-defendant">Fashion Nova</div>
-        <div class="settle-meta">2025 · N.D. Cal. · DOJ intervention<sup class="cite">2</sup></div>
-      </div>
-      <div class="settle-card">
-        <div class="settle-amt">$9.7M</div>
-        <div class="settle-defendant">Target</div>
-        <div class="settle-meta">2008 · NFB class action · $6M + $3.7M fees<sup class="cite">5</sup></div>
-      </div>
-      <div class="settle-card">
-        <div class="settle-amt">$795K</div>
-        <div class="settle-defendant">Netflix</div>
-        <div class="settle-meta">2012 · NAD · fees + captioning mandate<sup class="cite">6</sup></div>
-      </div>
-      <div class="settle-card">
-        <div class="settle-amt">Cited Daily</div>
-        <div class="settle-defendant">Domino's Pizza</div>
-        <div class="settle-meta">2019 · 9th Cir. · ADA applies to websites<sup class="cite">7</sup></div>
-      </div>
+      {{SETTLEMENT_CARDS}}
     </div>
-    <p class="settlements-note">Most ADA settlements are confidential. These are the largest publicly disclosed cases.</p>
   </div>
 
   <!-- CTA -->
-  <div class="cta-section">
+  <a href="{{CTA_URL}}" class="cta-section" style="text-decoration:none;color:inherit;">
     <div class="cta-body">
-      <h3>Let's fix this before someone files.</h3>
-      <p>I rebuild small and mid-sized firm websites on accessible architecture, verified at delivery. Modern design, defensible posture, flat fee.</p>
-      <span class="cta-action">Book a 20-minute call →</span>
+      <h3>Fix it before someone files.</h3>
+      <p>Your quote above is calculated from your site — no sales call needed.</p>
+      <span class="cta-action">{{CTA_LABEL}} →</span>
     </div>
     <div class="signature">
       <div class="sig-name">{{SENDER_NAME}}</div>
       <div class="sig-org">{{SENDER_COMPANY}}</div>
       <div class="sig-email">{{SENDER_EMAIL}}</div>
     </div>
-  </div>
+  </a>
 
   <!-- Sources -->
   <div class="sources">

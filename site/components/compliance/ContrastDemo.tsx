@@ -65,7 +65,7 @@ export function ContrastDemo() {
         >
           {largeText ? "Sample large text" : "Sample body text — can you read this clearly?"}
         </p>
-        <p className="text-xs mt-2 opacity-60" style={{ color: example.text }}>
+        <p className="text-xs mt-2" style={{ color: example.text, opacity: 0.9 }}>
           Contrast ratio: {example.ratio}:1
         </p>
       </div>
@@ -81,14 +81,14 @@ export function ContrastDemo() {
         aria-live="polite"
       >
         {status.pass ? (
-          <CheckCircle size={16} className="text-[var(--green)]" aria-hidden="true" />
+          <CheckCircle size={16} className="text-[#065F3B]" aria-hidden="true" />
         ) : (
-          <XCircle size={16} className="text-[var(--fail)]" aria-hidden="true" />
+          <XCircle size={16} className="text-red-700" aria-hidden="true" />
         )}
-        <span className={`text-sm font-semibold ${status.pass ? "text-[var(--green)]" : "text-[var(--fail)]"}`}>
+        <span className={`text-sm font-semibold ${status.pass ? "text-[#065F3B]" : "text-red-700"}`}>
           {status.label}
         </span>
-        <span className="text-xs text-[var(--muted-foreground)] ml-auto">
+        <span className="text-xs text-slate-600 ml-auto">
           {example.ratio}:1
         </span>
       </div>
@@ -120,6 +120,7 @@ export function ContrastDemo() {
         <button
           role="switch"
           aria-checked={largeText}
+          aria-label="Toggle large text preview"
           onClick={() => setLargeText(!largeText)}
           className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-[var(--blue)] focus-visible:outline-offset-2 ${
             largeText ? "bg-[var(--blue)]" : "bg-[var(--border)]"

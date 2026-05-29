@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "businessName": "Pela Case",
+    "url": "https://pelacase.com",
+    "urlDisplay": "pelacase.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-689",
+    "scannedAt": "2026-05-26T10:34:58.650Z"
+  },
+  "score": {
+    "value": 88,
+    "gaugeDash": "663.50 753.98",
+    "riskClass": "moderate",
+    "riskLabel": "Moderate"
+  },
+  "counts": {
+    "critical": 3,
+    "serious": 1,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 4,
+    "totalInstances": 19
+  },
+  "issues": [
+    {
+      "icon": "contrast",
+      "severity": "critical",
+      "title": "Your text is too hard to read",
+      "desc": "Text and background colors do not have enough contrast for people with low vision.",
+      "count": 4
+    },
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Images missing descriptions",
+      "desc": "Images have no alt text, making them invisible to screen readers and users who cannot see them.",
+      "count": 4
+    },
+    {
+      "icon": "form",
+      "severity": "critical",
+      "title": "Your forms confuse blind visitors",
+      "desc": "Buttons have no label, so screen readers cannot tell users what the button does.",
+      "count": 2
+    },
+    {
+      "icon": "frame",
+      "severity": "serious",
+      "title": "Maps and widgets are invisible",
+      "desc": "Embedded iframes have no title attribute, so their contents are completely hidden from screen readers.",
+      "count": 9
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

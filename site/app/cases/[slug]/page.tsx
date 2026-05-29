@@ -96,7 +96,7 @@ export default async function CaseDetailPage({
                 {l.sector} · {l.industryLabel}
               </span>
             )}
-            <span className="text-xs text-slate-400 font-mono">
+            <span className="text-xs text-slate-500 font-mono">
               {l.yearFiled}{l.yearFiled !== l.yearResolved ? `–${l.yearResolved}` : ""}
             </span>
           </div>
@@ -131,7 +131,7 @@ export default async function CaseDetailPage({
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
           {l.settlementAmount != null && (
             <div className="rounded-2xl bg-white border border-slate-200 p-5">
-              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-2">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 mb-2">
                 Settlement
               </p>
               <p
@@ -146,7 +146,7 @@ export default async function CaseDetailPage({
             </div>
           )}
           <div className="rounded-2xl bg-white border border-slate-200 p-5">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-2">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 mb-2">
               Court
             </p>
             <p className="text-sm text-slate-700 leading-snug">
@@ -154,12 +154,12 @@ export default async function CaseDetailPage({
             </p>
           </div>
           <div className="rounded-2xl bg-white border border-slate-200 p-5">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-2">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 mb-2">
               Case
             </p>
             <p className="text-xs text-slate-700 leading-snug font-mono">{l.caseName}</p>
             {l.docket && (
-              <p className="text-[11px] text-slate-400 mt-1 font-mono">{l.docket}</p>
+              <p className="text-[11px] text-slate-500 mt-1 font-mono">{l.docket}</p>
             )}
           </div>
         </div>
@@ -186,7 +186,7 @@ export default async function CaseDetailPage({
               {l.violations.map((v, i) => (
                 <div key={i}>
                   <VisualFailure type={v.type} description={v.description} />
-                  <p className="text-[11px] text-slate-400 font-mono mt-2 pl-1">
+                  <p className="text-[11px] text-slate-500 font-mono mt-2 pl-1">
                     WCAG {v.wcag}
                   </p>
                 </div>
@@ -211,7 +211,7 @@ export default async function CaseDetailPage({
                     rel="noopener noreferrer"
                     className="flex items-start gap-2 text-sm text-slate-700 hover:text-blue-700 group"
                   >
-                    <ExternalLink size={13} className="mt-0.5 shrink-0 text-slate-400 group-hover:text-blue-600" aria-hidden="true" />
+                    <ExternalLink size={13} className="mt-0.5 shrink-0 text-slate-500 group-hover:text-blue-600" aria-hidden="true" />
                     <span className="leading-snug">
                       {s.name}
                       {s.tier === 1 && (
@@ -268,7 +268,7 @@ export default async function CaseDetailPage({
                   Other cases, top WCAG failures for {industry.shortName.toLowerCase()}, and what to fix first.
                 </p>
               </div>
-              <ArrowRight size={18} className="text-slate-400 shrink-0" aria-hidden="true" />
+              <ArrowRight size={18} className="text-slate-500 shrink-0" aria-hidden="true" />
             </Link>
           </section>
         )}

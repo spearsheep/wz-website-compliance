@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "businessName": "Beardbrand",
+    "url": "https://beardbrand.com",
+    "urlDisplay": "beardbrand.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-907",
+    "scannedAt": "2026-05-26T10:54:42.523Z"
+  },
+  "score": {
+    "value": 100,
+    "gaugeDash": "753.98 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 0,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 0,
+    "totalIssues": 2,
+    "totalInstances": 22
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "serious",
+      "title": "Screen reader markup is broken",
+      "desc": "Ensure interactive controls are not nested, as they are not always announced by screen readers.",
+      "count": 2
+    },
+    {
+      "icon": "nav",
+      "severity": "moderate",
+      "title": "Navigation is broken",
+      "desc": "Page content is not contained in any landmark region, making navigation harder for screen reader users.",
+      "count": 20
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

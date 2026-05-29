@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "businessName": "The Driskill Austin",
+    "url": "https://driskillhotel.com",
+    "urlDisplay": "driskillhotel.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-990",
+    "scannedAt": "2026-05-26T09:40:18.560Z"
+  },
+  "score": {
+    "value": 73,
+    "gaugeDash": "550.41 753.98",
+    "riskClass": "high",
+    "riskLabel": "High"
+  },
+  "counts": {
+    "critical": 6,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 6,
+    "totalInstances": 13
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Screen reader markup is broken",
+      "desc": "ARIA input fields have no accessible name.",
+      "count": 7
+    },
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Mystery links with no name",
+      "desc": "Links have no descriptive text, so screen readers just say \"link\" with no context.",
+      "count": 2
+    },
+    {
+      "icon": "form",
+      "severity": "critical",
+      "title": "Your forms confuse blind visitors",
+      "desc": "Buttons have no label, so screen readers cannot tell users what the button does.",
+      "count": 1
+    },
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Language not declared",
+      "desc": "The page language code is invalid.",
+      "count": 1
+    },
+    {
+      "icon": "nav",
+      "severity": "critical",
+      "title": "Keyboard navigation is broken",
+      "desc": "The page disables zoom, preventing users with low vision from enlarging text.",
+      "count": 1
+    },
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Touch targets do not have sufficient size or spacing.",
+      "desc": "An accessibility issue was detected on this page.",
+      "count": 1
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

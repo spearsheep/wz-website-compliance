@@ -32,10 +32,10 @@ export function KeyboardDemo() {
   }, [playing])
 
   const typeColor = {
-    skip: "border-[var(--green)] bg-[var(--green)]/20 text-[var(--green)]",
-    nav: "border-[var(--blue)] bg-[var(--blue)]/20 text-[var(--blue)]",
-    cta: "border-purple-400 bg-purple-400/20 text-purple-300",
-    link: "border-amber-400 bg-amber-400/20 text-amber-300",
+    skip: "border-[var(--green)] bg-[var(--green)]/10 text-[#065F3B]",
+    nav: "border-[var(--blue)] bg-[var(--blue)]/10 text-[#1E40AF]",
+    cta: "border-purple-400 bg-purple-400/10 text-purple-700",
+    link: "border-amber-400 bg-amber-400/10 text-amber-800",
   }
 
   return (
@@ -69,8 +69,8 @@ export function KeyboardDemo() {
         className="space-y-2 mb-4"
         aria-live="polite"
         aria-atomic="true"
-        aria-label={`Currently focused: ${focusStops[currentFocus].label}`}
       >
+        <span className="sr-only">Currently focused: {focusStops[currentFocus].label}</span>
         {focusStops.map((stop, i) => (
           <div
             key={i}
@@ -81,7 +81,7 @@ export function KeyboardDemo() {
             }`}
             aria-hidden="true"
           >
-            <span className="font-mono text-[10px] w-4 text-center opacity-60">{i + 1}</span>
+            <span className="font-mono text-[10px] w-4 text-center opacity-80">{i + 1}</span>
             <span
               className={`inline-block w-2 h-2 rounded-full ${
                 i === currentFocus ? "bg-current" : "bg-[var(--border)]"
@@ -89,7 +89,7 @@ export function KeyboardDemo() {
             />
             {stop.label}
             {i === currentFocus && (
-              <span className="ml-auto font-mono text-[10px] opacity-60">← focused</span>
+              <span className="ml-auto font-mono text-[10px]">← focused</span>
             )}
           </div>
         ))}

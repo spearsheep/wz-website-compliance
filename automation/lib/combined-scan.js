@@ -12,7 +12,7 @@
  * Outputs JSON to output/{slug}-report.json matching schema.md
  */
 
-import { writeFileSync, mkdirSync, readFileSync } from 'fs';
+import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
@@ -213,8 +213,17 @@ function runLighthouse(url) {
     `&key=${API_KEY}`;
 
   try {
-    const raw = execSync(`curl -s "${apiUrl}"`, { timeout: 60000 }).toString();
-    const data = JSON.parse(raw);
+    const rawBuf = execSync(`curl -s --max-time 110 "${apiUrl}"`, { timeout: 120000 });
+    // Use python3 strict=False to parse the response, which tolerates unescaped
+    // newlines in string values that the PageSpeed API sometimes returns
+    const tmpFile = `/tmp/psi_${Date.now()}.json`;
+    writeFileSync(tmpFile, rawBuf);
+    const parsed = execSync(
+      `python3 -c "import json,sys; d=json.load(open('${tmpFile}'),strict=False); print(json.dumps(d))"`,
+      { timeout: 10000 }
+    ).toString();
+    unlinkSync(tmpFile);
+    const data = JSON.parse(parsed);
     if (data.error) throw new Error(data.error.message);
 
     const lhr = data.lighthouseResult;
@@ -492,7 +501,11 @@ async function main() {
   let browser = null;
 
   try {
-    browser = await chromium.launch({ args: ['--no-sandbox'] });
+    const launchOptions = { args: ['--no-sandbox'] };
+    // Allow using a locally installed Chrome when Playwright's Chromium isn't downloaded yet
+    const localChrome = process.env.CHROME_EXECUTABLE_PATH;
+    if (localChrome) launchOptions.executablePath = localChrome;
+    browser = await chromium.launch(launchOptions);
     const context = await browser.newContext();
     const page = await context.newPage();
 

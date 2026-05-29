@@ -86,7 +86,7 @@ function renderMockup(type: FailureType): React.ReactNode {
               Fails: 1.92:1 ratio · Needs 4.5:1
             </p>
           </div>
-          <div className="rounded-lg p-4" style={{ background: "#0DAB66" }}>
+          <div className="rounded-lg p-4" style={{ background: "#078250" }}>
             <p className="text-emerald-200 text-sm leading-snug">
               And this is too — light green on green.
             </p>
@@ -105,7 +105,7 @@ function renderMockup(type: FailureType): React.ReactNode {
               <div
                 key={s}
                 className="px-4 py-2 rounded-lg text-sm font-semibold text-white relative"
-                style={{ background: i === 1 ? "#015DF1" : "#94A3B8" }}
+                style={{ background: i === 1 ? "#015DF1" : "#64748B" }}
               >
                 {s}
               </div>
@@ -144,10 +144,10 @@ function renderMockup(type: FailureType): React.ReactNode {
       return (
         <div className="w-full space-y-2">
           <div className="rounded-lg bg-white border border-slate-200 px-3 py-2.5">
-            <p className="text-sm text-slate-400">your name here</p>
+            <p className="text-sm text-slate-500">your name here</p>
           </div>
           <div className="rounded-lg bg-white border border-slate-200 px-3 py-2.5">
-            <p className="text-sm text-slate-400">email</p>
+            <p className="text-sm text-slate-500">email</p>
           </div>
           <div className="rounded-lg bg-red-50 border border-red-200 px-3 py-2.5">
             <p className="text-xs text-red-700 font-medium">

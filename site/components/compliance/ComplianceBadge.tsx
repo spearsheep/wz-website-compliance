@@ -38,10 +38,10 @@ export function ComplianceBadge({
 
   const levelColor =
     wcagLevel === "A"
-      ? "text-[var(--green)] border-[var(--green)]/30 bg-[var(--green)]/10"
+      ? "text-[#065F3B] border-[var(--green)]/30 bg-[var(--green)]/10"
       : wcagLevel === "AA"
-      ? "text-[var(--blue)] border-[var(--blue)]/30 bg-[var(--blue)]/10"
-      : "text-purple-400 border-purple-400/30 bg-purple-400/10"
+      ? "text-[#1E40AF] border-[var(--blue)]/30 bg-[var(--blue)]/10"
+      : "text-purple-700 border-purple-400/30 bg-purple-400/10"
 
   return (
     <span className={`relative inline-flex items-center ${className}`}>

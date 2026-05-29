@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "businessName": "Arlo Hotels",
+    "url": "https://arlohotels.com",
+    "urlDisplay": "arlohotels.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-457",
+    "scannedAt": "2026-05-26T09:40:39.768Z"
+  },
+  "score": {
+    "value": 97,
+    "gaugeDash": "731.36 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 1,
+    "totalInstances": 2
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Touch targets do not have sufficient size or spacing.",
+      "desc": "An accessibility issue was detected on this page.",
+      "count": 2
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

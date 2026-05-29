@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "businessName": "Joe Machens Dealerships",
+    "url": "https://www.machens.com",
+    "urlDisplay": "www.machens.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-949",
+    "scannedAt": "2026-05-26T09:43:39.383Z"
+  },
+  "score": {
+    "value": 95,
+    "gaugeDash": "716.28 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 0,
+    "moderate": 1,
+    "minor": 0,
+    "totalIssues": 2,
+    "totalInstances": 6
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Touch targets do not have sufficient size or spacing.",
+      "desc": "An accessibility issue was detected on this page.",
+      "count": 5
+    },
+    {
+      "icon": "nav",
+      "severity": "moderate",
+      "title": "Navigation is broken",
+      "desc": "The page has no main content landmark, so screen reader users cannot jump directly to the content.",
+      "count": 1
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

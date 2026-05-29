@@ -1,0 +1,144 @@
+{
+  "industry": "Senior Care / Assisted Living",
+  "scannedAt": "2026-05-26T09:15:34.377Z",
+  "summary": {
+    "totalScanned": 10,
+    "avgScore": 91,
+    "criticalRiskCount": 0,
+    "highRiskCount": 0,
+    "moderateRiskCount": 2,
+    "lowRiskCount": 8
+  },
+  "sites": [
+    {
+      "company": "Sonida Senior Living",
+      "url": "https://www.sonidaseniorliving.com",
+      "score": 86,
+      "riskLevel": "LOW",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "aria-hidden-focus",
+        "color-contrast",
+        "link-name",
+        "target-size"
+      ],
+      "notes": "Regional operator, 60+ communities across multiple states. Score from live Lighthouse scan."
+    },
+    {
+      "company": "Watermark Retirement Communities",
+      "url": "https://www.watermarkcommunities.com",
+      "score": 96,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "heading-order",
+        "label-content-name-mismatch",
+        "link-name"
+      ],
+      "notes": "Mid-market operator with communities across the US. Score from live Lighthouse scan."
+    },
+    {
+      "company": "Milestone Retirement Communities",
+      "url": "https://www.milestoneretirement.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "heading-order",
+        "landmark-one-main",
+        "link-name"
+      ],
+      "notes": "Regional senior living operator in the Pacific Northwest. Score from live Lighthouse scan."
+    },
+    {
+      "company": "Frontier Senior Living",
+      "url": "https://www.frontierseniorliving.com",
+      "score": 82,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 8,
+      "topFailures": [
+        "aria-hidden-focus",
+        "color-contrast",
+        "frame-title",
+        "heading-order",
+        "image-alt",
+        "label-content-name-mismatch",
+        "landmark-one-main",
+        "skip-link"
+      ],
+      "notes": "Regional operator with communities in multiple states. Score from live Lighthouse scan."
+    },
+    {
+      "company": "The Springs Living",
+      "url": "https://www.thesprings.com",
+      "score": 90,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "color-contrast",
+        "heading-order",
+        "select-name"
+      ],
+      "notes": "Northwest regional operator with independent/assisted living. Score from live Lighthouse scan."
+    },
+    {
+      "company": "Senior Resource Group",
+      "url": "https://www.srg-llc.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "color-contrast",
+        "frame-title",
+        "label-content-name-mismatch",
+        "presentation-role-conflict"
+      ],
+      "notes": "Regional operator focused on senior living communities. Score from live Lighthouse scan."
+    },
+    {
+      "company": "HarborChase Senior Living",
+      "url": "https://www.harborchase.com",
+      "score": 93,
+      "riskLevel": "LOW",
+      "failedAuditCount": 2,
+      "topFailures": [
+        "color-contrast",
+        "link-name"
+      ],
+      "notes": "Regional operator with communities across the Southeast. Score from live Lighthouse scan."
+    },
+    {
+      "company": "American Senior Living",
+      "url": "https://www.americanseniorliving.com",
+      "score": 100,
+      "riskLevel": "LOW",
+      "failedAuditCount": 0,
+      "topFailures": [],
+      "notes": "Regional senior living operator. Score from live Lighthouse scan."
+    },
+    {
+      "company": "Concord Senior Living",
+      "url": "https://www.concordseniorliving.com",
+      "score": 79,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "color-contrast",
+        "html-has-lang",
+        "landmark-one-main"
+      ],
+      "notes": "Regional assisted living and memory care operator. Score from live Lighthouse scan."
+    },
+    {
+      "company": "Brightwater Senior Living",
+      "url": "https://www.brightwaterseniorliving.com",
+      "score": 100,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": [
+        "label-content-name-mismatch"
+      ],
+      "notes": "Regional senior living operator. Score from live Lighthouse scan."
+    }
+  ]
+}

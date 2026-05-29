@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { detectComplexity } from "@/lib/complexity-detector"
+import { detectIndustry } from "@/lib/industry-detector"
 import {
   calculateQuote,
   type Industry,
@@ -25,6 +26,8 @@ interface ScanResult {
   violations?: ViolationCounts
   quote?: QuoteResult
   industry?: Industry
+  detectedIndustry?: Industry
+  industryConfidence?: "high" | "medium" | "low"
   email?: string
   scannedAt: string
 }
@@ -68,10 +71,17 @@ async function syntheticScan(
   const failures = allFailures.slice(0, numFailures)
   const violations = violationsFromFailures(failures)
   // Still try to detect real complexity in demo mode — quote remains accurate.
-  const complexity = await detectComplexity(target).catch(() => undefined)
+  const result = await detectComplexity(target).catch(() => undefined)
+  const complexity = result?.complexity
+  const html = result?.html ?? ""
+
+  // Auto-detect industry from page content; use provided industry as override
+  const detection = html ? detectIndustry(html, target) : undefined
+  const effectiveIndustry = industry !== "other" ? industry : (detection?.industry ?? industry)
+
   const quote =
     complexity != null
-      ? calculateQuote({ complexity, violations, industry })
+      ? calculateQuote({ complexity, violations, industry: effectiveIndustry })
       : undefined
 
   return {
@@ -83,7 +93,9 @@ async function syntheticScan(
     complexity,
     violations,
     quote,
-    industry,
+    industry: effectiveIndustry,
+    detectedIndustry: detection?.industry,
+    industryConfidence: detection?.confidence,
     email,
     scannedAt: new Date().toISOString(),
   }
@@ -207,11 +219,18 @@ export async function POST(req: NextRequest) {
 
   // Complexity detection runs in parallel with the rest of the response build.
   // If it fails for any reason, we fall back to a mid-range estimate.
-  const complexity = await detectComplexity(target).catch(() => undefined)
+  const complexityResult = await detectComplexity(target).catch(() => undefined)
+  const complexity = complexityResult?.complexity
+  const pageHtml = complexityResult?.html ?? ""
+
+  // Auto-detect industry from page content; user's explicit choice overrides
+  const detection = pageHtml ? detectIndustry(pageHtml, target) : undefined
+  const effectiveIndustry = industry !== "other" ? industry : (detection?.industry ?? industry)
+
   const violations = violationsFromFailures(failures)
   const quote =
     complexity != null
-      ? calculateQuote({ complexity, violations, industry })
+      ? calculateQuote({ complexity, violations, industry: effectiveIndustry })
       : undefined
 
   const result: ScanResult = {
@@ -223,7 +242,9 @@ export async function POST(req: NextRequest) {
     complexity,
     violations,
     quote,
-    industry,
+    industry: effectiveIndustry,
+    detectedIndustry: detection?.industry,
+    industryConfidence: detection?.confidence,
     email,
     scannedAt: new Date().toISOString(),
   }

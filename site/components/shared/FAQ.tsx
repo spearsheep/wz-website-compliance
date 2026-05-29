@@ -52,7 +52,7 @@ export function FAQ({ title = "Frequently asked", subtitle, items }: FAQProps) {
                 <h3 className="text-base font-semibold text-slate-900">{item.question}</h3>
                 <ChevronDown
                   size={18}
-                  className="text-slate-400 shrink-0 transition-transform group-open:rotate-180"
+                  className="text-slate-500 shrink-0 transition-transform group-open:rotate-180"
                   aria-hidden="true"
                 />
               </summary>

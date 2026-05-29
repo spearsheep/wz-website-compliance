@@ -19,10 +19,10 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://jobsjr-compliance.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://justcompliant.net"),
   title: {
-    default: "Jobs Junior Compliance — ADA Web Accessibility",
-    template: "%s | Jobs Junior Compliance",
+    default: "JustCompliant — ADA Web Accessibility",
+    template: "%s | JustCompliant",
   },
   description:
     "Audit, fix, and maintain your website's ADA accessibility compliance. Protect your business from lawsuits under WCAG 2.1, ADA Title III, California Unruh Act, and New York Human Rights Law.",
@@ -35,21 +35,21 @@ export const metadata: Metadata = {
     "California Unruh Act",
     "website accessibility",
   ],
-  authors: [{ name: "Jobs Junior" }],
-  creator: "Jobs Junior",
-  publisher: "Jobs Junior",
+  authors: [{ name: "JustCompliant" }],
+  creator: "JustCompliant",
+  publisher: "JustCompliant",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Jobs Junior Compliance — ADA Web Accessibility",
+    title: "JustCompliant — ADA Web Accessibility",
     description:
       "ADA web accessibility audits, remediation, and ongoing compliance for US businesses. Built to WCAG 2.1 AA.",
-    siteName: "Jobs Junior Compliance",
+    siteName: "JustCompliant",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jobs Junior Compliance",
+    title: "JustCompliant",
     description:
       "ADA web accessibility audits, remediation, and ongoing compliance.",
   },
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Jobs Junior Compliance",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://jobsjr-compliance.com",
+  name: "JustCompliant",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://justcompliant.net",
   description:
     "ADA and WCAG 2.1 web accessibility consulting — audits, remediation, and ongoing compliance monitoring for US businesses.",
   areaServed: { "@type": "Country", name: "United States" },

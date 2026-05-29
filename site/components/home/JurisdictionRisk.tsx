@@ -20,7 +20,7 @@ export function JurisdictionRisk() {
     <section aria-labelledby="jurisdiction-heading" className="py-24 px-6 bg-[var(--surface)]">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-14">
-          <p className="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">
             Know Your Exposure
           </p>
           <h2

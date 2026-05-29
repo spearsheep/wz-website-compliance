@@ -1,0 +1,141 @@
+{
+  "industry": "Hotels & Hospitality",
+  "scannedAt": "2026-05-26T09:05:10Z",
+  "summary": {
+    "totalScanned": 10,
+    "avgScore": 89,
+    "criticalRiskCount": 0,
+    "highRiskCount": 0,
+    "moderateRiskCount": 3,
+    "lowRiskCount": 7
+  },
+  "sites": [
+    {
+      "company": "Lark Hotels",
+      "url": "https://larkhotels.com",
+      "score": 86,
+      "riskLevel": "LOW",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "color-contrast",
+        "select-name",
+        "heading-order",
+        "button-name"
+      ],
+      "notes": "Independent boutique hotel group with 20+ properties. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "Graduate Hotels",
+      "url": "https://graduatehotels.com",
+      "score": 97,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": [
+        "list"
+      ],
+      "notes": "University-town hotel brand, ~35 properties. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "Kimpton Hotels",
+      "url": "https://kimptonhotels.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "label-content-name-mismatch",
+        "heading-order",
+        "image-alt"
+      ],
+      "notes": "Boutique lifestyle hotel brand, ~70 properties. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "The Driskill Austin",
+      "url": "https://driskillhotel.com",
+      "score": 73,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 7,
+      "topFailures": [
+        "meta-viewport",
+        "aria-required-children",
+        "link-name",
+        "html-lang-valid",
+        "button-name"
+      ],
+      "notes": "Historic landmark hotel in Austin TX. Independent single property with own booking. Score from live PSI scan."
+    },
+    {
+      "company": "Arlo Hotels",
+      "url": "https://arlohotels.com",
+      "score": 97,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": [
+        "target-size"
+      ],
+      "notes": "NYC-based boutique hotel brand, 5 properties. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "The Dean Collection",
+      "url": "https://thedeancollection.com",
+      "score": 80,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 5,
+      "topFailures": [
+        "meta-viewport",
+        "color-contrast",
+        "landmark-one-main",
+        "frame-title",
+        "heading-order"
+      ],
+      "notes": "Art-focused boutique hotel brand. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "Proper Hotels",
+      "url": "https://theproperhotel.com",
+      "score": 80,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "landmark-one-main",
+        "document-title",
+        "meta-viewport"
+      ],
+      "notes": "Design-forward boutique hotel group, ~6 properties. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "Ace Hotel",
+      "url": "https://acehotel.com",
+      "score": 92,
+      "riskLevel": "LOW",
+      "failedAuditCount": 2,
+      "topFailures": [
+        "aria-valid-attr-value",
+        "aria-valid-attr"
+      ],
+      "notes": "Independent boutique hotel group, ~10 properties worldwide. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "Wythe Hotel",
+      "url": "https://wythehotel.com",
+      "score": 95,
+      "riskLevel": "LOW",
+      "failedAuditCount": 2,
+      "topFailures": [
+        "heading-order",
+        "color-contrast"
+      ],
+      "notes": "Brooklyn NY boutique hotel, single property. Own booking engine. Score from live PSI scan."
+    },
+    {
+      "company": "Auberge Resorts",
+      "url": "https://aubergeresorts.com",
+      "score": 97,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": [
+        "target-size"
+      ],
+      "notes": "Luxury boutique resort collection, ~25 properties. Own booking engine. Score from live PSI scan."
+    }
+  ]
+}

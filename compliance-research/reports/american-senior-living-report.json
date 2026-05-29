@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "businessName": "American Senior Living",
+    "url": "https://www.americanseniorliving.com",
+    "urlDisplay": "www.americanseniorliving.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-887",
+    "scannedAt": "2026-05-26T09:42:01.558Z"
+  },
+  "score": {
+    "value": 100,
+    "gaugeDash": "753.98 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 0,
+    "totalInstances": 0
+  },
+  "issues": [],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

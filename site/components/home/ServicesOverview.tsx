@@ -39,8 +39,8 @@ const services = [
     description:
       "Ongoing compliance monitoring and fixes. As you add new content and features, we ensure you stay protected against new exposure.",
     highlight: "Ongoing protection",
-    color: "text-amber-400",
-    border: "hover:border-amber-400/50",
+    color: "text-amber-700",
+    border: "hover:border-amber-700/50",
   },
 ]
 

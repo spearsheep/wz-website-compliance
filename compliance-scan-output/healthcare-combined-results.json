@@ -1,0 +1,303 @@
+{
+  "industry": "Healthcare Providers",
+  "scanMethod": "combined-scan: Lighthouse + axe-core + heuristic checks",
+  "scannedAt": "2026-05-26T14:20:21.599Z",
+  "summary": {
+    "totalScanned": 10,
+    "successfulScans": 7,
+    "failedScans": 3,
+    "avgScore": 72,
+    "criticalRiskCount": 1,
+    "highRiskCount": 0,
+    "moderateRiskCount": 6,
+    "lowRiskCount": 0,
+    "totalViolationInstances": 185
+  },
+  "sites": [
+    {
+      "company": "Personal Dental Office",
+      "url": "https://www.personaldentaloffice.com/",
+      "specialty": "dental",
+      "estimatedEmployees": 102,
+      "score": null,
+      "riskLevel": null,
+      "counts": null,
+      "topIssues": [],
+      "scanError": "Command failed: node /Users/raywang/Desktop/Softwares/Website Compliance/automation/lib/combined-scan.js https://www.personaldentaloffice.com/ Personal Dental Office\n  Lighthouse failed: Lighthouse re",
+      "reportJsonPath": null
+    },
+    {
+      "company": "California Dermatology Institute",
+      "url": "https://www.calderminstitute.com/",
+      "specialty": "dermatology",
+      "estimatedEmployees": 7,
+      "score": 0,
+      "riskLevel": "CRITICAL",
+      "counts": {
+        "critical": 0,
+        "serious": 2,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 2,
+        "totalInstances": 11
+      },
+      "topIssues": [
+        {
+          "severity": "serious",
+          "title": "Your text is too hard to read"
+        },
+        {
+          "severity": "serious",
+          "title": "Mystery links with no name"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/california-dermatology-institute-report.json"
+    },
+    {
+      "company": "The LA Chiropractor",
+      "url": "https://www.thelachiropractor.com/",
+      "specialty": "chiropractic",
+      "estimatedEmployees": null,
+      "score": 85,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 4,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 1,
+        "totalIssues": 6,
+        "totalInstances": 62
+      },
+      "topIssues": [
+        {
+          "severity": "critical",
+          "title": "Your text is too hard to read"
+        },
+        {
+          "severity": "critical",
+          "title": "Maps and widgets are invisible"
+        },
+        {
+          "severity": "critical",
+          "title": "Touch targets do not have sufficient size or spacing."
+        },
+        {
+          "severity": "critical",
+          "title": "Screen reader markup is broken"
+        },
+        {
+          "severity": "moderate",
+          "title": "Heading structure is broken"
+        },
+        {
+          "severity": "minor",
+          "title": "Your forms confuse blind visitors"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/the-la-chiropractor-report.json"
+    },
+    {
+      "company": "Eye Care of San Diego",
+      "url": "https://www.eyecareofsandiego.com/",
+      "specialty": "optometry",
+      "estimatedEmployees": null,
+      "score": null,
+      "riskLevel": null,
+      "counts": null,
+      "topIssues": [],
+      "scanError": "Command failed: node /Users/raywang/Desktop/Softwares/Website Compliance/automation/lib/combined-scan.js https://www.eyecareofsandiego.com/ Eye Care of San Diego\n  Lighthouse failed: Lighthouse return",
+      "reportJsonPath": null
+    },
+    {
+      "company": "Premier Physical Therapy",
+      "url": "https://premier805pt.com",
+      "specialty": "physical therapy",
+      "estimatedEmployees": 14,
+      "score": 80,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 4,
+        "serious": 1,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 6,
+        "totalInstances": 46
+      },
+      "topIssues": [
+        {
+          "severity": "critical",
+          "title": "Images missing descriptions"
+        },
+        {
+          "severity": "critical",
+          "title": "Maps and widgets are invisible"
+        },
+        {
+          "severity": "critical",
+          "title": "Your text is too hard to read"
+        },
+        {
+          "severity": "critical",
+          "title": "Keyboard navigation is broken"
+        },
+        {
+          "severity": "serious",
+          "title": "Mystery links with no name"
+        },
+        {
+          "severity": "moderate",
+          "title": "Navigation is broken"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/premier-physical-therapy-report.json"
+    },
+    {
+      "company": "California Kids Pediatrics",
+      "url": "https://www.calkidspeds.com/",
+      "specialty": "pediatrics",
+      "estimatedEmployees": 7,
+      "score": 87,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 3,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 3,
+        "totalInstances": 10
+      },
+      "topIssues": [
+        {
+          "severity": "critical",
+          "title": "Your text is too hard to read"
+        },
+        {
+          "severity": "critical",
+          "title": "Screen reader markup is broken"
+        },
+        {
+          "severity": "critical",
+          "title": "Mystery links with no name"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/california-kids-pediatrics-report.json"
+    },
+    {
+      "company": "Orange County Plastic Surgery",
+      "url": "https://orangecountyplasticsurgery.com",
+      "specialty": "plastic surgery",
+      "estimatedEmployees": 4,
+      "score": 81,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 4,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 5,
+        "totalInstances": 38
+      },
+      "topIssues": [
+        {
+          "severity": "critical",
+          "title": "Mystery links with no name"
+        },
+        {
+          "severity": "critical",
+          "title": "Your text is too hard to read"
+        },
+        {
+          "severity": "critical",
+          "title": "Keyboard navigation is broken"
+        },
+        {
+          "severity": "critical",
+          "title": "Touch targets do not have sufficient size or spacing."
+        },
+        {
+          "severity": "moderate",
+          "title": "Heading structure is broken"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/orange-county-plastic-surgery-report.json"
+    },
+    {
+      "company": "Life Practice Counseling Group",
+      "url": "https://www.lifepractice.org",
+      "specialty": "mental health",
+      "estimatedEmployees": 39,
+      "score": null,
+      "riskLevel": null,
+      "counts": null,
+      "topIssues": [],
+      "scanError": "spawnSync node ETIMEDOUT",
+      "reportJsonPath": null
+    },
+    {
+      "company": "HD Ophthalmology",
+      "url": "https://hdophthalmology.com",
+      "specialty": "ophthalmology",
+      "estimatedEmployees": 4,
+      "score": 89,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0,
+        "totalIssues": 3,
+        "totalInstances": 8
+      },
+      "topIssues": [
+        {
+          "severity": "critical",
+          "title": "Mystery links with no name"
+        },
+        {
+          "severity": "moderate",
+          "title": "Navigation is broken"
+        },
+        {
+          "severity": "moderate",
+          "title": "Heading structure is broken"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/hd-ophthalmology-report.json"
+    },
+    {
+      "company": "Innovative Care Medicine",
+      "url": "https://innovativecaremed.com",
+      "specialty": "family practice",
+      "estimatedEmployees": 67,
+      "score": 83,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 2,
+        "serious": 0,
+        "moderate": 2,
+        "minor": 0,
+        "totalIssues": 4,
+        "totalInstances": 10
+      },
+      "topIssues": [
+        {
+          "severity": "critical",
+          "title": "Mystery links with no name"
+        },
+        {
+          "severity": "critical",
+          "title": "Maps and widgets are invisible"
+        },
+        {
+          "severity": "moderate",
+          "title": "Heading structure is broken"
+        },
+        {
+          "severity": "moderate",
+          "title": "Navigation is broken"
+        }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/innovative-care-medicine-report.json"
+    }
+  ]
+}

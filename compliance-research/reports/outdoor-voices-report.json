@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "businessName": "Outdoor Voices",
+    "url": "https://outdoorvoices.com",
+    "urlDisplay": "outdoorvoices.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-150",
+    "scannedAt": "2026-05-26T10:29:49.190Z"
+  },
+  "score": {
+    "value": 97,
+    "gaugeDash": "731.36 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 1,
+    "totalInstances": 11
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Mystery links with no name",
+      "desc": "Links have no descriptive text, so screen readers just say \"link\" with no context.",
+      "count": 11
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

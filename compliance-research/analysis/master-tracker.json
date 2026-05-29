@@ -1,0 +1,2631 @@
+{
+  "generatedAt": "2026-05-26T13:43:39.358Z",
+  "note": "Business revenue/size populated by separate research agent — see master-tracker.json after merge.",
+  "industries": [
+    {
+      "industry": "Hotels & Hospitality",
+      "industryKey": "hotel",
+      "sites": [
+        {
+          "company": "Lark Hotels",
+          "url": "https://larkhotels.com",
+          "scanStatus": "success",
+          "score": 86,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 9
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 5
+            },
+            {
+              "severity": "critical",
+              "title": "Your forms confuse blind visitors",
+              "instances": 2
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 2
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 2900,
+              "high": 3400
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 16500,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Graduate Hotels",
+          "url": "https://graduatehotels.com",
+          "scanStatus": "failed",
+          "scanError": "Lighthouse timed out (ETIMEDOUT) on both attempts. No report generated.",
+          "score": null,
+          "riskLevel": null,
+          "violations": null,
+          "complexity": null,
+          "quote": null,
+          "marketBuildCost": null,
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null
+        },
+        {
+          "company": "Kimpton Hotels",
+          "url": "https://kimptonhotels.com",
+          "scanStatus": "success",
+          "score": 94,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 1,
+            "totalIssues": 3,
+            "totalInstances": 12
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Images missing descriptions",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 1
+            },
+            {
+              "severity": "minor",
+              "title": "Your forms confuse blind visitors",
+              "instances": 10
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2100,
+              "mid": 2500,
+              "high": 3000
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 16500,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "The Driskill Austin",
+          "url": "https://driskillhotel.com",
+          "scanStatus": "success",
+          "score": 73,
+          "riskLevel": "HIGH",
+          "violations": {
+            "critical": 6,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 6,
+            "totalInstances": 13
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Screen reader markup is broken",
+              "instances": 7
+            },
+            {
+              "severity": "critical",
+              "title": "Mystery links with no name",
+              "instances": 2
+            },
+            {
+              "severity": "critical",
+              "title": "Your forms confuse blind visitors",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Language not declared",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Keyboard navigation is broken",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing.",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 3600,
+              "mid": 4400,
+              "high": 5200
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 16500,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Arlo Hotels",
+          "url": "https://arlohotels.com",
+          "scanStatus": "success",
+          "score": 97,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 1,
+            "totalInstances": 2
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing.",
+              "instances": 2
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2400,
+              "high": 2800
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 16500,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "The Dean Collection",
+          "url": "https://thedeancollection.com",
+          "scanStatus": "success",
+          "score": 81,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 3
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Page has no title",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Keyboard navigation is broken",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 1,
+            "forms": 0,
+            "interactiveComponents": 0,
+            "images": 0,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 400,
+              "mid": 500,
+              "high": 600
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 2900,
+              "high": 3400
+            },
+            "rebuild": {
+              "low": 6400,
+              "mid": 8000,
+              "high": 9600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5500,
+            "high": 7500
+          },
+          "pricingFlags": [
+            {
+              "type": "audit-too-low",
+              "msg": "Audit price is below $500 — may signal low value or low complexity"
+            },
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($9,600) exceeds market build ceiling ($7,500) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Proper Hotels",
+          "url": "https://theproperhotel.com",
+          "scanStatus": "success",
+          "score": 80,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 3
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Page has no title",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Keyboard navigation is broken",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 1,
+            "forms": 0,
+            "interactiveComponents": 0,
+            "images": 0,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 400,
+              "mid": 500,
+              "high": 600
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 2900,
+              "high": 3400
+            },
+            "rebuild": {
+              "low": 6400,
+              "mid": 8000,
+              "high": 9600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5500,
+            "high": 7500
+          },
+          "pricingFlags": [
+            {
+              "type": "audit-too-low",
+              "msg": "Audit price is below $500 — may signal low value or low complexity"
+            },
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($9,600) exceeds market build ceiling ($7,500) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Ace Hotel",
+          "url": "https://acehotel.com",
+          "scanStatus": "success",
+          "score": 92,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 1,
+            "totalInstances": 16
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Screen reader markup is broken",
+              "instances": 16
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2400,
+              "high": 2800
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 16500,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Wythe Hotel",
+          "url": "https://wythehotel.com",
+          "scanStatus": "success",
+          "score": 98,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 0,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 1,
+            "totalInstances": 1
+          },
+          "topIssues": [
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 64,
+            "forms": 1,
+            "interactiveComponents": 48,
+            "images": 22,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 3200,
+              "mid": 3700,
+              "high": 4300
+            },
+            "fix": {
+              "low": 1700,
+              "mid": 2100,
+              "high": 2400
+            },
+            "rebuild": {
+              "low": 21600,
+              "mid": 27000,
+              "high": 32400
+            },
+            "recommendation": "audit",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 31000,
+            "mid": 41500,
+            "high": 55500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Auberge Resorts",
+          "url": "https://aubergeresorts.com",
+          "scanStatus": "success",
+          "score": 97,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 1,
+            "totalInstances": 4
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing.",
+              "instances": 4
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2400,
+              "high": 2800
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 16500,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        }
+      ],
+      "industryPricingGap": "No specific multiplier for \"hotel\" in quote engine — currently uses 1.0x (same as \"other\")"
+    },
+    {
+      "industry": "Auto Dealerships",
+      "industryKey": "automotive",
+      "sites": [
+        {
+          "company": "Schomp Automotive",
+          "url": "https://www.schompauto.com",
+          "scanStatus": "success",
+          "score": 81,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 3
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Page has no title",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Keyboard navigation is broken",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 1,
+            "forms": 0,
+            "interactiveComponents": 0,
+            "images": 0,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 400,
+              "mid": 500,
+              "high": 600
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 2900,
+              "high": 3400
+            },
+            "rebuild": {
+              "low": 6400,
+              "mid": 8000,
+              "high": 9600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 3500,
+            "mid": 4500,
+            "high": 6000
+          },
+          "pricingFlags": [
+            {
+              "type": "audit-too-low",
+              "msg": "Audit price is below $500 — may signal low value or low complexity"
+            },
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($9,600) exceeds market build ceiling ($6,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Serra Automotive",
+          "url": "https://www.serraautomotive.com",
+          "scanStatus": "success",
+          "score": 80,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 5,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 6,
+            "totalInstances": 29
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 10
+            },
+            {
+              "severity": "critical",
+              "title": "Images missing descriptions",
+              "instances": 7
+            },
+            {
+              "severity": "critical",
+              "title": "Mystery links with no name",
+              "instances": 7
+            },
+            {
+              "severity": "critical",
+              "title": "Your forms confuse blind visitors",
+              "instances": 2
+            },
+            {
+              "severity": "critical",
+              "title": "Screen reader markup is broken",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 2
+            }
+          ],
+          "complexity": {
+            "pages": 500,
+            "forms": 1,
+            "interactiveComponents": 29,
+            "images": 114,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 14100,
+              "mid": 16600,
+              "high": 19100
+            },
+            "fix": {
+              "low": 3300,
+              "mid": 4100,
+              "high": 4800
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 39000,
+            "mid": 51500,
+            "high": 70000
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Tom Wood Automotive",
+          "url": "https://www.tomwood.com",
+          "scanStatus": "failed",
+          "scanError": "All scans failed — site timed out (Lighthouse ETIMEDOUT, Playwright browser unavailable)",
+          "score": null,
+          "riskLevel": null,
+          "violations": null,
+          "complexity": null,
+          "quote": null,
+          "marketBuildCost": null,
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null
+        },
+        {
+          "company": "Bergstrom Automotive",
+          "url": "https://www.bergstromauto.com",
+          "scanStatus": "success",
+          "score": 90,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 3,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 21
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Links blend into text",
+              "instances": 18
+            },
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 500,
+            "forms": 1,
+            "interactiveComponents": 89,
+            "images": 90,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 15600,
+              "mid": 18400,
+              "high": 21100
+            },
+            "fix": {
+              "low": 2700,
+              "mid": 3300,
+              "high": 3900
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 39000,
+            "mid": 51500,
+            "high": 70000
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Ken Garff Automotive",
+          "url": "https://www.kengarff.com",
+          "scanStatus": "success",
+          "score": 83,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 5,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 5,
+            "totalInstances": 38
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Screen reader markup is broken",
+              "instances": 26
+            },
+            {
+              "severity": "critical",
+              "title": "Your forms confuse blind visitors",
+              "instances": 4
+            },
+            {
+              "severity": "critical",
+              "title": "Images missing descriptions",
+              "instances": 4
+            },
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 3
+            },
+            {
+              "severity": "critical",
+              "title": "Mystery links with no name",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 3300,
+              "mid": 4000,
+              "high": 4700
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 10500,
+            "mid": 14000,
+            "high": 18500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Tasca Automotive",
+          "url": "https://www.tasca.com",
+          "scanStatus": "success",
+          "score": 90,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 3,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 12
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 4
+            },
+            {
+              "severity": "critical",
+              "title": "Mystery links with no name",
+              "instances": 4
+            },
+            {
+              "severity": "critical",
+              "title": "Maps and widgets are invisible",
+              "instances": 3
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2700,
+              "mid": 3300,
+              "high": 3900
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 10500,
+            "mid": 14000,
+            "high": 18500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Crown Automotive",
+          "url": "https://www.crownauto.com",
+          "scanStatus": "success",
+          "score": 88,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 3,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 10
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 7
+            },
+            {
+              "severity": "critical",
+              "title": "Images missing descriptions",
+              "instances": 2
+            },
+            {
+              "severity": "critical",
+              "title": "Your forms confuse blind visitors",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 500,
+            "forms": 2,
+            "interactiveComponents": 7,
+            "images": 21,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 1
+          },
+          "quote": {
+            "audit": {
+              "low": 13300,
+              "mid": 15700,
+              "high": 18000
+            },
+            "fix": {
+              "low": 2600,
+              "mid": 3200,
+              "high": 3800
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 39000,
+            "mid": 51500,
+            "high": 70000
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Joe Machens Dealerships",
+          "url": "https://www.machens.com",
+          "scanStatus": "success",
+          "score": 95,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 2,
+            "totalInstances": 6
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing",
+              "instances": 5
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 500,
+            "forms": 1,
+            "interactiveComponents": 123,
+            "images": 72,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 16400,
+              "mid": 19300,
+              "high": 22200
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2500,
+              "high": 2900
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 39000,
+            "mid": 51500,
+            "high": 70000
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Findlay Automotive",
+          "url": "https://www.findlayauto.com",
+          "scanStatus": "success",
+          "score": 94,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 2,
+            "totalInstances": 17
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 16
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 1,
+            "forms": 0,
+            "interactiveComponents": 0,
+            "images": 121,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 900,
+              "mid": 1100,
+              "high": 1300
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2500,
+              "high": 2900
+            },
+            "rebuild": {
+              "low": 6400,
+              "mid": 8000,
+              "high": 9600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 3500,
+            "mid": 4500,
+            "high": 6000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($9,600) exceeds market build ceiling ($6,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Larry H. Miller Dealerships",
+          "url": "https://www.lhmauto.com",
+          "scanStatus": "failed",
+          "scanError": "All scans failed — Lighthouse returned error (site blocked/unreachable), Playwright browser unavailable",
+          "score": null,
+          "riskLevel": null,
+          "violations": null,
+          "complexity": null,
+          "quote": null,
+          "marketBuildCost": null,
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null
+        }
+      ],
+      "industryPricingGap": "No specific multiplier for \"automotive\" in quote engine — currently uses 1.0x (same as \"other\")"
+    },
+    {
+      "industry": "Senior Care / Assisted Living",
+      "industryKey": "senior-care",
+      "sites": [
+        {
+          "company": "Sonida Senior Living",
+          "url": "https://www.sonidaseniorliving.com",
+          "scanStatus": "success",
+          "score": 86,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 4,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 5
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing.",
+              "instances": 2
+            },
+            {
+              "severity": "critical",
+              "title": "Screen reader markup is broken",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Mystery links with no name",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 7,
+            "forms": 0,
+            "interactiveComponents": 6,
+            "images": 18,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 600,
+              "mid": 700,
+              "high": 800
+            },
+            "fix": {
+              "low": 3000,
+              "mid": 3600,
+              "high": 4200
+            },
+            "rebuild": {
+              "low": 7400,
+              "mid": 9300,
+              "high": 11200
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 6500,
+            "mid": 9000,
+            "high": 12000
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Watermark Retirement Communities",
+          "url": "https://www.watermarkcommunities.com",
+          "scanStatus": "success",
+          "score": 99,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 0,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 1,
+            "totalIssues": 2,
+            "totalInstances": 7
+          },
+          "topIssues": [
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 1
+            },
+            {
+              "severity": "minor",
+              "title": "Your forms confuse blind visitors",
+              "instances": 6
+            }
+          ],
+          "complexity": {
+            "pages": 315,
+            "forms": 0,
+            "interactiveComponents": 440,
+            "images": 35,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 19500,
+              "mid": 22900,
+              "high": 26400
+            },
+            "fix": {
+              "low": 1700,
+              "mid": 2100,
+              "high": 2500
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "audit",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 42000,
+            "mid": 56500,
+            "high": 76000
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Milestone Retirement Communities",
+          "url": "https://www.milestoneretirement.com",
+          "scanStatus": "success",
+          "score": 90,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 2,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 21
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Mystery links with no name",
+              "instances": 11
+            },
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 5
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 4
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 5,
+            "forms": 0,
+            "interactiveComponents": 40,
+            "images": 43,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 1600,
+              "mid": 1900,
+              "high": 2200
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 3000,
+              "high": 3500
+            },
+            "rebuild": {
+              "low": 11200,
+              "mid": 14000,
+              "high": 16800
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 7000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($16,800) exceeds market build ceiling ($7,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Frontier Senior Living",
+          "url": "https://www.frontierseniorliving.com",
+          "scanStatus": "success",
+          "score": 75,
+          "riskLevel": "HIGH",
+          "violations": {
+            "critical": 4,
+            "serious": 0,
+            "moderate": 2,
+            "minor": 0,
+            "totalIssues": 6,
+            "totalInstances": 38
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Screen reader markup is broken",
+              "instances": 26
+            },
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 7
+            },
+            {
+              "severity": "critical",
+              "title": "Images missing descriptions",
+              "instances": 2
+            },
+            {
+              "severity": "critical",
+              "title": "Maps and widgets are invisible",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "No way to skip navigation",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 5,
+            "forms": 3,
+            "interactiveComponents": 36,
+            "images": 59,
+            "videos": 2,
+            "pdfs": 0,
+            "thirdPartyWidgets": 1
+          },
+          "quote": {
+            "audit": {
+              "low": 1800,
+              "mid": 2200,
+              "high": 2500
+            },
+            "fix": {
+              "low": 3100,
+              "mid": 3800,
+              "high": 4400
+            },
+            "rebuild": {
+              "low": 11000,
+              "mid": 13800,
+              "high": 16600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 7000
+          },
+          "pricingFlags": [
+            {
+              "type": "fix-exceeds-build",
+              "msg": "Fix ceiling ($4,400) exceeds market build floor ($4,000) — rebuild becomes more attractive"
+            },
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($16,600) exceeds market build ceiling ($7,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "The Springs Living",
+          "url": "https://www.thesprings.com",
+          "scanStatus": "success",
+          "score": 90,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 3
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 1
+            },
+            {
+              "severity": "critical",
+              "title": "Your forms confuse blind visitors",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Heading structure is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 5,
+            "forms": 0,
+            "interactiveComponents": 3,
+            "images": 1,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 500,
+              "mid": 600,
+              "high": 700
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 2900,
+              "high": 3400
+            },
+            "rebuild": {
+              "low": 6800,
+              "mid": 8500,
+              "high": 10100
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 7000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($10,100) exceeds market build ceiling ($7,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Senior Resource Group",
+          "url": "https://www.srg-llc.com",
+          "scanStatus": "success",
+          "score": 92,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 3,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 2,
+            "totalIssues": 5,
+            "totalInstances": 15
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Touch targets do not have sufficient size or spacing.",
+              "instances": 5
+            },
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 2
+            },
+            {
+              "severity": "critical",
+              "title": "Maps and widgets are invisible",
+              "instances": 1
+            },
+            {
+              "severity": "minor",
+              "title": "Your forms confuse blind visitors",
+              "instances": 5
+            },
+            {
+              "severity": "minor",
+              "title": "Elements with role=\"none\" or role=\"presentation\" have conflicts",
+              "instances": 2
+            }
+          ],
+          "complexity": {
+            "pages": 5,
+            "forms": 3,
+            "interactiveComponents": 92,
+            "images": 33,
+            "videos": 1,
+            "pdfs": 0,
+            "thirdPartyWidgets": 1
+          },
+          "quote": {
+            "audit": {
+              "low": 3100,
+              "mid": 3600,
+              "high": 4200
+            },
+            "fix": {
+              "low": 2700,
+              "mid": 3300,
+              "high": 3800
+            },
+            "rebuild": {
+              "low": 17800,
+              "mid": 22200,
+              "high": 26600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 7000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($26,600) exceeds market build ceiling ($7,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "HarborChase Senior Living",
+          "url": "https://www.harborchase.com",
+          "scanStatus": "failed",
+          "scanError": "All scans failed — site blocked or timed out",
+          "score": null,
+          "riskLevel": null,
+          "violations": null,
+          "complexity": null,
+          "quote": null,
+          "marketBuildCost": null,
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null
+        },
+        {
+          "company": "American Senior Living",
+          "url": "https://www.americanseniorliving.com",
+          "scanStatus": "success",
+          "score": 100,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 0,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 0,
+            "totalInstances": 0
+          },
+          "topIssues": [],
+          "complexity": {
+            "pages": 5,
+            "forms": 0,
+            "interactiveComponents": 0,
+            "images": 0,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 400,
+              "mid": 500,
+              "high": 600
+            },
+            "fix": {
+              "low": 1600,
+              "mid": 2000,
+              "high": 2400
+            },
+            "rebuild": {
+              "low": 6400,
+              "mid": 8000,
+              "high": 9600
+            },
+            "recommendation": "audit",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 7000
+          },
+          "pricingFlags": [
+            {
+              "type": "audit-too-low",
+              "msg": "Audit price is below $500 — may signal low value or low complexity"
+            },
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($9,600) exceeds market build ceiling ($7,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Concord Senior Living",
+          "url": "https://www.concordseniorliving.com",
+          "scanStatus": "success",
+          "score": 79,
+          "riskLevel": "HIGH",
+          "violations": {
+            "critical": 2,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 7
+          },
+          "topIssues": [
+            {
+              "severity": "critical",
+              "title": "Your text is too hard to read",
+              "instances": 5
+            },
+            {
+              "severity": "critical",
+              "title": "Language not declared",
+              "instances": 1
+            },
+            {
+              "severity": "moderate",
+              "title": "Navigation is broken",
+              "instances": 1
+            }
+          ],
+          "complexity": {
+            "pages": 3,
+            "forms": 0,
+            "interactiveComponents": 1,
+            "images": 12,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 500,
+              "mid": 500,
+              "high": 600
+            },
+            "fix": {
+              "low": 2400,
+              "mid": 2900,
+              "high": 3400
+            },
+            "rebuild": {
+              "low": 6500,
+              "mid": 8200,
+              "high": 9800
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 7000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($9,800) exceeds market build ceiling ($7,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Brightwater Senior Living",
+          "url": "https://www.brightwaterseniorliving.com",
+          "scanStatus": "failed",
+          "scanError": "All scans failed — site blocked or timed out",
+          "score": null,
+          "riskLevel": null,
+          "violations": null,
+          "complexity": null,
+          "quote": null,
+          "marketBuildCost": null,
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null
+        }
+      ],
+      "industryPricingGap": "No specific multiplier for \"senior-care\" in quote engine — currently uses 1.0x (same as \"other\")"
+    },
+    {
+      "industry": "Mid-Market E-Commerce (DTC)",
+      "industryKey": "ecommerce",
+      "sites": [
+        {
+          "company": "Bombas",
+          "url": "https://bombas.com",
+          "scanStatus": "success",
+          "score": 82,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 3,
+            "serious": 0,
+            "moderate": 2,
+            "minor": 0,
+            "totalIssues": 5,
+            "totalInstances": 7
+          },
+          "topIssues": [
+            "Images missing descriptions",
+            "Language not declared",
+            "Your forms confuse blind visitors",
+            "Heading structure is broken",
+            "Navigation is broken"
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2700,
+              "mid": 3400,
+              "high": 4000
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 17000,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Brooklinen",
+          "url": "https://brooklinen.com",
+          "scanStatus": "success",
+          "score": 94,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 1,
+            "moderate": 2,
+            "minor": 1,
+            "totalIssues": 5,
+            "totalInstances": 27
+          },
+          "topIssues": [
+            "Images missing descriptions",
+            "Maps and widgets are invisible",
+            "Navigation is broken",
+            "Heading structure is broken",
+            "Your forms confuse blind visitors"
+          ],
+          "complexity": {
+            "pages": 5,
+            "forms": 4,
+            "interactiveComponents": 34,
+            "images": 40,
+            "videos": 2,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 1700,
+              "mid": 2000,
+              "high": 2300
+            },
+            "fix": {
+              "low": 2300,
+              "mid": 2800,
+              "high": 3300
+            },
+            "rebuild": {
+              "low": 11100,
+              "mid": 13900,
+              "high": 16700
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5500,
+            "high": 7500
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($16,700) exceeds market build ceiling ($7,500) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Caraway",
+          "url": "https://carawayhome.com",
+          "scanStatus": "success",
+          "score": 85,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 3,
+            "serious": 0,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 25
+          },
+          "topIssues": [
+            "Images missing descriptions",
+            "Your forms confuse blind visitors",
+            "Screen reader markup is broken",
+            "Heading structure is broken"
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2700,
+              "mid": 3300,
+              "high": 3900
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 17000,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Manduka",
+          "url": "https://manduka.com",
+          "scanStatus": "success",
+          "score": 92,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 1,
+            "moderate": 1,
+            "minor": 1,
+            "totalIssues": 4,
+            "totalInstances": 84
+          },
+          "topIssues": [
+            "Screen reader markup is broken",
+            "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+            "Navigation is broken",
+            "Your forms confuse blind visitors"
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2200,
+              "mid": 2700,
+              "high": 3200
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 17000,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Outdoor Voices",
+          "url": "https://outdoorvoices.com",
+          "scanStatus": "success",
+          "score": 97,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 1,
+            "totalInstances": 11
+          },
+          "topIssues": [
+            "Mystery links with no name"
+          ],
+          "complexity": {
+            "pages": 6,
+            "forms": 3,
+            "interactiveComponents": 24,
+            "images": 100,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 1500,
+              "mid": 1800,
+              "high": 2000
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2400,
+              "high": 2800
+            },
+            "rebuild": {
+              "low": 9800,
+              "mid": 12200,
+              "high": 14600
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 7500,
+            "mid": 10000,
+            "high": 13000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($14,600) exceeds market build ceiling ($13,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Four Sigmatic",
+          "url": "https://foursigmatic.com",
+          "scanStatus": "success",
+          "score": 90,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 2,
+            "serious": 2,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 158
+          },
+          "topIssues": [
+            "Screen reader markup is broken",
+            "Images missing descriptions",
+            "Your text is too hard to read",
+            "Mystery links with no name"
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2600,
+              "mid": 3200,
+              "high": 3800
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 17000,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Branch Furniture",
+          "url": "https://branchfurniture.com",
+          "scanStatus": "success",
+          "score": 90,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 0,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 1,
+            "totalInstances": 56
+          },
+          "topIssues": [
+            "Your text is too hard to read"
+          ],
+          "complexity": {
+            "pages": 15,
+            "forms": 2,
+            "interactiveComponents": 8,
+            "images": 25,
+            "videos": 1,
+            "pdfs": 1,
+            "thirdPartyWidgets": 2
+          },
+          "quote": {
+            "audit": {
+              "low": 1100,
+              "mid": 1300,
+              "high": 1500
+            },
+            "fix": {
+              "low": 2000,
+              "mid": 2400,
+              "high": 2800
+            },
+            "rebuild": {
+              "low": 9000,
+              "mid": 11200,
+              "high": 13400
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 12500,
+            "mid": 17000,
+            "high": 22500
+          },
+          "pricingFlags": [],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Pela Case",
+          "url": "https://pelacase.com",
+          "scanStatus": "success",
+          "score": 88,
+          "riskLevel": "MODERATE",
+          "violations": {
+            "critical": 3,
+            "serious": 1,
+            "moderate": 0,
+            "minor": 0,
+            "totalIssues": 4,
+            "totalInstances": 19
+          },
+          "topIssues": [
+            "Your text is too hard to read",
+            "Images missing descriptions",
+            "Your forms confuse blind visitors",
+            "Maps and widgets are invisible"
+          ],
+          "complexity": {
+            "pages": 37,
+            "forms": 13,
+            "interactiveComponents": 292,
+            "images": 201,
+            "videos": 22,
+            "pdfs": 0,
+            "thirdPartyWidgets": 1
+          },
+          "quote": {
+            "audit": {
+              "low": 11800,
+              "mid": 13900,
+              "high": 16000
+            },
+            "fix": {
+              "low": 2800,
+              "mid": 3400,
+              "high": 4000
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 21000,
+            "mid": 28000,
+            "high": 38000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($42,000) exceeds market build ceiling ($38,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Beardbrand",
+          "url": "https://beardbrand.com",
+          "scanStatus": "success",
+          "score": 100,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 0,
+            "serious": 1,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 2,
+            "totalInstances": 22
+          },
+          "topIssues": [
+            "Screen reader markup is broken",
+            "Navigation is broken"
+          ],
+          "complexity": {
+            "pages": 5,
+            "forms": 3,
+            "interactiveComponents": 193,
+            "images": 30,
+            "videos": 0,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 5500,
+              "mid": 6500,
+              "high": 7500
+            },
+            "fix": {
+              "low": 1900,
+              "mid": 2300,
+              "high": 2700
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "audit",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 4000,
+            "mid": 5500,
+            "high": 7500
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($42,000) exceeds market build ceiling ($7,500) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        },
+        {
+          "company": "Ekster",
+          "url": "https://ekster.com",
+          "scanStatus": "success",
+          "score": 91,
+          "riskLevel": "LOW",
+          "violations": {
+            "critical": 1,
+            "serious": 1,
+            "moderate": 1,
+            "minor": 0,
+            "totalIssues": 3,
+            "totalInstances": 6
+          },
+          "topIssues": [
+            "Screen reader markup is broken",
+            "Keyboard navigation is broken",
+            "Heading structure is broken"
+          ],
+          "complexity": {
+            "pages": 33,
+            "forms": 4,
+            "interactiveComponents": 395,
+            "images": 254,
+            "videos": 4,
+            "pdfs": 0,
+            "thirdPartyWidgets": 0
+          },
+          "quote": {
+            "audit": {
+              "low": 12600,
+              "mid": 14800,
+              "high": 17000
+            },
+            "fix": {
+              "low": 2200,
+              "mid": 2700,
+              "high": 3200
+            },
+            "rebuild": {
+              "low": 28000,
+              "mid": 35000,
+              "high": 42000
+            },
+            "recommendation": "fix",
+            "industryMultiplier": 1
+          },
+          "marketBuildCost": {
+            "low": 21000,
+            "mid": 28000,
+            "high": 38000
+          },
+          "pricingFlags": [
+            {
+              "type": "rebuild-overpriced",
+              "msg": "Rebuild ceiling ($42,000) exceeds market build ceiling ($38,000) — we are not competitive"
+            }
+          ],
+          "estimatedRevenue": null,
+          "revenueRange": null,
+          "employeeCount": null,
+          "locationCount": null,
+          "websiteType": null,
+          "websiteNotes": null
+        }
+      ],
+      "industryPricingGap": null
+    }
+  ]
+}

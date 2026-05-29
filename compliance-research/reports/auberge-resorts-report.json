@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "businessName": "Auberge Resorts",
+    "url": "https://aubergeresorts.com",
+    "urlDisplay": "aubergeresorts.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-522",
+    "scannedAt": "2026-05-26T09:43:18.058Z"
+  },
+  "score": {
+    "value": 97,
+    "gaugeDash": "731.36 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 1,
+    "totalInstances": 4
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Touch targets do not have sufficient size or spacing.",
+      "desc": "An accessibility issue was detected on this page.",
+      "count": 4
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

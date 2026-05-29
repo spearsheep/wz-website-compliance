@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Shield, Target, Users, ArrowRight } from "lucide-react"
+import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 export const metadata: Metadata = {
   title: "About — Jobs Junior Compliance",
@@ -31,10 +32,19 @@ export default function AboutPage() {
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-6">
-            The web should work for{" "}
-            <span className="text-[var(--green)]">everyone</span>
-          </h1>
+          <ComplianceHighlight
+            label="Easy-to-read text"
+            explanation="The big dark words sit on a light background, so they are simple to see. A person with weak eyesight can read this without squinting."
+            wcagId="1.4.3"
+            wcagName="Contrast (Minimum)"
+            position="bottom"
+            className="mb-6 mx-auto"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)]">
+              The web should work for{" "}
+              <span className="text-[var(--green)]">everyone</span>
+            </h1>
+          </ComplianceHighlight>
           <p className="text-[var(--muted-foreground)] text-lg leading-relaxed max-w-2xl mx-auto">
             Jobs Junior started as a jobs platform. Along the way, we learned how many websites — including our own in early versions — failed the people who needed them most. Compliance became our mission because we saw firsthand what inaccessibility costs: users who couldn&apos;t complete a task, and businesses that didn&apos;t know they were exposed.
           </p>
@@ -74,10 +84,10 @@ export default function AboutPage() {
           <h2 className="text-xl font-bold text-[var(--foreground)] mb-3">
             This website is our proof of work
           </h2>
-          <p className="text-[var(--muted-foreground)] leading-relaxed mb-4">
+          <p className="text-slate-600 leading-relaxed mb-4">
             Every page on this site meets WCAG 2.1 Level AA. We built the compliance badges you see throughout the site so visitors can inspect exactly what makes each element compliant — the WCAG criterion, the governing law, and the real lawsuits that have enforced it. We don&apos;t just tell you compliance matters. We show you, in real time, what it looks like.
           </p>
-          <p className="text-sm text-[var(--muted-foreground)]">
+          <p className="text-sm text-slate-600">
             Press Tab to see the skip navigation link. Check any image for its alt text. Use a screen reader — it works.
           </p>
         </div>

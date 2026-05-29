@@ -48,7 +48,14 @@ function countUnique(html: string, regex: RegExp): number {
   return new Set(matches).size
 }
 
-export async function detectComplexity(url: string): Promise<SiteComplexity> {
+export interface ComplexityWithHtml {
+  complexity: SiteComplexity
+  html: string
+}
+
+export async function detectComplexity(
+  url: string,
+): Promise<ComplexityWithHtml> {
   const controller = new AbortController()
   const timeoutId = setTimeout(() => controller.abort(), 30_000)
 
@@ -65,12 +72,12 @@ export async function detectComplexity(url: string): Promise<SiteComplexity> {
     })
     clearTimeout(timeoutId)
     if (!res.ok) {
-      return fallbackComplexity()
+      return { complexity: fallbackComplexity(), html: "" }
     }
     html = await res.text()
   } catch {
     clearTimeout(timeoutId)
-    return fallbackComplexity()
+    return { complexity: fallbackComplexity(), html: "" }
   }
 
   // ─── COUNTS ──────────────────────────────────────────
@@ -115,13 +122,16 @@ export async function detectComplexity(url: string): Promise<SiteComplexity> {
   const pages = await estimatePageCount(url, html)
 
   return {
-    pages,
-    forms,
-    interactiveComponents,
-    images,
-    videos,
-    pdfs,
-    thirdPartyWidgets,
+    complexity: {
+      pages,
+      forms,
+      interactiveComponents,
+      images,
+      videos,
+      pdfs,
+      thirdPartyWidgets,
+    },
+    html,
   }
 }
 

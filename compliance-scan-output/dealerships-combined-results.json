@@ -1,0 +1,147 @@
+{
+  "industry": "Auto Dealerships",
+  "scanMethod": "combined-scan: Lighthouse + axe-core + heuristic checks",
+  "scannedAt": "2026-05-26T09:45:00.000Z",
+  "summary": {
+    "totalScanned": 10,
+    "successfulScans": 8,
+    "failedScans": 2,
+    "avgScore": 87.6,
+    "criticalRiskCount": 0,
+    "highRiskCount": 0,
+    "moderateRiskCount": 4,
+    "lowRiskCount": 4,
+    "totalViolationInstances": 136
+  },
+  "sites": [
+    {
+      "company": "Schomp Automotive",
+      "url": "https://www.schompauto.com",
+      "score": 81,
+      "riskLevel": "MODERATE",
+      "counts": { "critical": 2, "serious": 0, "moderate": 1, "minor": 0, "totalIssues": 3, "totalInstances": 3 },
+      "topIssues": [
+        { "severity": "critical", "title": "Page has no title", "instances": 1 },
+        { "severity": "critical", "title": "Keyboard navigation is broken", "instances": 1 },
+        { "severity": "moderate", "title": "Navigation is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/schomp-automotive-report.json"
+    },
+    {
+      "company": "Serra Automotive",
+      "url": "https://www.serraautomotive.com",
+      "score": 80,
+      "riskLevel": "MODERATE",
+      "counts": { "critical": 5, "serious": 0, "moderate": 1, "minor": 0, "totalIssues": 6, "totalInstances": 29 },
+      "topIssues": [
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 10 },
+        { "severity": "critical", "title": "Images missing descriptions", "instances": 7 },
+        { "severity": "critical", "title": "Mystery links with no name", "instances": 7 },
+        { "severity": "critical", "title": "Your forms confuse blind visitors", "instances": 2 },
+        { "severity": "critical", "title": "Screen reader markup is broken", "instances": 1 },
+        { "severity": "moderate", "title": "Heading structure is broken", "instances": 2 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/serra-automotive-report.json"
+    },
+    {
+      "company": "Tom Wood Automotive",
+      "url": "https://www.tomwood.com",
+      "score": null,
+      "riskLevel": null,
+      "counts": null,
+      "topIssues": [],
+      "scanError": "All scans failed — site timed out (Lighthouse ETIMEDOUT, Playwright browser unavailable)",
+      "reportJsonPath": null
+    },
+    {
+      "company": "Bergstrom Automotive",
+      "url": "https://www.bergstromauto.com",
+      "score": 90,
+      "riskLevel": "LOW",
+      "counts": { "critical": 3, "serious": 0, "moderate": 1, "minor": 0, "totalIssues": 4, "totalInstances": 21 },
+      "topIssues": [
+        { "severity": "critical", "title": "Links blend into text", "instances": 18 },
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 1 },
+        { "severity": "critical", "title": "Touch targets do not have sufficient size or spacing", "instances": 1 },
+        { "severity": "moderate", "title": "Navigation is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/bergstrom-automotive-report.json"
+    },
+    {
+      "company": "Ken Garff Automotive",
+      "url": "https://www.kengarff.com",
+      "score": 83,
+      "riskLevel": "MODERATE",
+      "counts": { "critical": 5, "serious": 0, "moderate": 0, "minor": 0, "totalIssues": 5, "totalInstances": 38 },
+      "topIssues": [
+        { "severity": "critical", "title": "Screen reader markup is broken", "instances": 26 },
+        { "severity": "critical", "title": "Your forms confuse blind visitors", "instances": 4 },
+        { "severity": "critical", "title": "Images missing descriptions", "instances": 4 },
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 3 },
+        { "severity": "critical", "title": "Mystery links with no name", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/ken-garff-automotive-report.json"
+    },
+    {
+      "company": "Tasca Automotive",
+      "url": "https://www.tasca.com",
+      "score": 90,
+      "riskLevel": "LOW",
+      "counts": { "critical": 3, "serious": 0, "moderate": 1, "minor": 0, "totalIssues": 4, "totalInstances": 12 },
+      "topIssues": [
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 4 },
+        { "severity": "critical", "title": "Mystery links with no name", "instances": 4 },
+        { "severity": "critical", "title": "Maps and widgets are invisible", "instances": 3 },
+        { "severity": "moderate", "title": "Heading structure is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/tasca-automotive-report.json"
+    },
+    {
+      "company": "Crown Automotive",
+      "url": "https://www.crownauto.com",
+      "score": 88,
+      "riskLevel": "MODERATE",
+      "counts": { "critical": 3, "serious": 0, "moderate": 0, "minor": 0, "totalIssues": 3, "totalInstances": 10 },
+      "topIssues": [
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 7 },
+        { "severity": "critical", "title": "Images missing descriptions", "instances": 2 },
+        { "severity": "critical", "title": "Your forms confuse blind visitors", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/crown-automotive-report.json"
+    },
+    {
+      "company": "Joe Machens Dealerships",
+      "url": "https://www.machens.com",
+      "score": 95,
+      "riskLevel": "LOW",
+      "counts": { "critical": 1, "serious": 0, "moderate": 1, "minor": 0, "totalIssues": 2, "totalInstances": 6 },
+      "topIssues": [
+        { "severity": "critical", "title": "Touch targets do not have sufficient size or spacing", "instances": 5 },
+        { "severity": "moderate", "title": "Navigation is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/joe-machens-dealerships-report.json"
+    },
+    {
+      "company": "Findlay Automotive",
+      "url": "https://www.findlayauto.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "counts": { "critical": 1, "serious": 0, "moderate": 1, "minor": 0, "totalIssues": 2, "totalInstances": 17 },
+      "topIssues": [
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 16 },
+        { "severity": "moderate", "title": "Navigation is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/findlay-automotive-report.json"
+    },
+    {
+      "company": "Larry H. Miller Dealerships",
+      "url": "https://www.lhmauto.com",
+      "score": null,
+      "riskLevel": null,
+      "counts": null,
+      "topIssues": [],
+      "scanError": "All scans failed — Lighthouse returned error (site blocked/unreachable), Playwright browser unavailable",
+      "reportJsonPath": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "businessName": "Wythe Hotel",
+    "url": "https://wythehotel.com",
+    "urlDisplay": "wythehotel.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-278",
+    "scannedAt": "2026-05-26T09:45:00.309Z"
+  },
+  "score": {
+    "value": 98,
+    "gaugeDash": "738.90 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 1,
+    "minor": 0,
+    "totalIssues": 1,
+    "totalInstances": 1
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "moderate",
+      "title": "Heading structure is broken",
+      "desc": "Headings skip levels (e.g. H1 jumps to H3), disrupting how screen readers navigate the page.",
+      "count": 1
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

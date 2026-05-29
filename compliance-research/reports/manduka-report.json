@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "businessName": "Manduka",
+    "url": "https://manduka.com",
+    "urlDisplay": "manduka.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-733",
+    "scannedAt": "2026-05-26T10:28:19.016Z"
+  },
+  "score": {
+    "value": 92,
+    "gaugeDash": "693.66 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 1,
+    "moderate": 1,
+    "minor": 1,
+    "totalIssues": 4,
+    "totalInstances": 84
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Screen reader markup is broken",
+      "desc": "ARIA buttons or links have no accessible name.",
+      "count": 15
+    },
+    {
+      "icon": "warning",
+      "severity": "serious",
+      "title": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "desc": "An accessibility issue was detected on this page.",
+      "count": 22
+    },
+    {
+      "icon": "nav",
+      "severity": "moderate",
+      "title": "Navigation is broken",
+      "desc": "Links in the navigation use \"#\" as their destination, which goes nowhere and confuses screen readers.",
+      "count": 2
+    },
+    {
+      "icon": "form",
+      "severity": "minor",
+      "title": "Your forms confuse blind visitors",
+      "desc": "Form field visible label does not match its accessible name, causing confusion for screen reader users.",
+      "count": 45
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

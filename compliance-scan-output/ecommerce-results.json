@@ -1,0 +1,155 @@
+{
+  "industry": "Mid-Market E-Commerce (DTC)",
+  "scannedAt": "2026-05-26T09:18:45.325838+00:00",
+  "scanMethod": "Local Lighthouse CLI v13.3.0 with headless Chrome (desktop strategy)",
+  "summary": {
+    "totalScanned": 10,
+    "avgScore": 89,
+    "criticalRiskCount": 0,
+    "highRiskCount": 0,
+    "moderateRiskCount": 2,
+    "lowRiskCount": 8
+  },
+  "sites": [
+    {
+      "company": "Bombas",
+      "url": "https://bombas.com",
+      "score": 93,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main"
+      ],
+      "notes": "DTC socks/apparel brand, Shopify Plus. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Brooklinen",
+      "url": "https://brooklinen.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "heading-order",
+        "image-alt",
+        "label-content-name-mismatch"
+      ],
+      "notes": "DTC bedding and home goods brand. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Caraway",
+      "url": "https://carawayhome.com",
+      "score": 75,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 8,
+      "topFailures": [
+        "aria-valid-attr-value",
+        "button-name",
+        "heading-order",
+        "image-alt",
+        "label-content-name-mismatch",
+        "list",
+        "listitem",
+        "target-size"
+      ],
+      "notes": "DTC cookware brand known for ceramic non-stick products. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Manduka",
+      "url": "https://manduka.com",
+      "score": 89,
+      "riskLevel": "LOW",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "aria-hidden-focus",
+        "aria-required-parent",
+        "label-content-name-mismatch",
+        "target-size"
+      ],
+      "notes": "DTC yoga gear and accessories brand. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Outdoor Voices",
+      "url": "https://outdoorvoices.com",
+      "score": 96,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": [
+        "link-name"
+      ],
+      "notes": "DTC activewear brand. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Four Sigmatic",
+      "url": "https://foursigmatic.com",
+      "score": 87,
+      "riskLevel": "LOW",
+      "failedAuditCount": 5,
+      "topFailures": [
+        "color-contrast",
+        "image-alt",
+        "label-content-name-mismatch",
+        "link-name",
+        "target-size"
+      ],
+      "notes": "DTC functional mushroom coffee and wellness brand. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Branch Furniture",
+      "url": "https://branchfurniture.com",
+      "score": 73,
+      "riskLevel": "MODERATE",
+      "failedAuditCount": 8,
+      "topFailures": [
+        "aria-dialog-name",
+        "button-name",
+        "color-contrast",
+        "heading-order",
+        "image-alt",
+        "link-name",
+        "target-size",
+        "presentation-role-conflict"
+      ],
+      "notes": "DTC office furniture brand targeting remote workers. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Pela Case",
+      "url": "https://pelacase.com",
+      "score": 89,
+      "riskLevel": "LOW",
+      "failedAuditCount": 3,
+      "topFailures": [
+        "button-name",
+        "color-contrast",
+        "link-name"
+      ],
+      "notes": "DTC eco-friendly phone cases brand. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Beardbrand",
+      "url": "https://beardbrand.com",
+      "score": 100,
+      "riskLevel": "LOW",
+      "failedAuditCount": 1,
+      "topFailures": [
+        "label-content-name-mismatch"
+      ],
+      "notes": "DTC men's grooming brand. Score from local Lighthouse scan."
+    },
+    {
+      "company": "Ekster",
+      "url": "https://ekster.com",
+      "score": 90,
+      "riskLevel": "LOW",
+      "failedAuditCount": 4,
+      "topFailures": [
+        "aria-required-parent",
+        "heading-order",
+        "label-content-name-mismatch",
+        "target-size"
+      ],
+      "notes": "DTC smart wallets brand. Score from local Lighthouse scan. (Scanned in place of Ridge Wallet which blocked headless browsers.)"
+    }
+  ]
+}

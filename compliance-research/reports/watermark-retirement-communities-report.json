@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "businessName": "Watermark Retirement Communities",
+    "url": "https://www.watermarkcommunities.com",
+    "urlDisplay": "www.watermarkcommunities.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-941",
+    "scannedAt": "2026-05-26T09:38:56.802Z"
+  },
+  "score": {
+    "value": 99,
+    "gaugeDash": "746.44 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 1,
+    "minor": 1,
+    "totalIssues": 2,
+    "totalInstances": 7
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "moderate",
+      "title": "Heading structure is broken",
+      "desc": "Headings skip levels (e.g. H1 jumps to H3), disrupting how screen readers navigate the page.",
+      "count": 1
+    },
+    {
+      "icon": "form",
+      "severity": "minor",
+      "title": "Your forms confuse blind visitors",
+      "desc": "Form field visible label does not match its accessible name, causing confusion for screen reader users.",
+      "count": 6
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

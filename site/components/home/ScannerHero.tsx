@@ -31,6 +31,8 @@ interface ScanResult {
   violations?: ViolationCounts
   quote?: QuoteResult
   industry?: Industry
+  detectedIndustry?: Industry
+  industryConfidence?: "high" | "medium" | "low"
   email?: string
   scannedAt: string
 }
@@ -45,7 +47,8 @@ const riskStyles: Record<string, { ring: string; bg: string; text: string; label
 export function ScannerHero() {
   const [url, setUrl] = useState("")
   const [email, setEmail] = useState("")
-  const [industry, setIndustry] = useState<Industry>("law")
+  const [industry, setIndustry] = useState<Industry>("other")
+  const [userChangedIndustry, setUserChangedIndustry] = useState(false)
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState<ScanResult | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -66,7 +69,12 @@ export function ScannerHero() {
       if (!res.ok) {
         setError(data?.error || "Scan failed. Try a different URL.")
       } else {
-        setResult(data as ScanResult)
+        const scanData = data as ScanResult
+        setResult(scanData)
+        // Auto-fill industry dropdown if user hasn't manually changed it
+        if (!userChangedIndustry && scanData.detectedIndustry && scanData.detectedIndustry !== "other") {
+          setIndustry(scanData.detectedIndustry)
+        }
       }
     } catch {
       setError("Could not reach scanner. Check your connection.")
@@ -84,7 +92,7 @@ export function ScannerHero() {
       >
         {/* URL */}
         <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3">
-          <Globe size={18} className="text-slate-400" aria-hidden="true" />
+          <Globe size={18} className="text-slate-500" aria-hidden="true" />
           <label htmlFor="scan-url" className="sr-only">Website URL to scan</label>
           <input
             id="scan-url"
@@ -102,7 +110,7 @@ export function ScannerHero() {
         {/* Email + Industry side-by-side on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3">
-            <Mail size={16} className="text-slate-400" aria-hidden="true" />
+            <Mail size={16} className="text-slate-500" aria-hidden="true" />
             <label htmlFor="scan-email" className="sr-only">Your work email</label>
             <input
               id="scan-email"
@@ -116,19 +124,27 @@ export function ScannerHero() {
             />
           </div>
 
-          <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3">
-            <Briefcase size={16} className="text-slate-400" aria-hidden="true" />
+          <div className="relative flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3">
+            <Briefcase size={16} className="text-slate-500" aria-hidden="true" />
             <label htmlFor="scan-industry" className="sr-only">Your industry</label>
             <select
               id="scan-industry"
               value={industry}
-              onChange={(e) => setIndustry(e.target.value as Industry)}
+              onChange={(e) => {
+                setIndustry(e.target.value as Industry)
+                setUserChangedIndustry(true)
+              }}
               className="flex-1 bg-transparent border-0 outline-none text-slate-900 text-sm py-3 px-1 focus:outline-none cursor-pointer"
             >
               {INDUSTRY_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>{opt.label}</option>
               ))}
             </select>
+            {result?.detectedIndustry && result.detectedIndustry !== "other" && !userChangedIndustry && (
+              <span className="absolute -top-2 right-2 rounded-full bg-emerald-100 text-emerald-700 text-[9px] font-semibold px-1.5 py-0.5 leading-none">
+                Auto-detected
+              </span>
+            )}
           </div>
         </div>
 
@@ -170,6 +186,16 @@ export function ScannerHero() {
         </div>
       )}
 
+      {/* Persistent screen-reader status region — WCAG 4.1.3 Status Messages.
+          Always in the DOM so assistive tech announces scan progress + results. */}
+      <div className="sr-only" role="status" aria-live="polite">
+        {loading
+          ? "Scanning your website, please wait."
+          : result
+            ? `Scan complete. Accessibility score ${result.score} out of 100. Risk level: ${riskStyles[result.risk].label}.`
+            : ""}
+      </div>
+
       {/* Loading placeholder */}
       {loading && !result && (
         <div className="mt-5 rounded-2xl border border-slate-200 bg-white shadow-lg p-6 animate-pulse">
@@ -185,7 +211,7 @@ export function ScannerHero() {
         <div className="mt-5 rounded-2xl border border-slate-200 bg-white shadow-xl overflow-hidden">
           <div className="px-6 pt-6 pb-4 flex items-start justify-between gap-4">
             <div className="min-w-0 flex-1">
-              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-1">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 mb-1">
                 Scan result
               </p>
               <p className="text-sm text-slate-600 truncate" title={result.url}>
@@ -208,8 +234,8 @@ export function ScannerHero() {
               style={{
                 fontFamily: "var(--font-jakarta), var(--font-inter), system-ui",
                 color:
-                  result.risk === "LOW" ? "#0DAB66" :
-                  result.risk === "MODERATE" ? "#D97706" :
+                  result.risk === "LOW" ? "#078250" :
+                  result.risk === "MODERATE" ? "#B45309" :
                   "#DC2626",
               }}
             >
@@ -248,19 +274,19 @@ export function ScannerHero() {
           {/* ── QUOTE PANEL ─────────────────────────── */}
           {result.quote && (
             <div className="border-t-2 border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 text-white px-6 py-5">
-              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-3">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 mb-3">
                 Your estimated quote
               </p>
 
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div className="rounded-xl bg-slate-800/60 border border-slate-700 p-3">
-                  <p className="text-[10px] uppercase tracking-wider text-slate-400 font-semibold mb-1.5">
+                  <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1.5">
                     Full audit
                   </p>
                   <p className="text-xl font-bold tabular-nums leading-none" style={{ fontFamily: "var(--font-jakarta), system-ui" }}>
                     {formatQuoteRangeFull(result.quote.audit)}
                   </p>
-                  <p className="text-[10px] text-slate-400 mt-1.5">
+                  <p className="text-[10px] text-slate-500 mt-1.5">
                     Manual review + cert
                   </p>
                 </div>
@@ -269,7 +295,7 @@ export function ScannerHero() {
                   className="rounded-xl border p-3"
                   style={{
                     background: result.quote.recommendation === "fix" ? "rgba(13, 171, 102, 0.18)" : "rgba(30, 41, 59, 0.6)",
-                    borderColor: result.quote.recommendation === "fix" ? "#0DAB66" : "#334155",
+                    borderColor: result.quote.recommendation === "fix" ? "#078250" : "#334155",
                   }}
                 >
                   <p className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: result.quote.recommendation === "fix" ? "#86efac" : "#94a3b8" }}>
@@ -278,7 +304,7 @@ export function ScannerHero() {
                   <p className="text-xl font-bold tabular-nums leading-none" style={{ fontFamily: "var(--font-jakarta), system-ui" }}>
                     {formatQuoteRangeFull(result.quote.fix)}
                   </p>
-                  <p className="text-[10px] text-slate-400 mt-1.5">
+                  <p className="text-[10px] text-slate-500 mt-1.5">
                     Code-level remediation + VPAT
                   </p>
                 </div>

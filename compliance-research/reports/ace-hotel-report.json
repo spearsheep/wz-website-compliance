@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "businessName": "Ace Hotel",
+    "url": "https://acehotel.com",
+    "urlDisplay": "acehotel.com",
+    "auditDate": "May 26, 2026",
+    "auditDateShort": "26 MAY 2026",
+    "dossierId": "JR-2026-0526-378",
+    "scannedAt": "2026-05-26T09:42:47.648Z"
+  },
+  "score": {
+    "value": 92,
+    "gaugeDash": "693.66 753.98",
+    "riskClass": "low",
+    "riskLabel": "Low"
+  },
+  "counts": {
+    "critical": 1,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0,
+    "totalIssues": 1,
+    "totalInstances": 16
+  },
+  "issues": [
+    {
+      "icon": "warning",
+      "severity": "critical",
+      "title": "Screen reader markup is broken",
+      "desc": "ARIA attribute values are invalid, causing assistive technology to malfunction.",
+      "count": 16
+    }
+  ],
+  "sender": {
+    "name": "Ray Wang",
+    "company": "Juris",
+    "email": "ray@juris.audit"
+  }
+}

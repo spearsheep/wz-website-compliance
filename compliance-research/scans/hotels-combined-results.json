@@ -1,0 +1,202 @@
+{
+  "industry": "Hotels & Hospitality",
+  "scanMethod": "combined-scan: Lighthouse + axe-core + heuristic checks",
+  "scannedAt": "2026-05-26T09:45:30.000Z",
+  "notes": "Graduate Hotels (graduatehotels.com) could not be scanned — Lighthouse timed out on both attempts (ETIMEDOUT). 9 of 10 sites successfully scanned.",
+  "summary": {
+    "totalScanned": 9,
+    "avgScore": 89,
+    "criticalRiskCount": 1,
+    "highRiskCount": 0,
+    "moderateRiskCount": 3,
+    "lowRiskCount": 5,
+    "totalViolationInstances": 63
+  },
+  "sites": [
+    {
+      "company": "Lark Hotels",
+      "url": "https://larkhotels.com",
+      "score": 86,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 2,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 3,
+        "totalInstances": 9
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Your text is too hard to read", "instances": 5 },
+        { "severity": "critical", "title": "Your forms confuse blind visitors", "instances": 2 },
+        { "severity": "moderate", "title": "Heading structure is broken", "instances": 2 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/lark-hotels-report.json"
+    },
+    {
+      "company": "Graduate Hotels",
+      "url": "https://graduatehotels.com",
+      "score": null,
+      "riskLevel": "UNKNOWN",
+      "counts": null,
+      "topIssues": [],
+      "reportJsonPath": null,
+      "scanError": "Lighthouse timed out (ETIMEDOUT) on both attempts. No report generated."
+    },
+    {
+      "company": "Kimpton Hotels",
+      "url": "https://kimptonhotels.com",
+      "score": 94,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 1,
+        "totalIssues": 3,
+        "totalInstances": 12
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Images missing descriptions", "instances": 1 },
+        { "severity": "moderate", "title": "Heading structure is broken", "instances": 1 },
+        { "severity": "minor", "title": "Your forms confuse blind visitors", "instances": 10 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/kimpton-hotels-report.json"
+    },
+    {
+      "company": "The Driskill Austin",
+      "url": "https://driskillhotel.com",
+      "score": 73,
+      "riskLevel": "HIGH",
+      "counts": {
+        "critical": 6,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 6,
+        "totalInstances": 13
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Screen reader markup is broken", "instances": 7 },
+        { "severity": "critical", "title": "Mystery links with no name", "instances": 2 },
+        { "severity": "critical", "title": "Your forms confuse blind visitors", "instances": 1 },
+        { "severity": "critical", "title": "Language not declared", "instances": 1 },
+        { "severity": "critical", "title": "Keyboard navigation is broken", "instances": 1 },
+        { "severity": "critical", "title": "Touch targets do not have sufficient size or spacing.", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/the-driskill-austin-report.json"
+    },
+    {
+      "company": "Arlo Hotels",
+      "url": "https://arlohotels.com",
+      "score": 97,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 1,
+        "totalInstances": 2
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Touch targets do not have sufficient size or spacing.", "instances": 2 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/arlo-hotels-report.json"
+    },
+    {
+      "company": "The Dean Collection",
+      "url": "https://thedeancollection.com",
+      "score": 81,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 2,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 3,
+        "totalInstances": 3
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Page has no title", "instances": 1 },
+        { "severity": "critical", "title": "Keyboard navigation is broken", "instances": 1 },
+        { "severity": "moderate", "title": "Navigation is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/the-dean-collection-report.json"
+    },
+    {
+      "company": "Proper Hotels",
+      "url": "https://theproperhotel.com",
+      "score": 80,
+      "riskLevel": "MODERATE",
+      "counts": {
+        "critical": 2,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 3,
+        "totalInstances": 3
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Page has no title", "instances": 1 },
+        { "severity": "critical", "title": "Keyboard navigation is broken", "instances": 1 },
+        { "severity": "moderate", "title": "Navigation is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/proper-hotels-report.json"
+    },
+    {
+      "company": "Ace Hotel",
+      "url": "https://acehotel.com",
+      "score": 92,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 1,
+        "totalInstances": 16
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Screen reader markup is broken", "instances": 16 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/ace-hotel-report.json"
+    },
+    {
+      "company": "Wythe Hotel",
+      "url": "https://wythehotel.com",
+      "score": 98,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 0,
+        "serious": 0,
+        "moderate": 1,
+        "minor": 0,
+        "totalIssues": 1,
+        "totalInstances": 1
+      },
+      "topIssues": [
+        { "severity": "moderate", "title": "Heading structure is broken", "instances": 1 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/wythe-hotel-report.json"
+    },
+    {
+      "company": "Auberge Resorts",
+      "url": "https://aubergeresorts.com",
+      "score": 97,
+      "riskLevel": "LOW",
+      "counts": {
+        "critical": 1,
+        "serious": 0,
+        "moderate": 0,
+        "minor": 0,
+        "totalIssues": 1,
+        "totalInstances": 4
+      },
+      "topIssues": [
+        { "severity": "critical", "title": "Touch targets do not have sufficient size or spacing.", "instances": 4 }
+      ],
+      "reportJsonPath": "/Users/raywang/Desktop/Softwares/Website Compliance/automation/output/auberge-resorts-report.json"
+    }
+  ]
+}

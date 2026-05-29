@@ -107,7 +107,7 @@ export function BrowserMockup() {
               <div className="h-7 w-full rounded-md bg-white border border-slate-200 mb-2" />
               <div className="h-2 w-16 rounded bg-slate-400 mb-2" />
               <div className="h-7 w-full rounded-md bg-white border border-slate-200 mb-3" />
-              <div className="h-7 w-28 rounded-md" style={{ background: "#0DAB66" }} />
+              <div className="h-7 w-28 rounded-md" style={{ background: "#078250" }} />
             </div>
             {/* SparkDot: Form labels / WCAG 3.3.2 */}
             <div className="absolute top-2 right-6">
