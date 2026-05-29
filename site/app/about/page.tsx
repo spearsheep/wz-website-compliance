@@ -4,8 +4,8 @@ import { Shield, Target, Users, ArrowRight } from "lucide-react"
 import { ComplianceHighlight } from "@/components/compliance/ComplianceHighlight"
 
 export const metadata: Metadata = {
-  title: "About — Jobs Junior Compliance",
-  description: "About Jobs Junior's web accessibility compliance service.",
+  title: "About",
+  description: "About JustCompliant's web accessibility compliance service.",
 }
 
 const values = [
@@ -46,7 +46,7 @@ export default function AboutPage() {
             </h1>
           </ComplianceHighlight>
           <p className="text-[var(--muted-foreground)] text-lg leading-relaxed max-w-2xl mx-auto">
-            Jobs Junior started as a jobs platform. Along the way, we learned how many websites — including our own in early versions — failed the people who needed them most. Compliance became our mission because we saw firsthand what inaccessibility costs: users who couldn&apos;t complete a task, and businesses that didn&apos;t know they were exposed.
+            JustCompliant began with a simple realization: how many websites — including our own in early versions — failed the people who needed them most. Compliance became our mission because we saw firsthand what inaccessibility costs: users who couldn&apos;t complete a task, and businesses that didn&apos;t know they were exposed.
           </p>
         </div>
 

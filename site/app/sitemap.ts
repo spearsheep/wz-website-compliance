@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/blog"
 import { getAllLawsuits } from "@/lib/lawsuits"
 import { industries } from "@/lib/industries"
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://jobsjr-compliance.com"
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://justcompliant.net"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()

@@ -30,7 +30,7 @@ function readPostFile(filename: string): Post | null {
     title: data.title || slug,
     description: data.description || "",
     date: data.date || new Date().toISOString().slice(0, 10),
-    author: data.author || "Jobs Junior",
+    author: data.author || "JustCompliant",
     tags: data.tags || [],
     readingTime: Math.max(1, Math.round(words / 200)),
     content,

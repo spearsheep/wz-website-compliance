@@ -66,7 +66,7 @@ export async function detectComplexity(
       signal: controller.signal,
       headers: {
         "User-Agent":
-          "Mozilla/5.0 (compatible; JobsJuniorComplianceBot/1.0; +https://jobsjr-compliance.com)",
+          "Mozilla/5.0 (compatible; JustCompliantBot/1.0; +https://justcompliant.net)",
         Accept: "text/html,application/xhtml+xml",
       },
     })
@@ -144,7 +144,7 @@ async function estimatePageCount(url: string, html: string): Promise<number> {
     const res = await fetch(sitemapUrl, {
       cache: "no-store",
       signal: AbortSignal.timeout(8000),
-      headers: { "User-Agent": "JobsJuniorComplianceBot/1.0" },
+      headers: { "User-Agent": "JustCompliantBot/1.0" },
     })
     if (res.ok) {
       const xml = await res.text()

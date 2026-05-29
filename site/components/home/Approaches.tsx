@@ -4,7 +4,7 @@ import { ArrowRight, Shield, BarChart3, Building2, Wrench } from "lucide-react"
 /**
  * Approaches — The 4-approach comparison section.
  *
- * Positions Jobs Junior against three "wrong" archetypes without naming
+ * Positions JustCompliant against three "wrong" archetypes without naming
  * specific competitors. Customer-confident tone — we don't punch down.
  */
 
@@ -93,7 +93,7 @@ const approaches: Approach[] = [
   },
   {
     num: "04",
-    name: "Jobs Junior",
+    name: "JustCompliant",
     tagline: "Audited by experts. Fixed by engineers. Certified.",
     icon: Wrench,
     iconBg: "bg-emerald-50",

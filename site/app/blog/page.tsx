@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Daily plain-English insights on ADA Title III, WCAG 2.1, state accessibility laws, and real lawsuit case studies. Written for non-technical business owners.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Jobs Junior Compliance Blog",
+    title: "JustCompliant Blog",
     description: "Daily insights on web accessibility law and WCAG compliance.",
     type: "website",
   },

@@ -84,7 +84,10 @@ export function Footer() {
 
         <div className="mt-12 border-t border-[var(--border)] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--muted-foreground)]">
-            © {new Date().getFullYear()} JustCompliant · Owned and operated by Jobs Jr. LLC
+            © {new Date().getFullYear()} JustCompliant
+            <span className="block text-[10px] leading-relaxed text-[var(--muted-foreground)] mt-1">
+              Owned and operated by Jobs Jr. LLC
+            </span>
           </p>
           <p className="text-xs text-[var(--muted-foreground)] text-center">
             This website is built to WCAG 2.1 Level AA standards —{" "}

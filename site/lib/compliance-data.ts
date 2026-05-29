@@ -280,7 +280,7 @@ export const complianceData: ComplianceRequirement[] = [
     category: "Structure",
     name: "Page Titles",
     plainEnglish:
-      "Every page must have a unique, descriptive title (the text shown in the browser tab). 'Home | Jobs Junior Compliance' tells users exactly where they are. Identical titles like 'Welcome' on every page make navigation very difficult for screen reader users.",
+      "Every page must have a unique, descriptive title (the text shown in the browser tab). 'Home | JustCompliant' tells users exactly where they are. Identical titles like 'Welcome' on every page make navigation very difficult for screen reader users.",
     legalText:
       "WCAG 2.1 SC 2.4.2: 'Web pages have titles that describe topic or purpose.' Applied under ADA Title III (42 U.S.C. § 12181).",
     wcagCriterion: "2.4.2",

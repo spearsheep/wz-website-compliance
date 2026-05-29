@@ -43,10 +43,10 @@ export function AltTextDemo() {
             background: "linear-gradient(135deg, #015DF1 0%, #078250 100%)",
           }}
           role="img"
-          aria-label="Abstract gradient showing Jobs Junior brand colors — blue transitioning to green, representing the company's visual identity"
+          aria-label="Abstract gradient showing JustCompliant brand colors — blue transitioning to green, representing the company's visual identity"
         >
           <div className="text-center text-white">
-            <div className="text-4xl font-bold opacity-20">JJ</div>
+            <div className="text-4xl font-bold opacity-20">JC</div>
             <div className="text-sm font-medium mt-2 opacity-60">Image</div>
           </div>
         </div>
@@ -59,7 +59,7 @@ export function AltTextDemo() {
                 Screen reader reads:
               </p>
               <p className="text-sm text-[var(--foreground)] italic leading-relaxed">
-                &ldquo;Abstract gradient showing Jobs Junior brand colors — blue transitioning to green, representing the company&apos;s visual identity&rdquo;
+                &ldquo;Abstract gradient showing JustCompliant brand colors — blue transitioning to green, representing the company&apos;s visual identity&rdquo;
               </p>
               <p className="text-xs text-[var(--muted-foreground)] mt-3">
                 This alt text describes what the image shows AND its purpose — both required by WCAG 1.1.1.

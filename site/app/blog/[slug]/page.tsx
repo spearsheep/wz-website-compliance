@@ -18,7 +18,7 @@ export async function generateMetadata({
   const post = getPostBySlug(slug)
   if (!post) return {}
   return {
-    title: `${post.title} — Jobs Junior Compliance`,
+    title: post.title,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
@@ -95,7 +95,7 @@ export default async function BlogPostPage({
     dateModified: post.date,
     publisher: {
       "@type": "Organization",
-      name: "Jobs Junior Compliance",
+      name: "JustCompliant",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
